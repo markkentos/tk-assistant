@@ -61,6 +61,7 @@ eval/
   blind_review.py      # слепая ручная оценка (перемешивание base/tuned)
 notebooks/
   00_t4_smoke_test.ipynb  # проверка T4: 7B в 4-bit, fp16, LoRA, генерация (этап 0)
+  01_train_colab.ipynb    # QLoRA-обучение на T4 + эксперименты (этап 3)
 configs/          # yaml-конфиги генерации, фильтров, судьи, обучения
 notebooks/        # разведочный анализ данных
 ```
@@ -124,7 +125,7 @@ python eval/judge.py --answers eval/runs/answers_tuned.jsonl --name tuned
 python eval/compare.py
 ```
 
-Секреты — через переменные окружения (`.env` в `.gitignore`):
+Секреты — в файле `.env` в корне (шаблон: `.env.example`, файл в `.gitignore`):
 `GIGACHAT_CREDENTIALS` (ключ авторизации GigaChat API), `OPENROUTER_API_KEY`, `HF_TOKEN`, `WANDB_API_KEY`.
 
 ## Среда обучения и особенности
