@@ -54,18 +54,17 @@ class OpenAICompatibleMixin:
         if response.status_code == 429:  # лимит — подождём и повторим один раз
             time.sleep(10)
             response = self.session.post(self.api_url, json=payload, timeout=120)
-        response.raise_for_status()
+        if response.status_code != 200:
+            raise RuntimeError(
+                f"LLM API error HTTP {response.status_code}: {response.text[:300]}")
         data = response.json()
         return data["choices"][0]["message"]["content"]
 
 
-class GigaChatProvider(LLMProvider, OpenAICompatibleMixin):
+class GigaChatProvider(OpenAICompatibleMixin, LLMProvider):
     name = "gigachat"
 
     def __init__(self, model: str = "GigaChat-Max"):
-        credentials = os.environ.get("GIGACHAT_CREDENTIALS")
-        if not credentials:
-            raise RuntimeError("Не задан GIGACHAT_CREDENTIALS (ключ авторизации GigaChat API)")
         self.model = model
         self.scope = os.environ.get("GIGACHAT_SCOPE", "GIGACHAT_API_PERS")
         self.session = requests.Session()
@@ -73,57 +72,92 @@ class GigaChatProvider(LLMProvider, OpenAICompatibleMixin):
         if ca_cert:
             self.session.verify = ca_cert
         else:
-            # У Сбера свой CA; без его сертификата остаётся отключить проверку.
-            # Для пет-проекта приемлемо, но предупреждаем громко.
+            # Сертификаты Сбера подписаны российским CA (Минцифры), которого нет
+            # в certifi — без переданного CA-сертификата отключаем проверку.
             import urllib3
             urllib3.disable_warnings(urllib3.exceptions.InsecureRequestWarning)
             self.session.verify = False
-        self._token: str | None = None
-        self._token_expires_at: float = 0.0
+
+        # Режим 1 (новая платформа): статичный API-ключ -> Bearer на api.giga.chat,
+        # OAuth не нужен. Режим 2 (классика): ключ авторизации -> OAuth на ngw.
+        self.api_key = os.environ.get("GIGACHAT_API_KEY", "").strip()
+        if self.api_key:
+            self.mode = "bearer"
+            self.api_url = "https://api.giga.chat/v1/chat/completions"
+        else:
+            self.mode = "oauth"
+            self.api_url = GIGACHAT_API_URL
+            self._token: str | None = None
+            self._token_expires_at: float = 0.0
+            _ = self.credentials  # провоцируем ошибку рано, если ключей нет вовсе
 
     def _get_token(self) -> str:
         if self._token and time.time() < self._token_expires_at - 60:
             return self._token
+        # ВАЖНО: OAuth-эндпоинт принимает application/x-www-form-urlencoded
+        # (data=..., БЕЗ Content-Type: application/json — иначе шлюз отвечает 415).
+        # Так же делает официальный SDK (gigachat/api/auth.py: data={"scope": ...}).
         response = self.session.post(
             GIGACHAT_OAUTH_URL,
             headers={
                 "Authorization": f"Basic {self.credentials}",
-                "RqUID": uuid.uuid4().hex,
-                "Content-Type": "application/json",
-                "Accept": "application/json",
+                "RqUID": str(uuid.uuid4()),
             },
-            json={"scope": self.scope},
+            data={"scope": self.scope},
             timeout=30,
         )
-        response.raise_for_status()
+        if response.status_code != 200:
+            # Тело ответа Сберa обычно объясняет причину (401 — неверный ключ,
+            # 403 — не тот скоуп/нет доступа, 400 — «Can't decode Authorization» —
+            # скопирован не тот/не весь ключ).
+            raise RuntimeError(
+                f"GigaChat OAuth failed: HTTP {response.status_code}, "
+                f"ответ: {response.text[:300]}")
         data = response.json()
         self._token = data["access_token"]
         self._token_expires_at = data.get("expires_at", 0) / 1000  # мс -> сек
         return self._token
 
+    @staticmethod
+    def _clean_credentials(raw: str) -> str:
+        """Ключ авторизации GigaChat уходит в Basic как есть: срезаем только мусор.
+
+        Новые ключи — это JWE-токены (начинаются с eyJ..., содержат точки),
+        поэтому «докодировать» их нельзя — только испортим.
+        """
+        return raw.strip().strip('"').strip("'").strip()
+
     @property
     def credentials(self) -> str:
-        # Ключ уже приходит в Base64 — если это не так, закодируем.
-        raw = os.environ["GIGACHAT_CREDENTIALS"]
-        try:
-            base64.b64decode(raw, validate=True)
+        """Basic-ключ: готовый «Ключ авторизации» ИЛИ base64(client_id:client_secret)."""
+        raw = self._clean_credentials(os.environ.get("GIGACHAT_CREDENTIALS", ""))
+        if raw:
             return raw
-        except Exception:
-            return base64.b64encode(raw.encode()).decode()
+        client_id = os.environ.get("GIGACHAT_CLIENT_ID", "").strip()
+        client_secret = os.environ.get("GIGACHAT_CLIENT_SECRET", "").strip()
+        if client_id and client_secret:
+            return base64.b64encode(f"{client_id}:{client_secret}".encode()).decode()
+        raise RuntimeError(
+            "Не задан GIGACHAT_CREDENTIALS (ключ авторизации) либо пара "
+            "GIGACHAT_CLIENT_ID / GIGACHAT_CLIENT_SECRET — заполни .env")
 
     def chat(self, messages: list[Message], temperature: float = 0.7,
              max_tokens: int = 2048) -> str:
+        if self.mode == "bearer":
+            # Статичный API-ключ новой платформы api.giga.chat — OAuth не нужен
+            self.session.headers["Authorization"] = f"Bearer {self.api_key}"
+            return super().chat(messages, temperature, max_tokens)
         token = self._get_token()
         self.session.headers["Authorization"] = f"Bearer {token}"
         try:
             return super().chat(messages, temperature, max_tokens)
-        except requests.HTTPError as exc:
-            if exc.response is not None and exc.response.status_code == 401:
+        except RuntimeError as exc:
+            if "HTTP 401" in str(exc):
                 self._token = None  # токен протух — обновим при следующем вызове
             raise
 
 
-class OpenRouterProvider(LLMProvider, OpenAICompatibleMixin):
+class OpenRouterProvider(OpenAICompatibleMixin, LLMProvider):
     name = "openrouter"
 
     def __init__(self, model: str):

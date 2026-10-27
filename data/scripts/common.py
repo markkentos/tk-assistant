@@ -3,6 +3,7 @@
 from __future__ import annotations
 
 import json
+import os
 import pathlib
 import sys
 import time
@@ -12,6 +13,19 @@ import requests
 ROOT = pathlib.Path(__file__).resolve().parents[2]
 RAW_DIR = ROOT / "data" / "raw"
 PROCESSED_DIR = ROOT / "data" / "processed"
+
+
+def load_env() -> None:
+    """Подхватываем .env из корня репо (KEY=VALUE), не перетирая уже заданное."""
+    env_path = ROOT / ".env"
+    if not env_path.exists():
+        return
+    for line in env_path.read_text(encoding="utf-8").splitlines():
+        line = line.strip()
+        if not line or line.startswith("#") or "=" not in line:
+            continue
+        key, _, value = line.partition("=")
+        os.environ.setdefault(key.strip(), value.strip())
 
 USER_AGENT = (
     "tk-assistant-dataset-bot/0.1 (educational pet project; "

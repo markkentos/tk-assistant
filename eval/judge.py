@@ -25,7 +25,7 @@ import sys
 
 import yaml
 
-from common import append_jsonl, load_json, load_jsonl, save_json, save_jsonl, utf8_console
+from common import append_jsonl, load_env, load_json, load_jsonl, save_json, save_jsonl, utf8_console
 from providers import make_provider
 
 JUDGE_SYSTEM = """\
@@ -201,6 +201,7 @@ def calibrate(args) -> None:
 
 def main() -> None:
     utf8_console()
+    load_env()
     parser = argparse.ArgumentParser(description=__doc__,
                                      formatter_class=argparse.RawDescriptionHelpFormatter)
     parser.add_argument("--answers", required=True, help="jsonl из generate_answers.py")

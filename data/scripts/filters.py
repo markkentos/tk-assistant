@@ -25,7 +25,7 @@ import time
 
 import yaml
 
-from common import append_jsonl, load_json, load_jsonl, save_json, save_jsonl, utf8_console
+from common import append_jsonl, load_env, load_json, load_jsonl, save_json, save_jsonl, utf8_console
 from providers import make_provider
 
 REF_RE = re.compile(r"ст(?:ать[а-яё]*)?\.?\s*№?\s*(\d+(?:\.\d+)?)\s*ТК\s*РФ", re.IGNORECASE)
@@ -144,6 +144,7 @@ class ApiChecker:
 
 def main() -> None:
     utf8_console()
+    load_env()
     parser = argparse.ArgumentParser(description=__doc__,
                                      formatter_class=argparse.RawDescriptionHelpFormatter)
     parser.add_argument("--config", default="configs/filters.yaml")
