@@ -20,7 +20,7 @@ import time
 
 import yaml
 
-from common import PROCESSED_DIR, append_jsonl, load_json, load_jsonl, utf8_console
+from common import PROCESSED_DIR, append_jsonl, load_env, load_json, load_jsonl, utf8_console
 from providers import extract_json_array, make_provider
 
 SYSTEM_PROMPT = """\
@@ -121,7 +121,7 @@ ARTICLE_GENERATOR = ""  # заполнится в run()
 
 
 def run(config_path: str, limit: int | None, only_articles: list[str] | None,
-        dry_run: bool) -> None:
+        dry_run: bool, shuffle: bool = False, seed: int = 42) -> None:
     global ARTICLE_GENERATOR
 
     with open(config_path, "r", encoding="utf-8") as fh:
@@ -153,6 +153,10 @@ def run(config_path: str, limit: int | None, only_articles: list[str] | None,
         todo.append(article)
     if limit:
         todo = todo[:limit]
+    if shuffle and not only_articles:
+        import random
+        random.Random(seed).shuffle(todo)
+        print("Порядок статей: случайный (--shuffle)")
     print(f"К генерации: {len(todo)} статей "
           f"(ожидается ~{len(todo) * config['n_questions_per_article']} пар)")
 
@@ -212,18 +216,23 @@ def run(config_path: str, limit: int | None, only_articles: list[str] | None,
 
 def main() -> None:
     utf8_console()
+    load_env()
     parser = argparse.ArgumentParser(description=__doc__,
                                      formatter_class=argparse.RawDescriptionHelpFormatter)
     parser.add_argument("--config", default="configs/generate_qa.yaml")
     parser.add_argument("--limit", type=int, default=None, help="только N статей (тест)")
     parser.add_argument("--articles", default=None,
                         help="конкретные статьи через запятую, напр. 80,81,99")
+    parser.add_argument("--shuffle", action="store_true",
+                        help="случайный порядок статей (при обрыве датасет останется "
+                             "равномерным, а не «первые N»)")
+    parser.add_argument("--seed", type=int, default=42)
     parser.add_argument("--dry-run", action="store_true",
                         help="показать промпты без обращения к API")
     args = parser.parse_args()
 
     only = args.articles.split(",") if args.articles else None
-    run(args.config, args.limit, only, args.dry_run)
+    run(args.config, args.limit, only, args.dry_run, args.shuffle, args.seed)
 
 
 if __name__ == "__main__":
