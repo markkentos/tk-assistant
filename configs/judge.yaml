@@ -1,0 +1,9 @@
+# Конфиг судьи LLM-as-judge (этапы 2 и 4)
+# Судья — ДРУГАЯ модель, не та, что обучаем (Qwen). GigaChat подходит: бесплатный лимит.
+
+judge:
+  provider: gigachat
+  model: GigaChat-Max
+  temperature: 0.0        # судья должен быть детерминирован
+  max_tokens: 512
+  max_retries: 3

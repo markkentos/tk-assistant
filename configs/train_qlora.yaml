@@ -1,0 +1,38 @@
+# Конфиг QLoRA-обучения (Этап 3). Запускается на GPU (Colab T4 / Kaggle).
+# python src/train_qlora.py --config configs/train_qlora.yaml
+
+model:
+  name: unsloth/Qwen2.5-7B-Instruct   # base-модель из плана (вариант: Vikhr-модели)
+  max_seq_length: 2048                 # 1024-2048 по плану
+  load_in_4bit: true                   # QLoRA: 4-bit NF4
+
+lora:
+  r: 16
+  alpha: 32
+  dropout: 0.05
+  target_modules: [q_proj, k_proj, v_proj, o_proj, gate_proj, up_proj, down_proj]
+
+train:
+  dataset: data/processed/train.jsonl
+  val_dataset: data/processed/val.jsonl
+  epochs: 1                # эксперименты: 1 -> 2 -> 3, потом lr 1e-4 vs 2e-4
+  lr: 2.0e-4               # эксперименты: 2e-4 vs 1e-4
+  scheduler: cosine
+  warmup_ratio: 0.05
+  per_device_batch_size: 2
+  grad_accum_steps: 4      # effective batch = 8
+  weight_decay: 0.01
+  seed: 42
+  fp16: true               # у T4 нет bf16 — обучаем в fp16
+  logging_steps: 10
+  save_steps: 200
+
+output:
+  adapter_dir: outputs/adapter_e1_lr2e-4
+  sample_n: 10             # сэмплировать N ответов на val после обучения
+  push_to_hub: false
+  hf_repo: ""              # напр. markkentos/qwen2.5-7b-tk-qlora
+
+wandb:
+  project: tk-assistant
+  enabled: true

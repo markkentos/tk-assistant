@@ -1,0 +1,28 @@
+# Python
+__pycache__/
+*.py[cod]
+*.egg-info/
+.venv/
+venv/
+.ipynb_checkpoints/
+
+# Секреты и трекинг
+.env
+wandb/
+
+# Сырые данные (HTML-кэш закачки) — тяжёлые, воспроизводятся скриптом
+data/raw/
+
+# Большие артефакты обучения (езжают на HF Hub, не в git)
+checkpoints/
+outputs/
+*.safetensors
+*.gguf
+adapter_model.safetensors
+
+# Локальные результаты прогонов (в git идут только агрегаты *.md/*.json итогов)
+eval/runs/
+
+# OS
+.DS_Store
+Thumbs.db

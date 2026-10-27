@@ -1,1 +1,147 @@
-# tk-assistant
+# tk-assistant — QLoRA-дообучение 7B LLM для ответов по трудовому праву РФ
+
+Дообучаю открытую 7B-модель (Qwen2.5-7B-Instruct), чтобы она отвечала на вопросы по трудовому праву
+РФ: **точно, со ссылкой на конкретную статью ТК РФ, в стабильном проверяемом формате** — на
+собственном датасете QA-пар, сгенерированном и отфильтрованном по тексту кодекса.
+
+**Цель проекта:** tuned-модель объективно лучше base-модели на моём бенчмарке — с таблицей метрик,
+а не словами «стало лучше».
+
+---
+
+## Пайплайн
+
+```
+ТК РФ (текст, ~430 статей)
+  → парсинг на статьи (номер, заголовок, текст, глава)          data/scripts/download_tk.py, parse_articles.py
+  → генерация QA-пар сильной LLM через API (2–3 на статью)      data/scripts/generate_qa.py
+  → автоматические фильтры: формат / заземление / самосогласие  data/scripts/filters.py
+  → дедупликация (fuzzy + опц. эмбеддинги)                      data/scripts/dedup.py
+  → ручная вычитка выборки (500 + 50 отфильтрованных)           data/scripts/review_sample.py
+  → стратифицированный сплит train/val/test                     data/scripts/split_dataset.py
+  → QLoRA (Unsloth + PEFT + TRL, 4-bit NF4, T4, fp16)           src/train_qlora.py
+  → бенчмарк base vs tuned + LLM-as-judge (другая модель)       eval/*
+```
+
+## Результаты
+
+*Заполняется на этапе 4. Судья — отдельная сильная модель, не та, что обучается.*
+
+| Метрика | base (few-shot) | tuned (QLoRA) |
+|---|---|---|
+| Judge score (1–5), mean | — | — |
+| Корректная ссылка на статью, % | — | — |
+| Галлюцинации, % | — | — |
+| ROUGE-L vs эталон | — | — |
+
+## Этапы
+
+- [x] **Этап 0. Подготовка** — структура репо, план, окружение, проверка T4 (Unsloth, 7B в 4-bit, fp16)
+- [~] **Этап 1. Датасет** — ✅ ТК РФ скачан и распарсен (534 статьи, 526 активных); ✅ скрипты генерации/фильтров/дедупа/сплита готовы; ⏳ генерация QA (нужен ключ GigaChat) → фильтры → вычитка 500 → сплит → HF Datasets
+- [ ] **Этап 2. Baseline ДО обучения** — 100 вопросов + ручные эталоны, base few-shot, judge 1–5, калибровка судьи на 30 ответах
+- [ ] **Этап 3. QLoRA** — ≥3 эксперимента в W&B (epochs 1/2/3, lr 1e-4/2e-4), adapter на HF Hub
+- [ ] **Этап 4. Оценка** — те же 100 вопросов, тот же судья; слепая ручная оценка 30 пар; error analysis (10 лучше / 10 хуже)
+- [ ] **Этап 5. Упаковка** — README с метриками, HF модель+датасет с карточками, Gradio-демо (CPU GGUF), статья на Habr
+
+## Структура репозитория
+
+```
+data/
+  scripts/        # сбор данных: download, parse, generate, filters, dedup, split, review
+  raw/            # HTML-кэш закачки (в .gitignore, воспроизводится скриптом)
+  processed/      # статьи ТК (JSON), QA-датасет (JSONL), сплиты
+src/
+  prompts.py      # системный промпт, few-shot, сборка чата через apply_chat_template
+  train_qlora.py  # QLoRA-обучение (запуск на GPU)
+  generate_answers.py  # батч-генерация ответов модели для бенчмарка
+eval/
+  build_benchmark.py   # 100 вопросов из test (эталоны пишу вручную по тексту ТК)
+  judge.py             # LLM-as-judge: 4 критерия × 1–5 + флаги галлюцинаций/ссылок
+  compare.py           # таблица base vs tuned + ROUGE/BERTScore
+  blind_review.py      # слепая ручная оценка (перемешивание base/tuned)
+configs/          # yaml-конфиги генерации и обучения
+notebooks/        # разведочный анализ данных
+```
+
+## Формат данных
+
+Каждая QA-пара — JSONL-запись:
+
+```json
+{
+  "id": "qa_000123",
+  "article": "80",
+  "chapter": 13,
+  "question_type": "situational",
+  "question": "Может ли работодатель уволить работника, который подал заявление по собственному желанию, а через неделю передумал?",
+  "answer": "...",
+  "source_article_url": "https://www.zakonrf.info/tk/80/"
+}
+```
+
+**Единый формат ответа** (его же требует системный промпт и проверяет судья):
+
+```
+<Краткий ответ одним предложением.>
+<Обоснование: 1–3 предложения со ссылкой в формате «ст. N ТК РФ».>
+```
+
+## Дисциплина
+
+- **test-сплит не открывается** до этапа 4: эталоны для бенчмарка пишутся вручную по тексту ТК,
+  а не LLM — иначе судья оценивает подгонку.
+- Эталонные ответы бенчмарка и ручная вычитка ведутся в CSV (см. `data/review/README.md`).
+- Каждый эксперимент обучения = отдельный чекпоинт + запись в W&B.
+
+## Как воспроизвести
+
+```bash
+pip install -r requirements.txt
+
+# Этап 1: данные
+python data/scripts/download_tk.py          # скачает ТК РФ в data/raw/tk/
+python data/scripts/parse_articles.py       # статьи → data/processed/tk_articles.json
+python data/scripts/generate_qa.py --config configs/generate_qa.yaml
+python data/scripts/filters.py --config configs/generate_qa.yaml
+python data/scripts/dedup.py
+python data/scripts/review_sample.py --n 500
+python data/scripts/split_dataset.py
+
+# Этап 2: baseline (до обучения!)
+python eval/build_benchmark.py --n 100      # → вручную заполнить эталоны
+python src/generate_answers.py --mode base --input eval/benchmark.jsonl --output eval/runs/answers_base.jsonl
+python eval/judge.py --answers eval/runs/answers_base.jsonl --name base
+
+# Этап 3: обучение (на T4, Colab/Kaggle)
+pip install -r requirements-colab.txt
+python src/train_qlora.py --config configs/train_qlora.yaml
+
+# Этап 4: оценка tuned + сравнение
+python src/generate_answers.py --mode tuned --adapter outputs/adapter_e1_lr2e-4 --input eval/benchmark.jsonl --output eval/runs/answers_tuned.jsonl
+python eval/judge.py --answers eval/runs/answers_tuned.jsonl --name tuned
+python eval/compare.py
+```
+
+Секреты — через переменные окружения (`.env` в `.gitignore`):
+`GIGACHAT_CREDENTIALS` (ключ авторизации GigaChat API), `OPENROUTER_API_KEY`, `HF_TOKEN`, `WANDB_API_KEY`.
+
+## Среда обучения и особенности
+
+- GPU: Colab **T4** (16 ГБ) / Kaggle T4×2. 7B в 4-bit NF4 влезает с запасом.
+- У T4 **нет bf16** → обучение в **fp16** (Unsloth подхватит автоматически; в конфиге — явно).
+- Форматирование данных — строго `tokenizer.apply_chat_template`, без ручной склейки строк.
+- Обучение 3–5k примеров на T4: ~2–5 часов — влезает в одну сессию.
+
+## Данные и источники
+
+- Текст ТК РФ: zakonrf.info (действующая редакция, скачано 2026-10) — **534 статьи**
+  (424 основных номера + 110 подпунктов вида 19.1/22.1; в устаревших источниках фигурирует
+  «~415 статей»), 526 активных + 8 утративших силу, ~794 тыс. символов. Качается скриптом,
+  точечно сверяется с официальной публикацией. Официальный текст ТК РФ как акт государственного
+  органа находится в публичном достоянии; комментарии сторонних сайтов в датасет не включаются.
+- Сгенерированный датасет будет выложен на HuggingFace Datasets с карточкой (план, фильтры,
+  статистика вычитки).
+
+## Лицензия
+
+MIT (код). Данные — согласно источнику (текст ТК РФ — официальный документ).

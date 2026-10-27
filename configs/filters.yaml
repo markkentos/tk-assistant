@@ -1,0 +1,36 @@
+# Конфиг автоматических фильтров качества QA
+# Запуск: python data/scripts/filters.py --config configs/filters.yaml
+
+input_raw: data/processed/qa_raw.jsonl
+articles: data/processed/tk_articles.json
+output_filtered: data/processed/qa_filtered.jsonl
+output_rejected: data/processed/qa_rejected.jsonl
+output_cache: data/processed/filters_cache.jsonl   # вердикты API-проверок (докачка)
+
+# Стадии (слева направо, дешёвые вперёд):
+#   format       — валидация формата и ссылки на статью (без API)
+#   grounding    — «следует ли ответ из текста статьи?» второй моделью (API)
+#   consistency  — самосогласие: два независимых ответа, сравнение с эталоном (API)
+stages: [format, grounding, consistency]
+
+format:
+  question_min_chars: 15
+  question_max_chars: 500
+  answer_min_chars: 40
+  answer_max_chars: 1500
+  require_question_mark: true
+  require_article_reference: true   # «ст. N ТК РФ» и номер совпадает со статьёй пары
+
+checker:                            # «вторая модель» — не та, что генерировала, если возможно
+  provider: gigachat
+  model: GigaChat-Max
+  temperature: 0.2
+  max_tokens: 512
+  request_delay_sec: 0.8
+
+grounding:
+  pass_value: "да"                  # что должен ответить чекер, чтобы пара прошла
+
+consistency:
+  n_samples: 2
+  min_similarity: 70                # rapidfuzz partial_ratio, 0-100

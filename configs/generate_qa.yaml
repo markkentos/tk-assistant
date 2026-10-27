@@ -1,0 +1,22 @@
+# Конфиг генерации QA-пар по статьям ТК РФ
+# Запуск: python data/scripts/generate_qa.py --config configs/generate_qa.yaml
+
+provider: gigachat          # gigachat | openrouter
+model: GigaChat-Max         # для openrouter: напр. meta-llama/llama-3.3-70b-instruct:free
+temperature: 0.7
+max_tokens: 2048
+request_delay_sec: 1.0      # вежливый троттлинг
+max_retries: 4
+
+n_questions_per_article: 4  # 534 статьи × ~4 = ~2100 пар (выше MVP-минимума 2k)
+# Распределение типов вопросов по статьям (сумма не обязана быть 1 — берётся по кругу)
+question_types:
+  - definition      # определения, понятия
+  - deadline        # сроки
+  - amount          # размеры, ставки, компенсации
+  - procedure       # порядок действий
+  - situational     # «может ли работодатель...»
+
+input_articles: data/processed/tk_articles.json
+output_raw: data/processed/qa_raw.jsonl
+output_rejects: data/processed/qa_rejects.jsonl   # нераспарсенные ответы LLM — для анализа

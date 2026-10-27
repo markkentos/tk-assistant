@@ -1,0 +1,15 @@
+# Локальная среда: пайплайн данных и оценка (без torch/unsloth — они в Colab)
+requests>=2.31
+beautifulsoup4>=4.12
+lxml>=5.1
+tqdm>=4.66
+PyYAML>=6.0
+rapidfuzz>=3.6
+numpy>=1.26
+datasets>=2.18
+huggingface_hub>=0.22
+
+# Опционально: дедупликация по эмбеддингам и BERTScore
+# sentence-transformers>=2.6
+# rouge-score>=1.0
+# bert-score>=0.3.13
