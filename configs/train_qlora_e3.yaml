@@ -1,0 +1,39 @@
+# Эксперимент №2: 3 эпохи — учим не только формат, но и сопоставление «тема → статья».
+# Этап 3 плана: сравнить epochs 1 vs 3, потом lr 1e-4 vs 2e-4.
+model:
+  name: unsloth/Qwen2.5-7B-Instruct
+  max_seq_length: 2048
+  load_in_4bit: true
+
+lora:
+  r: 16
+  alpha: 32
+  dropout: 0.05
+  target_modules: [q_proj, k_proj, v_proj, o_proj, gate_proj, up_proj, down_proj]
+
+train:
+  dataset: data/processed/train.jsonl
+  val_dataset: data/processed/val.jsonl
+  epochs: 3
+  lr: 2.0e-4
+  scheduler: cosine
+  warmup_ratio: 0.05
+  per_device_batch_size: 2
+  grad_accum_steps: 4
+  weight_decay: 0.01
+  seed: 42
+  fp16: true
+  logging_steps: 10
+  save_steps: 200
+
+output:
+  adapter_dir: outputs/adapter_e3_lr2e-4
+  sample_n: 10
+  push_to_hub: false
+  hf_repo: ""
+
+wandb:
+  project: tk-assistant
+  enabled: false
+
+report_to: tensorboard
