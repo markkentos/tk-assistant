@@ -1,0 +1,2096 @@
+{"grounding": {"ok": true, "reason": "grounding: итог: да"}, "uid": "f3c970394654"}
+{"grounding": {"ok": true, "reason": "grounding: итог: да"}, "uid": "f3c970394654", "consistency": {"ok": false, "reason": "consistency: сходство 69 < 70"}}
+{"grounding": {"ok": true, "reason": "grounding: итог: да"}, "uid": "a1be6e247939"}
+{"grounding": {"ok": true, "reason": "grounding: итог: да"}, "uid": "a1be6e247939", "consistency": {"ok": true, "reason": "ok"}}
+{"grounding": {"ok": true, "reason": "grounding: итог: да"}, "uid": "b9824c59ee41"}
+{"grounding": {"ok": true, "reason": "grounding: итог: да"}, "uid": "b9824c59ee41", "consistency": {"ok": false, "reason": "consistency: сходство 50 < 70"}}
+{"grounding": {"ok": true, "reason": "grounding: итог: да  "}, "uid": "1f181fdac128"}
+{"grounding": {"ok": true, "reason": "grounding: итог: да  "}, "uid": "1f181fdac128", "consistency": {"ok": false, "reason": "consistency: сходство 68 < 70"}}
+{"grounding": {"ok": true, "reason": "grounding: итог: да"}, "uid": "84339c1cfcc2"}
+{"grounding": {"ok": true, "reason": "grounding: итог: да"}, "uid": "84339c1cfcc2", "consistency": {"ok": true, "reason": "ok"}}
+{"grounding": {"ok": true, "reason": "grounding: итог: да"}, "uid": "99b89dd26503"}
+{"grounding": {"ok": true, "reason": "grounding: итог: да"}, "uid": "99b89dd26503", "consistency": {"ok": true, "reason": "ok"}}
+{"grounding": {"ok": true, "reason": "grounding: итог: да"}, "uid": "3bc91e2a81d5"}
+{"grounding": {"ok": true, "reason": "grounding: итог: да"}, "uid": "3bc91e2a81d5", "consistency": {"ok": true, "reason": "ok"}}
+{"grounding": {"ok": true, "reason": "grounding: итог: да"}, "uid": "00d156af4403"}
+{"grounding": {"ok": true, "reason": "grounding: итог: да"}, "uid": "00d156af4403", "consistency": {"ok": false, "reason": "consistency: сходство 60 < 70"}}
+{"grounding": {"ok": true, "reason": "grounding: итог: да"}, "uid": "714ad58a803d"}
+{"grounding": {"ok": true, "reason": "grounding: итог: да"}, "uid": "714ad58a803d", "consistency": {"ok": true, "reason": "ok"}}
+{"grounding": {"ok": true, "reason": "grounding: итог: да"}, "uid": "1232b36d1925"}
+{"grounding": {"ok": true, "reason": "grounding: итог: да"}, "uid": "1232b36d1925", "consistency": {"ok": false, "reason": "consistency: сходство 61 < 70"}}
+{"grounding": {"ok": true, "reason": "grounding: итог: да"}, "uid": "fa44d6605b9c"}
+{"grounding": {"ok": true, "reason": "grounding: итог: да"}, "uid": "fa44d6605b9c", "consistency": {"ok": true, "reason": "ok"}}
+{"grounding": {"ok": true, "reason": "grounding: итог: да"}, "uid": "d664b8c3101f"}
+{"grounding": {"ok": true, "reason": "grounding: итог: да"}, "uid": "d664b8c3101f", "consistency": {"ok": true, "reason": "ok"}}
+{"grounding": {"ok": true, "reason": "grounding: итог: да"}, "uid": "cfdb3a9e0e08"}
+{"grounding": {"ok": true, "reason": "grounding: итог: да"}, "uid": "cfdb3a9e0e08", "consistency": {"ok": false, "reason": "consistency: сходство 66 < 70"}}
+{"grounding": {"ok": true, "reason": "grounding: итог: да"}, "uid": "63f75b527895"}
+{"grounding": {"ok": true, "reason": "grounding: итог: да"}, "uid": "63f75b527895", "consistency": {"ok": false, "reason": "consistency: сходство 53 < 70"}}
+{"grounding": {"ok": true, "reason": "grounding: итог: да"}, "uid": "7e3c955625fa"}
+{"grounding": {"ok": true, "reason": "grounding: итог: да"}, "uid": "7e3c955625fa", "consistency": {"ok": false, "reason": "consistency: сходство 56 < 70"}}
+{"grounding": {"ok": false, "reason": "grounding: итог: нет"}, "uid": "77a9dbe9fe31"}
+{"grounding": {"ok": true, "reason": "grounding: итог: да"}, "uid": "133368f178bc"}
+{"grounding": {"ok": true, "reason": "grounding: итог: да"}, "uid": "133368f178bc", "consistency": {"ok": true, "reason": "ok"}}
+{"grounding": {"ok": false, "reason": "grounding: итог: нет  "}, "uid": "614259255d4b"}
+{"grounding": {"ok": true, "reason": "grounding: итог: да"}, "uid": "b0a08e20280e"}
+{"grounding": {"ok": true, "reason": "grounding: итог: да"}, "uid": "b0a08e20280e", "consistency": {"ok": false, "reason": "consistency: сходство 65 < 70"}}
+{"grounding": {"ok": true, "reason": "grounding: итог: да"}, "uid": "825b3744b1eb"}
+{"grounding": {"ok": true, "reason": "grounding: итог: да"}, "uid": "825b3744b1eb", "consistency": {"ok": false, "reason": "consistency: сходство 54 < 70"}}
+{"grounding": {"ok": false, "reason": "grounding: итог: нет"}, "uid": "b355aec9673e"}
+{"grounding": {"ok": true, "reason": "grounding: итог: да"}, "uid": "2f7128fa920a"}
+{"grounding": {"ok": true, "reason": "grounding: итог: да"}, "uid": "2f7128fa920a", "consistency": {"ok": false, "reason": "consistency: сходство 53 < 70"}}
+{"grounding": {"ok": true, "reason": "grounding: итог: да"}, "uid": "fcb9d5ac945c"}
+{"grounding": {"ok": true, "reason": "grounding: итог: да"}, "uid": "fcb9d5ac945c", "consistency": {"ok": false, "reason": "consistency: сходство 64 < 70"}}
+{"grounding": {"ok": true, "reason": "grounding: итог: да"}, "uid": "74b96134688c"}
+{"grounding": {"ok": true, "reason": "grounding: итог: да"}, "uid": "74b96134688c", "consistency": {"ok": false, "reason": "consistency: сходство 60 < 70"}}
+{"grounding": {"ok": false, "reason": "grounding: итог: нет"}, "uid": "4360b2489848"}
+{"grounding": {"ok": true, "reason": "grounding: итог: да"}, "uid": "e08cf4699ff3"}
+{"grounding": {"ok": true, "reason": "grounding: итог: да"}, "uid": "e08cf4699ff3", "consistency": {"ok": false, "reason": "consistency: сходство 55 < 70"}}
+{"grounding": {"ok": true, "reason": "grounding: итог: да  "}, "uid": "633683fa634f"}
+{"grounding": {"ok": true, "reason": "grounding: итог: да  "}, "uid": "633683fa634f", "consistency": {"ok": false, "reason": "consistency: сходство 45 < 70"}}
+{"grounding": {"ok": true, "reason": "grounding: итог: да"}, "uid": "03283cd4a4f2"}
+{"grounding": {"ok": true, "reason": "grounding: итог: да"}, "uid": "03283cd4a4f2", "consistency": {"ok": false, "reason": "consistency: сходство 46 < 70"}}
+{"grounding": {"ok": true, "reason": "grounding: итог: да"}, "uid": "d3ffa9d008b2"}
+{"grounding": {"ok": true, "reason": "grounding: итог: да"}, "uid": "d3ffa9d008b2", "consistency": {"ok": true, "reason": "ok"}}
+{"grounding": {"ok": true, "reason": "grounding: итог: да"}, "uid": "316ef16b3a9e"}
+{"grounding": {"ok": true, "reason": "grounding: итог: да"}, "uid": "316ef16b3a9e", "consistency": {"ok": true, "reason": "ok"}}
+{"grounding": {"ok": true, "reason": "grounding: итог: да"}, "uid": "52a7cf3dd0ce"}
+{"grounding": {"ok": true, "reason": "grounding: итог: да"}, "uid": "52a7cf3dd0ce", "consistency": {"ok": false, "reason": "consistency: сходство 65 < 70"}}
+{"grounding": {"ok": true, "reason": "grounding: итог: да"}, "uid": "f51db752eaec"}
+{"grounding": {"ok": true, "reason": "grounding: итог: да"}, "uid": "f51db752eaec", "consistency": {"ok": false, "reason": "consistency: сходство 61 < 70"}}
+{"grounding": {"ok": true, "reason": "grounding: итог: да"}, "uid": "283713a1125c"}
+{"grounding": {"ok": true, "reason": "grounding: итог: да"}, "uid": "283713a1125c", "consistency": {"ok": false, "reason": "consistency: сходство 61 < 70"}}
+{"grounding": {"ok": true, "reason": "grounding: итог: да"}, "uid": "a3761fb62088"}
+{"grounding": {"ok": true, "reason": "grounding: итог: да"}, "uid": "a3761fb62088", "consistency": {"ok": false, "reason": "consistency: сходство 50 < 70"}}
+{"grounding": {"ok": true, "reason": "grounding: итог: да"}, "uid": "40848b97a758"}
+{"grounding": {"ok": true, "reason": "grounding: итог: да"}, "uid": "40848b97a758", "consistency": {"ok": false, "reason": "consistency: сходство 60 < 70"}}
+{"grounding": {"ok": true, "reason": "grounding: итог: да"}, "uid": "d97b94c4110b"}
+{"grounding": {"ok": true, "reason": "grounding: итог: да"}, "uid": "d97b94c4110b", "consistency": {"ok": false, "reason": "consistency: сходство 65 < 70"}}
+{"grounding": {"ok": true, "reason": "grounding: итог: да"}, "uid": "322575945a33"}
+{"grounding": {"ok": true, "reason": "grounding: итог: да"}, "uid": "322575945a33", "consistency": {"ok": true, "reason": "ok"}}
+{"grounding": {"ok": true, "reason": "grounding: итог: да"}, "uid": "6923c08ab4b4"}
+{"grounding": {"ok": true, "reason": "grounding: итог: да"}, "uid": "6923c08ab4b4", "consistency": {"ok": true, "reason": "ok"}}
+{"grounding": {"ok": true, "reason": "grounding: итог: да"}, "uid": "788f4efadf4d"}
+{"grounding": {"ok": true, "reason": "grounding: итог: да"}, "uid": "788f4efadf4d", "consistency": {"ok": true, "reason": "ok"}}
+{"grounding": {"ok": true, "reason": "grounding: итог: да"}, "uid": "abd5170726b7"}
+{"grounding": {"ok": true, "reason": "grounding: итог: да"}, "uid": "abd5170726b7", "consistency": {"ok": true, "reason": "ok"}}
+{"grounding": {"ok": true, "reason": "grounding: итог: да"}, "uid": "76d28e4f93f3"}
+{"grounding": {"ok": true, "reason": "grounding: итог: да"}, "uid": "76d28e4f93f3", "consistency": {"ok": true, "reason": "ok"}}
+{"grounding": {"ok": true, "reason": "grounding: итог: да"}, "uid": "36b019835059"}
+{"grounding": {"ok": true, "reason": "grounding: итог: да"}, "uid": "36b019835059", "consistency": {"ok": true, "reason": "ok"}}
+{"grounding": {"ok": true, "reason": "grounding: итог: да"}, "uid": "a23ba62671d5"}
+{"grounding": {"ok": true, "reason": "grounding: итог: да"}, "uid": "a23ba62671d5", "consistency": {"ok": true, "reason": "ok"}}
+{"grounding": {"ok": true, "reason": "grounding: итог: да"}, "uid": "e8b269318651"}
+{"grounding": {"ok": true, "reason": "grounding: итог: да"}, "uid": "e8b269318651", "consistency": {"ok": false, "reason": "consistency: сходство 47 < 70"}}
+{"grounding": {"ok": false, "reason": "grounding: итог: нет"}, "uid": "523e8e36e305"}
+{"grounding": {"ok": false, "reason": "grounding: итог: нет"}, "uid": "1808e198e120"}
+{"grounding": {"ok": false, "reason": "grounding: итог: нет"}, "uid": "1bfb5ae616a1"}
+{"grounding": {"ok": false, "reason": "grounding: итог: нет"}, "uid": "a9f7b421cf87"}
+{"grounding": {"ok": false, "reason": "grounding: итог: нет"}, "uid": "0a397ec4fa11"}
+{"grounding": {"ok": false, "reason": "grounding: итог: нет"}, "uid": "b7a2334a28dd"}
+{"grounding": {"ok": true, "reason": "grounding: итог: да"}, "uid": "0eb625146502"}
+{"grounding": {"ok": true, "reason": "grounding: итог: да"}, "uid": "0eb625146502", "consistency": {"ok": true, "reason": "ok"}}
+{"grounding": {"ok": false, "reason": "grounding: итог: нет"}, "uid": "fe442f7358e4"}
+{"grounding": {"ok": true, "reason": "grounding: итог: да"}, "uid": "a48af77e0281"}
+{"grounding": {"ok": true, "reason": "grounding: итог: да"}, "uid": "a48af77e0281", "consistency": {"ok": false, "reason": "consistency: сходство 55 < 70"}}
+{"grounding": {"ok": true, "reason": "grounding: итог: да"}, "uid": "817585eae37a"}
+{"grounding": {"ok": true, "reason": "grounding: итог: да"}, "uid": "817585eae37a", "consistency": {"ok": true, "reason": "ok"}}
+{"grounding": {"ok": true, "reason": "grounding: итог: да"}, "uid": "479436facf16"}
+{"grounding": {"ok": true, "reason": "grounding: итог: да"}, "uid": "479436facf16", "consistency": {"ok": false, "reason": "consistency: сходство 69 < 70"}}
+{"grounding": {"ok": true, "reason": "grounding: итог: да"}, "uid": "4ad47c2659b1"}
+{"grounding": {"ok": true, "reason": "grounding: итог: да"}, "uid": "4ad47c2659b1", "consistency": {"ok": true, "reason": "ok"}}
+{"grounding": {"ok": true, "reason": "grounding: итог: да"}, "uid": "6762c0bc6616"}
+{"grounding": {"ok": true, "reason": "grounding: итог: да"}, "uid": "6762c0bc6616", "consistency": {"ok": false, "reason": "consistency: сходство 48 < 70"}}
+{"grounding": {"ok": true, "reason": "grounding: итог: да  "}, "uid": "df35abc0f258"}
+{"grounding": {"ok": true, "reason": "grounding: итог: да  "}, "uid": "df35abc0f258", "consistency": {"ok": false, "reason": "consistency: сходство 62 < 70"}}
+{"grounding": {"ok": true, "reason": "grounding: итог: да"}, "uid": "44f7df88d48f"}
+{"grounding": {"ok": true, "reason": "grounding: итог: да"}, "uid": "44f7df88d48f", "consistency": {"ok": true, "reason": "ok"}}
+{"grounding": {"ok": true, "reason": "grounding: итог: да"}, "uid": "599548ba8b78"}
+{"grounding": {"ok": true, "reason": "grounding: итог: да"}, "uid": "599548ba8b78", "consistency": {"ok": true, "reason": "ok"}}
+{"grounding": {"ok": true, "reason": "grounding: итог: да"}, "uid": "769c2a86ec03"}
+{"grounding": {"ok": true, "reason": "grounding: итог: да"}, "uid": "769c2a86ec03", "consistency": {"ok": true, "reason": "ok"}}
+{"grounding": {"ok": false, "reason": "grounding: итог: нет"}, "uid": "19e74a9abc64"}
+{"grounding": {"ok": true, "reason": "grounding: итог: да"}, "uid": "645e3ee5ef4f"}
+{"grounding": {"ok": true, "reason": "grounding: итог: да"}, "uid": "645e3ee5ef4f", "consistency": {"ok": false, "reason": "consistency: сходство 59 < 70"}}
+{"grounding": {"ok": true, "reason": "grounding: итог: да"}, "uid": "1b275dd3c43a"}
+{"grounding": {"ok": true, "reason": "grounding: итог: да"}, "uid": "1b275dd3c43a", "consistency": {"ok": false, "reason": "consistency: сходство 64 < 70"}}
+{"grounding": {"ok": true, "reason": "grounding: итог: да"}, "uid": "8b71507f8cdb"}
+{"grounding": {"ok": true, "reason": "grounding: итог: да"}, "uid": "8b71507f8cdb", "consistency": {"ok": false, "reason": "consistency: сходство 63 < 70"}}
+{"grounding": {"ok": true, "reason": "grounding: итог: да"}, "uid": "aa5d3d60f193"}
+{"grounding": {"ok": true, "reason": "grounding: итог: да"}, "uid": "aa5d3d60f193", "consistency": {"ok": false, "reason": "consistency: сходство 66 < 70"}}
+{"grounding": {"ok": true, "reason": "grounding: итог: да"}, "uid": "8ead8f09a00d"}
+{"grounding": {"ok": true, "reason": "grounding: итог: да"}, "uid": "8ead8f09a00d", "consistency": {"ok": false, "reason": "consistency: сходство 62 < 70"}}
+{"grounding": {"ok": true, "reason": "grounding: итог: да"}, "uid": "b752f69cf379"}
+{"grounding": {"ok": true, "reason": "grounding: итог: да"}, "uid": "b752f69cf379", "consistency": {"ok": false, "reason": "consistency: сходство 67 < 70"}}
+{"grounding": {"ok": true, "reason": "grounding: итог: да"}, "uid": "2d41e08ea895"}
+{"grounding": {"ok": true, "reason": "grounding: итог: да"}, "uid": "2d41e08ea895", "consistency": {"ok": false, "reason": "consistency: сходство 67 < 70"}}
+{"grounding": {"ok": true, "reason": "grounding: итог: да"}, "uid": "7dbafdb4942c"}
+{"grounding": {"ok": true, "reason": "grounding: итог: да"}, "uid": "7dbafdb4942c", "consistency": {"ok": true, "reason": "ok"}}
+{"grounding": {"ok": true, "reason": "grounding: итог: да"}, "uid": "ce6987eed0a0"}
+{"grounding": {"ok": true, "reason": "grounding: итог: да"}, "uid": "ce6987eed0a0", "consistency": {"ok": false, "reason": "consistency: сходство 58 < 70"}}
+{"grounding": {"ok": true, "reason": "grounding: итог: да"}, "uid": "ce54da13051a"}
+{"grounding": {"ok": true, "reason": "grounding: итог: да"}, "uid": "ce54da13051a", "consistency": {"ok": false, "reason": "consistency: сходство 38 < 70"}}
+{"grounding": {"ok": true, "reason": "grounding: итог: да"}, "uid": "a228631b9c3c"}
+{"grounding": {"ok": true, "reason": "grounding: итог: да"}, "uid": "a228631b9c3c", "consistency": {"ok": false, "reason": "consistency: сходство 60 < 70"}}
+{"grounding": {"ok": true, "reason": "grounding: итог: да"}, "uid": "8f3e4a46c82b"}
+{"grounding": {"ok": true, "reason": "grounding: итог: да"}, "uid": "8f3e4a46c82b", "consistency": {"ok": false, "reason": "consistency: сходство 57 < 70"}}
+{"grounding": {"ok": true, "reason": "grounding: итог: да"}, "uid": "e0818389521b"}
+{"grounding": {"ok": true, "reason": "grounding: итог: да"}, "uid": "e0818389521b", "consistency": {"ok": true, "reason": "ok"}}
+{"grounding": {"ok": true, "reason": "grounding: итог: да"}, "uid": "44b66a100760"}
+{"grounding": {"ok": true, "reason": "grounding: итог: да"}, "uid": "44b66a100760", "consistency": {"ok": true, "reason": "ok"}}
+{"grounding": {"ok": true, "reason": "grounding: итог: да"}, "uid": "3b5160aa67f2"}
+{"grounding": {"ok": true, "reason": "grounding: итог: да"}, "uid": "3b5160aa67f2", "consistency": {"ok": false, "reason": "consistency: сходство 61 < 70"}}
+{"grounding": {"ok": true, "reason": "grounding: итог: да"}, "uid": "e44d9e3b78c5"}
+{"grounding": {"ok": true, "reason": "grounding: итог: да"}, "uid": "e44d9e3b78c5", "consistency": {"ok": true, "reason": "ok"}}
+{"grounding": {"ok": true, "reason": "grounding: итог: да"}, "uid": "fb3194326010"}
+{"grounding": {"ok": true, "reason": "grounding: итог: да"}, "uid": "fb3194326010", "consistency": {"ok": true, "reason": "ok"}}
+{"grounding": {"ok": true, "reason": "grounding: итог: да"}, "uid": "81329f79b515"}
+{"grounding": {"ok": true, "reason": "grounding: итог: да"}, "uid": "81329f79b515", "consistency": {"ok": true, "reason": "ok"}}
+{"grounding": {"ok": true, "reason": "grounding: итог: да"}, "uid": "29109269dfd5"}
+{"grounding": {"ok": true, "reason": "grounding: итог: да"}, "uid": "29109269dfd5", "consistency": {"ok": true, "reason": "ok"}}
+{"grounding": {"ok": true, "reason": "grounding: итог: да"}, "uid": "d0e6b4ae846c"}
+{"grounding": {"ok": true, "reason": "grounding: итог: да"}, "uid": "d0e6b4ae846c", "consistency": {"ok": false, "reason": "consistency: сходство 70 < 70"}}
+{"grounding": {"ok": true, "reason": "grounding: итог: да"}, "uid": "fcdb19851ad2"}
+{"grounding": {"ok": true, "reason": "grounding: итог: да"}, "uid": "fcdb19851ad2", "consistency": {"ok": true, "reason": "ok"}}
+{"grounding": {"ok": true, "reason": "grounding: итог: да"}, "uid": "835892779fe4"}
+{"grounding": {"ok": true, "reason": "grounding: итог: да"}, "uid": "835892779fe4", "consistency": {"ok": true, "reason": "ok"}}
+{"grounding": {"ok": true, "reason": "grounding: итог: да"}, "uid": "12d58840d5b6"}
+{"grounding": {"ok": true, "reason": "grounding: итог: да"}, "uid": "12d58840d5b6", "consistency": {"ok": false, "reason": "consistency: сходство 49 < 70"}}
+{"grounding": {"ok": true, "reason": "grounding: итог: да"}, "uid": "7d8990968629"}
+{"grounding": {"ok": true, "reason": "grounding: итог: да"}, "uid": "7d8990968629", "consistency": {"ok": true, "reason": "ok"}}
+{"grounding": {"ok": true, "reason": "grounding: итог: да"}, "uid": "7d928d5a8407"}
+{"grounding": {"ok": true, "reason": "grounding: итог: да"}, "uid": "7d928d5a8407", "consistency": {"ok": false, "reason": "consistency: сходство 41 < 70"}}
+{"grounding": {"ok": false, "reason": "grounding: итог: нет  "}, "uid": "3b5eece120d6"}
+{"grounding": {"ok": true, "reason": "grounding: итог: да"}, "uid": "fe8774e54088"}
+{"grounding": {"ok": true, "reason": "grounding: итог: да"}, "uid": "fe8774e54088", "consistency": {"ok": false, "reason": "consistency: сходство 53 < 70"}}
+{"grounding": {"ok": true, "reason": "grounding: итог: да"}, "uid": "862a214116d8"}
+{"grounding": {"ok": true, "reason": "grounding: итог: да"}, "uid": "862a214116d8", "consistency": {"ok": false, "reason": "consistency: сходство 50 < 70"}}
+{"grounding": {"ok": true, "reason": "grounding: итог: да"}, "uid": "344d9127ba12"}
+{"grounding": {"ok": true, "reason": "grounding: итог: да"}, "uid": "344d9127ba12", "consistency": {"ok": false, "reason": "consistency: сходство 57 < 70"}}
+{"grounding": {"ok": true, "reason": "grounding: итог: да"}, "uid": "8ee922192f21"}
+{"grounding": {"ok": true, "reason": "grounding: итог: да"}, "uid": "8ee922192f21", "consistency": {"ok": false, "reason": "consistency: сходство 67 < 70"}}
+{"grounding": {"ok": true, "reason": "grounding: итог: да"}, "uid": "52698ae6fecd"}
+{"grounding": {"ok": true, "reason": "grounding: итог: да"}, "uid": "52698ae6fecd", "consistency": {"ok": false, "reason": "consistency: сходство 62 < 70"}}
+{"grounding": {"ok": true, "reason": "grounding: итог: да"}, "uid": "12346f4083b6"}
+{"grounding": {"ok": true, "reason": "grounding: итог: да"}, "uid": "12346f4083b6", "consistency": {"ok": false, "reason": "consistency: сходство 43 < 70"}}
+{"grounding": {"ok": true, "reason": "grounding: итог: да"}, "uid": "dad964193a38"}
+{"grounding": {"ok": true, "reason": "grounding: итог: да"}, "uid": "dad964193a38", "consistency": {"ok": false, "reason": "consistency: сходство 53 < 70"}}
+{"grounding": {"ok": true, "reason": "grounding: итог: да"}, "uid": "0f54e57f7b1a"}
+{"grounding": {"ok": true, "reason": "grounding: итог: да"}, "uid": "0f54e57f7b1a", "consistency": {"ok": true, "reason": "ok"}}
+{"grounding": {"ok": true, "reason": "grounding: итог: да"}, "uid": "ac493ffcf50f"}
+{"grounding": {"ok": true, "reason": "grounding: итог: да"}, "uid": "ac493ffcf50f", "consistency": {"ok": true, "reason": "ok"}}
+{"grounding": {"ok": false, "reason": "grounding: итог: нет"}, "uid": "a4b9852e6d3f"}
+{"grounding": {"ok": false, "reason": "grounding: итог: нет"}, "uid": "ee719723c5e1"}
+{"grounding": {"ok": true, "reason": "grounding: итог: да"}, "uid": "b14aa76c945a"}
+{"grounding": {"ok": true, "reason": "grounding: итог: да"}, "uid": "b14aa76c945a", "consistency": {"ok": true, "reason": "ok"}}
+{"grounding": {"ok": true, "reason": "grounding: итог: да"}, "uid": "123685e6143c"}
+{"grounding": {"ok": true, "reason": "grounding: итог: да"}, "uid": "123685e6143c", "consistency": {"ok": true, "reason": "ok"}}
+{"grounding": {"ok": true, "reason": "grounding: итог: да"}, "uid": "0dca11491236"}
+{"grounding": {"ok": true, "reason": "grounding: итог: да"}, "uid": "0dca11491236", "consistency": {"ok": true, "reason": "ok"}}
+{"grounding": {"ok": true, "reason": "grounding: итог: да"}, "uid": "2e1f569bfbb9"}
+{"grounding": {"ok": true, "reason": "grounding: итог: да"}, "uid": "2e1f569bfbb9", "consistency": {"ok": true, "reason": "ok"}}
+{"grounding": {"ok": true, "reason": "grounding: итог: да"}, "uid": "c546dcdce6a5"}
+{"grounding": {"ok": true, "reason": "grounding: итог: да"}, "uid": "c546dcdce6a5", "consistency": {"ok": true, "reason": "ok"}}
+{"grounding": {"ok": true, "reason": "grounding: итог: да"}, "uid": "a8bef00a5e0b"}
+{"grounding": {"ok": true, "reason": "grounding: итог: да"}, "uid": "a8bef00a5e0b", "consistency": {"ok": false, "reason": "consistency: сходство 61 < 70"}}
+{"grounding": {"ok": true, "reason": "grounding: итог: да"}, "uid": "c3bac26d61b7"}
+{"grounding": {"ok": true, "reason": "grounding: итог: да"}, "uid": "c3bac26d61b7", "consistency": {"ok": false, "reason": "consistency: сходство 67 < 70"}}
+{"grounding": {"ok": true, "reason": "grounding: итог: да"}, "uid": "a490b90567c2"}
+{"grounding": {"ok": true, "reason": "grounding: итог: да"}, "uid": "a490b90567c2", "consistency": {"ok": true, "reason": "ok"}}
+{"grounding": {"ok": true, "reason": "grounding: итог: да"}, "uid": "28a764872c6c"}
+{"grounding": {"ok": true, "reason": "grounding: итог: да"}, "uid": "28a764872c6c", "consistency": {"ok": true, "reason": "ok"}}
+{"grounding": {"ok": true, "reason": "grounding: итог: да"}, "uid": "2084c22f44fa"}
+{"grounding": {"ok": true, "reason": "grounding: итог: да"}, "uid": "2084c22f44fa", "consistency": {"ok": true, "reason": "ok"}}
+{"grounding": {"ok": true, "reason": "grounding: итог: да"}, "uid": "ffdcea3cfd49"}
+{"grounding": {"ok": true, "reason": "grounding: итог: да"}, "uid": "ffdcea3cfd49", "consistency": {"ok": true, "reason": "ok"}}
+{"grounding": {"ok": false, "reason": "grounding: итог: нет"}, "uid": "9b6722fcc147"}
+{"grounding": {"ok": true, "reason": "grounding: итог: да"}, "uid": "4c83db63bda7"}
+{"grounding": {"ok": true, "reason": "grounding: итог: да"}, "uid": "4c83db63bda7", "consistency": {"ok": true, "reason": "ok"}}
+{"grounding": {"ok": true, "reason": "grounding: итог: да"}, "uid": "aad0a3f6ccec"}
+{"grounding": {"ok": true, "reason": "grounding: итог: да"}, "uid": "aad0a3f6ccec", "consistency": {"ok": true, "reason": "ok"}}
+{"grounding": {"ok": true, "reason": "grounding: итог: да"}, "uid": "9a03dd26a787"}
+{"grounding": {"ok": true, "reason": "grounding: итог: да"}, "uid": "9a03dd26a787", "consistency": {"ok": false, "reason": "consistency: сходство 54 < 70"}}
+{"grounding": {"ok": true, "reason": "grounding: итог: да"}, "uid": "ccd07f54c65d"}
+{"grounding": {"ok": true, "reason": "grounding: итог: да"}, "uid": "ccd07f54c65d", "consistency": {"ok": true, "reason": "ok"}}
+{"grounding": {"ok": true, "reason": "grounding: итог: да"}, "uid": "74b9f00aa486"}
+{"grounding": {"ok": true, "reason": "grounding: итог: да"}, "uid": "74b9f00aa486", "consistency": {"ok": true, "reason": "ok"}}
+{"grounding": {"ok": true, "reason": "grounding: итог: да"}, "uid": "c2bc7df226b4"}
+{"grounding": {"ok": true, "reason": "grounding: итог: да"}, "uid": "c2bc7df226b4", "consistency": {"ok": false, "reason": "consistency: сходство 67 < 70"}}
+{"grounding": {"ok": true, "reason": "grounding: итог: да"}, "uid": "7e577b6ec3a3"}
+{"grounding": {"ok": true, "reason": "grounding: итог: да"}, "uid": "7e577b6ec3a3", "consistency": {"ok": true, "reason": "ok"}}
+{"grounding": {"ok": true, "reason": "grounding: итог: да"}, "uid": "ac96309e584d"}
+{"grounding": {"ok": true, "reason": "grounding: итог: да"}, "uid": "ac96309e584d", "consistency": {"ok": true, "reason": "ok"}}
+{"grounding": {"ok": true, "reason": "grounding: итог: да  "}, "uid": "4fe9dc1dfd4c"}
+{"grounding": {"ok": true, "reason": "grounding: итог: да  "}, "uid": "4fe9dc1dfd4c", "consistency": {"ok": true, "reason": "ok"}}
+{"grounding": {"ok": false, "reason": "grounding: итог: нет"}, "uid": "31f226f10894"}
+{"grounding": {"ok": true, "reason": "grounding: итог: да"}, "uid": "5270f625210b"}
+{"grounding": {"ok": true, "reason": "grounding: итог: да"}, "uid": "5270f625210b", "consistency": {"ok": true, "reason": "ok"}}
+{"grounding": {"ok": true, "reason": "grounding: итог: да"}, "uid": "0c79c60b96f2"}
+{"grounding": {"ok": true, "reason": "grounding: итог: да"}, "uid": "0c79c60b96f2", "consistency": {"ok": true, "reason": "ok"}}
+{"grounding": {"ok": true, "reason": "grounding: итог: да"}, "uid": "8f2494120141"}
+{"grounding": {"ok": true, "reason": "grounding: итог: да"}, "uid": "8f2494120141", "consistency": {"ok": true, "reason": "ok"}}
+{"grounding": {"ok": true, "reason": "grounding: итог: да"}, "uid": "5f32bb1cc195"}
+{"grounding": {"ok": true, "reason": "grounding: итог: да"}, "uid": "5f32bb1cc195", "consistency": {"ok": false, "reason": "consistency: сходство 68 < 70"}}
+{"grounding": {"ok": true, "reason": "grounding: итог: да"}, "uid": "8d19b4853a92"}
+{"grounding": {"ok": true, "reason": "grounding: итог: да"}, "uid": "8d19b4853a92", "consistency": {"ok": false, "reason": "consistency: сходство 67 < 70"}}
+{"grounding": {"ok": true, "reason": "grounding: итог: да"}, "uid": "162676783853"}
+{"grounding": {"ok": true, "reason": "grounding: итог: да"}, "uid": "162676783853", "consistency": {"ok": true, "reason": "ok"}}
+{"grounding": {"ok": false, "reason": "grounding: итог: нет"}, "uid": "16e5489cbb9d"}
+{"grounding": {"ok": false, "reason": "grounding: итог: нет"}, "uid": "634eb7e0d194"}
+{"grounding": {"ok": false, "reason": "grounding: итог: нет"}, "uid": "a4101541254f"}
+{"grounding": {"ok": true, "reason": "grounding: итог: да"}, "uid": "c154ff8bb7c9"}
+{"grounding": {"ok": true, "reason": "grounding: итог: да"}, "uid": "c154ff8bb7c9", "consistency": {"ok": true, "reason": "ok"}}
+{"grounding": {"ok": true, "reason": "grounding: итог: да"}, "uid": "76f9f1cd89fa"}
+{"grounding": {"ok": true, "reason": "grounding: итог: да"}, "uid": "76f9f1cd89fa", "consistency": {"ok": true, "reason": "ok"}}
+{"grounding": {"ok": true, "reason": "grounding: итог: да"}, "uid": "f8e67700c784"}
+{"grounding": {"ok": true, "reason": "grounding: итог: да"}, "uid": "f8e67700c784", "consistency": {"ok": false, "reason": "consistency: сходство 55 < 70"}}
+{"grounding": {"ok": true, "reason": "grounding: итог: да"}, "uid": "dff41fd7c09b"}
+{"grounding": {"ok": true, "reason": "grounding: итог: да"}, "uid": "dff41fd7c09b", "consistency": {"ok": true, "reason": "ok"}}
+{"grounding": {"ok": true, "reason": "grounding: итог: да"}, "uid": "dff41fd7c09b", "consistency": {"ok": true, "reason": "ok"}}
+{"grounding": {"ok": true, "reason": "grounding: итог: да"}, "uid": "c37a3f27cced"}
+{"grounding": {"ok": true, "reason": "grounding: итог: да"}, "uid": "c37a3f27cced", "consistency": {"ok": false, "reason": "consistency: сходство 69 < 70"}}
+{"grounding": {"ok": true, "reason": "grounding: итог: да"}, "uid": "74b589ad80ce"}
+{"grounding": {"ok": true, "reason": "grounding: итог: да"}, "uid": "74b589ad80ce", "consistency": {"ok": false, "reason": "consistency: сходство 55 < 70"}}
+{"grounding": {"ok": true, "reason": "grounding: итог: да"}, "uid": "3ef7c897dcc7"}
+{"grounding": {"ok": true, "reason": "grounding: итог: да"}, "uid": "3ef7c897dcc7", "consistency": {"ok": true, "reason": "ok"}}
+{"grounding": {"ok": true, "reason": "grounding: итог: да"}, "uid": "272a285cb5df"}
+{"grounding": {"ok": true, "reason": "grounding: итог: да"}, "uid": "272a285cb5df", "consistency": {"ok": false, "reason": "consistency: сходство 65 < 70"}}
+{"grounding": {"ok": true, "reason": "grounding: итог: да"}, "uid": "832cb3e1dcff"}
+{"grounding": {"ok": true, "reason": "grounding: итог: да"}, "uid": "832cb3e1dcff", "consistency": {"ok": true, "reason": "ok"}}
+{"grounding": {"ok": true, "reason": "grounding: итог: да"}, "uid": "e56f7bc03843"}
+{"grounding": {"ok": true, "reason": "grounding: итог: да"}, "uid": "e56f7bc03843", "consistency": {"ok": true, "reason": "ok"}}
+{"grounding": {"ok": false, "reason": "grounding: итог: нет"}, "uid": "3a022f983dbd"}
+{"grounding": {"ok": true, "reason": "grounding: итог: да"}, "uid": "4ba253ce91ba"}
+{"grounding": {"ok": true, "reason": "grounding: итог: да"}, "uid": "4ba253ce91ba", "consistency": {"ok": true, "reason": "ok"}}
+{"grounding": {"ok": true, "reason": "grounding: итог: да"}, "uid": "dbfea48dd604"}
+{"grounding": {"ok": true, "reason": "grounding: итог: да"}, "uid": "dbfea48dd604", "consistency": {"ok": false, "reason": "consistency: сходство 69 < 70"}}
+{"grounding": {"ok": true, "reason": "grounding: итог: да"}, "uid": "3073231d1a24"}
+{"grounding": {"ok": true, "reason": "grounding: итог: да"}, "uid": "3073231d1a24", "consistency": {"ok": true, "reason": "ok"}}
+{"grounding": {"ok": true, "reason": "grounding: итог: да"}, "uid": "8c0b2de88585"}
+{"grounding": {"ok": true, "reason": "grounding: итог: да"}, "uid": "8c0b2de88585", "consistency": {"ok": true, "reason": "ok"}}
+{"grounding": {"ok": true, "reason": "grounding: итог: да"}, "uid": "e2b9ba1e82bc"}
+{"grounding": {"ok": true, "reason": "grounding: итог: да"}, "uid": "e2b9ba1e82bc", "consistency": {"ok": true, "reason": "ok"}}
+{"grounding": {"ok": true, "reason": "grounding: итог: да"}, "uid": "d1808c95c516"}
+{"grounding": {"ok": true, "reason": "grounding: итог: да"}, "uid": "d1808c95c516", "consistency": {"ok": true, "reason": "ok"}}
+{"grounding": {"ok": true, "reason": "grounding: итог: да"}, "uid": "b8d07c9af567"}
+{"grounding": {"ok": true, "reason": "grounding: итог: да"}, "uid": "b8d07c9af567", "consistency": {"ok": false, "reason": "consistency: сходство 68 < 70"}}
+{"grounding": {"ok": true, "reason": "grounding: итог: да"}, "uid": "504510d02a19"}
+{"grounding": {"ok": true, "reason": "grounding: итог: да"}, "uid": "504510d02a19", "consistency": {"ok": true, "reason": "ok"}}
+{"grounding": {"ok": true, "reason": "grounding: итог: да"}, "uid": "4b9966186917"}
+{"grounding": {"ok": true, "reason": "grounding: итог: да"}, "uid": "4b9966186917", "consistency": {"ok": false, "reason": "consistency: сходство 58 < 70"}}
+{"grounding": {"ok": true, "reason": "grounding: итог: да"}, "uid": "3a1b7cf8ebc8"}
+{"grounding": {"ok": true, "reason": "grounding: итог: да"}, "uid": "3a1b7cf8ebc8", "consistency": {"ok": true, "reason": "ok"}}
+{"grounding": {"ok": true, "reason": "grounding: итог: да"}, "uid": "4b403db1bba5"}
+{"grounding": {"ok": true, "reason": "grounding: итог: да"}, "uid": "4b403db1bba5", "consistency": {"ok": true, "reason": "ok"}}
+{"grounding": {"ok": true, "reason": "grounding: итог: да"}, "uid": "ae9a56dc2a1a"}
+{"grounding": {"ok": true, "reason": "grounding: итог: да"}, "uid": "ae9a56dc2a1a", "consistency": {"ok": false, "reason": "consistency: сходство 61 < 70"}}
+{"grounding": {"ok": false, "reason": "grounding: итог: нет  "}, "uid": "48a0463cd8cd"}
+{"grounding": {"ok": true, "reason": "grounding: итог: да"}, "uid": "931591d56be0"}
+{"grounding": {"ok": true, "reason": "grounding: итог: да"}, "uid": "931591d56be0", "consistency": {"ok": false, "reason": "consistency: сходство 60 < 70"}}
+{"grounding": {"ok": true, "reason": "grounding: итог: да"}, "uid": "91895a70712d"}
+{"grounding": {"ok": true, "reason": "grounding: итог: да"}, "uid": "91895a70712d", "consistency": {"ok": false, "reason": "consistency: сходство 68 < 70"}}
+{"grounding": {"ok": false, "reason": "grounding: итог: нет  "}, "uid": "18a1b4907397"}
+{"grounding": {"ok": true, "reason": "grounding: итог: да"}, "uid": "44ffa1a1c762"}
+{"grounding": {"ok": true, "reason": "grounding: итог: да"}, "uid": "44ffa1a1c762", "consistency": {"ok": false, "reason": "consistency: сходство 67 < 70"}}
+{"grounding": {"ok": true, "reason": "grounding: итог: да"}, "uid": "dbeb3dc2ffa3"}
+{"grounding": {"ok": true, "reason": "grounding: итог: да"}, "uid": "dbeb3dc2ffa3", "consistency": {"ok": true, "reason": "ok"}}
+{"grounding": {"ok": true, "reason": "grounding: итог: да"}, "uid": "828503386ced"}
+{"grounding": {"ok": true, "reason": "grounding: итог: да"}, "uid": "828503386ced", "consistency": {"ok": true, "reason": "ok"}}
+{"grounding": {"ok": true, "reason": "grounding: итог: да"}, "uid": "083c8c19e0f0"}
+{"grounding": {"ok": true, "reason": "grounding: итог: да"}, "uid": "083c8c19e0f0", "consistency": {"ok": true, "reason": "ok"}}
+{"grounding": {"ok": true, "reason": "grounding: итог: да"}, "uid": "80dbe7b7f694"}
+{"grounding": {"ok": true, "reason": "grounding: итог: да"}, "uid": "80dbe7b7f694", "consistency": {"ok": true, "reason": "ok"}}
+{"grounding": {"ok": true, "reason": "grounding: итог: да"}, "uid": "8284a8923959"}
+{"grounding": {"ok": true, "reason": "grounding: итог: да"}, "uid": "8284a8923959", "consistency": {"ok": false, "reason": "consistency: сходство 57 < 70"}}
+{"grounding": {"ok": true, "reason": "grounding: итог: да"}, "uid": "bb60e04da9f3"}
+{"grounding": {"ok": true, "reason": "grounding: итог: да"}, "uid": "bb60e04da9f3", "consistency": {"ok": true, "reason": "ok"}}
+{"grounding": {"ok": true, "reason": "grounding: итог: да"}, "uid": "7281b26476da"}
+{"grounding": {"ok": true, "reason": "grounding: итог: да"}, "uid": "7281b26476da", "consistency": {"ok": false, "reason": "consistency: сходство 58 < 70"}}
+{"grounding": {"ok": true, "reason": "grounding: итог: да"}, "uid": "ee5ddebdc61e"}
+{"grounding": {"ok": true, "reason": "grounding: итог: да"}, "uid": "ee5ddebdc61e", "consistency": {"ok": false, "reason": "consistency: сходство 51 < 70"}}
+{"grounding": {"ok": true, "reason": "grounding: итог: да"}, "uid": "c0768c9c1504"}
+{"grounding": {"ok": true, "reason": "grounding: итог: да"}, "uid": "c0768c9c1504", "consistency": {"ok": false, "reason": "consistency: сходство 51 < 70"}}
+{"grounding": {"ok": false, "reason": "grounding: итог: нет"}, "uid": "04d99bff4702"}
+{"grounding": {"ok": false, "reason": "grounding: итог: нет"}, "uid": "f6b60373c3a6"}
+{"grounding": {"ok": true, "reason": "grounding: итог: да"}, "uid": "57c35a8a9a68"}
+{"grounding": {"ok": true, "reason": "grounding: итог: да"}, "uid": "57c35a8a9a68", "consistency": {"ok": true, "reason": "ok"}}
+{"grounding": {"ok": true, "reason": "grounding: итог: да"}, "uid": "4215b1a1dd3f"}
+{"grounding": {"ok": true, "reason": "grounding: итог: да"}, "uid": "4215b1a1dd3f", "consistency": {"ok": false, "reason": "consistency: сходство 66 < 70"}}
+{"grounding": {"ok": true, "reason": "grounding: итог: да"}, "uid": "9d962b6e1d66"}
+{"grounding": {"ok": true, "reason": "grounding: итог: да"}, "uid": "9d962b6e1d66", "consistency": {"ok": false, "reason": "consistency: сходство 66 < 70"}}
+{"grounding": {"ok": true, "reason": "grounding: итог: да"}, "uid": "bf72e9f380c3"}
+{"grounding": {"ok": true, "reason": "grounding: итог: да"}, "uid": "bf72e9f380c3", "consistency": {"ok": false, "reason": "consistency: сходство 60 < 70"}}
+{"grounding": {"ok": true, "reason": "grounding: итог: да"}, "uid": "f35274b7944a"}
+{"grounding": {"ok": true, "reason": "grounding: итог: да"}, "uid": "f35274b7944a", "consistency": {"ok": false, "reason": "consistency: сходство 44 < 70"}}
+{"grounding": {"ok": true, "reason": "grounding: итог: да  "}, "uid": "57fadf4a8d45"}
+{"grounding": {"ok": true, "reason": "grounding: итог: да  "}, "uid": "57fadf4a8d45", "consistency": {"ok": false, "reason": "consistency: сходство 43 < 70"}}
+{"grounding": {"ok": true, "reason": "grounding: итог: да"}, "uid": "8b2abfe2fe2b"}
+{"grounding": {"ok": true, "reason": "grounding: итог: да"}, "uid": "8b2abfe2fe2b", "consistency": {"ok": false, "reason": "consistency: сходство 54 < 70"}}
+{"grounding": {"ok": false, "reason": "grounding: итог: нет"}, "uid": "eba64a17f5f6"}
+{"grounding": {"ok": false, "reason": "grounding: итог: нет"}, "uid": "8eaa0bc0bd0c"}
+{"grounding": {"ok": true, "reason": "grounding: итог: да"}, "uid": "39cf61d1e90a"}
+{"grounding": {"ok": true, "reason": "grounding: итог: да"}, "uid": "39cf61d1e90a", "consistency": {"ok": true, "reason": "ok"}}
+{"grounding": {"ok": true, "reason": "grounding: итог: да"}, "uid": "318a04b8bed2"}
+{"grounding": {"ok": true, "reason": "grounding: итог: да"}, "uid": "318a04b8bed2", "consistency": {"ok": false, "reason": "consistency: сходство 49 < 70"}}
+{"grounding": {"ok": true, "reason": "grounding: итог: да"}, "uid": "d72d49d240dd"}
+{"grounding": {"ok": true, "reason": "grounding: итог: да"}, "uid": "d72d49d240dd", "consistency": {"ok": true, "reason": "ok"}}
+{"grounding": {"ok": true, "reason": "grounding: итог: да"}, "uid": "ad0380668272"}
+{"grounding": {"ok": true, "reason": "grounding: итог: да"}, "uid": "ad0380668272", "consistency": {"ok": true, "reason": "ok"}}
+{"grounding": {"ok": true, "reason": "grounding: итог: да"}, "uid": "eef42e3b0963"}
+{"grounding": {"ok": true, "reason": "grounding: итог: да"}, "uid": "eef42e3b0963", "consistency": {"ok": false, "reason": "consistency: сходство 54 < 70"}}
+{"grounding": {"ok": true, "reason": "grounding: итог: да"}, "uid": "b8fffc335e46"}
+{"grounding": {"ok": true, "reason": "grounding: итог: да"}, "uid": "b8fffc335e46", "consistency": {"ok": false, "reason": "consistency: сходство 41 < 70"}}
+{"grounding": {"ok": true, "reason": "grounding: итог: да"}, "uid": "0b0433586886"}
+{"grounding": {"ok": true, "reason": "grounding: итог: да"}, "uid": "0b0433586886", "consistency": {"ok": true, "reason": "ok"}}
+{"grounding": {"ok": true, "reason": "grounding: итог: да"}, "uid": "b38c55e27356"}
+{"grounding": {"ok": true, "reason": "grounding: итог: да"}, "uid": "b38c55e27356", "consistency": {"ok": true, "reason": "ok"}}
+{"grounding": {"ok": true, "reason": "grounding: итог: да"}, "uid": "9d77045da8df"}
+{"grounding": {"ok": true, "reason": "grounding: итог: да"}, "uid": "9d77045da8df", "consistency": {"ok": true, "reason": "ok"}}
+{"grounding": {"ok": true, "reason": "grounding: итог: да"}, "uid": "96610851a036"}
+{"grounding": {"ok": true, "reason": "grounding: итог: да"}, "uid": "96610851a036", "consistency": {"ok": false, "reason": "consistency: сходство 64 < 70"}}
+{"grounding": {"ok": true, "reason": "grounding: итог: да"}, "uid": "bad83adbfc66"}
+{"grounding": {"ok": true, "reason": "grounding: итог: да"}, "uid": "bad83adbfc66", "consistency": {"ok": false, "reason": "consistency: сходство 61 < 70"}}
+{"grounding": {"ok": true, "reason": "grounding: итог: да"}, "uid": "cc9b070a8437"}
+{"grounding": {"ok": true, "reason": "grounding: итог: да"}, "uid": "cc9b070a8437", "consistency": {"ok": true, "reason": "ok"}}
+{"grounding": {"ok": true, "reason": "grounding: итог: да"}, "uid": "e48dea624420"}
+{"grounding": {"ok": true, "reason": "grounding: итог: да"}, "uid": "e48dea624420", "consistency": {"ok": false, "reason": "consistency: сходство 50 < 70"}}
+{"grounding": {"ok": true, "reason": "grounding: итог: да"}, "uid": "b6d43780be2c"}
+{"grounding": {"ok": true, "reason": "grounding: итог: да"}, "uid": "b6d43780be2c", "consistency": {"ok": false, "reason": "consistency: сходство 51 < 70"}}
+{"grounding": {"ok": false, "reason": "grounding: итог: нет"}, "uid": "39e045fac8ee"}
+{"grounding": {"ok": true, "reason": "grounding: итог: да"}, "uid": "69cce7bedbce"}
+{"grounding": {"ok": true, "reason": "grounding: итог: да"}, "uid": "69cce7bedbce", "consistency": {"ok": true, "reason": "ok"}}
+{"grounding": {"ok": true, "reason": "grounding: итог: да"}, "uid": "202d3dc7c75d"}
+{"grounding": {"ok": true, "reason": "grounding: итог: да"}, "uid": "9260e46775fb"}
+{"grounding": {"ok": true, "reason": "grounding: итог: да"}, "uid": "4b79d6fb2c75"}
+{"grounding": {"ok": true, "reason": "grounding: итог: да"}, "uid": "202d3dc7c75d"}
+{"grounding": {"ok": true, "reason": "grounding: итог: да"}, "uid": "202d3dc7c75d", "consistency": {"ok": false, "reason": "consistency: сходство 63 < 70"}}
+{"grounding": {"ok": true, "reason": "grounding: итог: да"}, "uid": "9260e46775fb"}
+{"grounding": {"ok": true, "reason": "grounding: итог: да"}, "uid": "9260e46775fb", "consistency": {"ok": true, "reason": "ok"}}
+{"grounding": {"ok": true, "reason": "grounding: итог: да"}, "uid": "4b79d6fb2c75"}
+{"grounding": {"ok": true, "reason": "grounding: итог: да"}, "uid": "4b79d6fb2c75", "consistency": {"ok": false, "reason": "consistency: сходство 69 < 70"}}
+{"grounding": {"ok": true, "reason": "grounding: итог: да"}, "uid": "707ff2b3aaa3"}
+{"grounding": {"ok": true, "reason": "grounding: итог: да"}, "uid": "707ff2b3aaa3", "consistency": {"ok": false, "reason": "consistency: сходство 68 < 70"}}
+{"grounding": {"ok": true, "reason": "grounding: итог: да"}, "uid": "98d9530946a9"}
+{"grounding": {"ok": true, "reason": "grounding: итог: да"}, "uid": "98d9530946a9", "consistency": {"ok": false, "reason": "consistency: сходство 59 < 70"}}
+{"grounding": {"ok": true, "reason": "grounding: итог: да"}, "uid": "793796374500"}
+{"grounding": {"ok": true, "reason": "grounding: итог: да"}, "uid": "793796374500", "consistency": {"ok": true, "reason": "ok"}}
+{"grounding": {"ok": true, "reason": "grounding: итог: да"}, "uid": "60435cd112fe"}
+{"grounding": {"ok": true, "reason": "grounding: итог: да"}, "uid": "60435cd112fe", "consistency": {"ok": true, "reason": "ok"}}
+{"grounding": {"ok": true, "reason": "grounding: итог: да"}, "uid": "92af1bb743df"}
+{"grounding": {"ok": true, "reason": "grounding: итог: да"}, "uid": "92af1bb743df", "consistency": {"ok": false, "reason": "consistency: сходство 66 < 70"}}
+{"grounding": {"ok": false, "reason": "grounding: итог: нет"}, "uid": "ad4e352367cb"}
+{"grounding": {"ok": false, "reason": "grounding: итог: нет"}, "uid": "7a3706687336"}
+{"grounding": {"ok": true, "reason": "grounding: итог: да"}, "uid": "e853d85e7701"}
+{"grounding": {"ok": true, "reason": "grounding: итог: да"}, "uid": "e853d85e7701", "consistency": {"ok": false, "reason": "consistency: сходство 59 < 70"}}
+{"grounding": {"ok": true, "reason": "grounding: итог: да"}, "uid": "28abaac4afc1"}
+{"grounding": {"ok": true, "reason": "grounding: итог: да"}, "uid": "28abaac4afc1", "consistency": {"ok": true, "reason": "ok"}}
+{"grounding": {"ok": true, "reason": "grounding: итог: да"}, "uid": "9ded1d8394de"}
+{"grounding": {"ok": true, "reason": "grounding: итог: да"}, "uid": "9ded1d8394de", "consistency": {"ok": false, "reason": "consistency: сходство 69 < 70"}}
+{"grounding": {"ok": true, "reason": "grounding: итог: да"}, "uid": "5f7a77906332"}
+{"grounding": {"ok": true, "reason": "grounding: итог: да"}, "uid": "5f7a77906332", "consistency": {"ok": true, "reason": "ok"}}
+{"grounding": {"ok": true, "reason": "grounding: итог: да"}, "uid": "fa92cd2da37b"}
+{"grounding": {"ok": true, "reason": "grounding: итог: да"}, "uid": "fa92cd2da37b", "consistency": {"ok": false, "reason": "consistency: сходство 61 < 70"}}
+{"grounding": {"ok": true, "reason": "grounding: итог: да"}, "uid": "088c609cfab5"}
+{"grounding": {"ok": true, "reason": "grounding: итог: да"}, "uid": "088c609cfab5", "consistency": {"ok": false, "reason": "consistency: сходство 65 < 70"}}
+{"grounding": {"ok": true, "reason": "grounding: итог: да"}, "uid": "f5513d8fd645"}
+{"grounding": {"ok": true, "reason": "grounding: итог: да"}, "uid": "f5513d8fd645", "consistency": {"ok": false, "reason": "consistency: сходство 46 < 70"}}
+{"grounding": {"ok": true, "reason": "grounding: итог: да"}, "uid": "a91088951947"}
+{"grounding": {"ok": true, "reason": "grounding: итог: да"}, "uid": "a91088951947", "consistency": {"ok": false, "reason": "consistency: сходство 56 < 70"}}
+{"grounding": {"ok": true, "reason": "grounding: итог: да"}, "uid": "e379daa36c8d"}
+{"grounding": {"ok": true, "reason": "grounding: итог: да"}, "uid": "e379daa36c8d", "consistency": {"ok": true, "reason": "ok"}}
+{"grounding": {"ok": true, "reason": "grounding: итог: да"}, "uid": "85c33a76797e"}
+{"grounding": {"ok": true, "reason": "grounding: итог: да"}, "uid": "85c33a76797e", "consistency": {"ok": false, "reason": "consistency: сходство 65 < 70"}}
+{"grounding": {"ok": true, "reason": "grounding: итог: да"}, "uid": "c8ab9189e6dc"}
+{"grounding": {"ok": true, "reason": "grounding: итог: да"}, "uid": "c8ab9189e6dc", "consistency": {"ok": false, "reason": "consistency: сходство 45 < 70"}}
+{"grounding": {"ok": true, "reason": "grounding: итог: да"}, "uid": "548c4493cf1e"}
+{"grounding": {"ok": true, "reason": "grounding: итог: да"}, "uid": "548c4493cf1e", "consistency": {"ok": false, "reason": "consistency: сходство 70 < 70"}}
+{"grounding": {"ok": true, "reason": "grounding: итог: да"}, "uid": "bd2d173b63ee"}
+{"grounding": {"ok": true, "reason": "grounding: итог: да"}, "uid": "bd2d173b63ee", "consistency": {"ok": false, "reason": "consistency: сходство 64 < 70"}}
+{"grounding": {"ok": false, "reason": "grounding: итог: нет"}, "uid": "76968d6dd7f8"}
+{"grounding": {"ok": false, "reason": "grounding: итог: нет"}, "uid": "f332d29bbc90"}
+{"grounding": {"ok": false, "reason": "grounding: итог: нет"}, "uid": "fbfe4ec2295e"}
+{"grounding": {"ok": true, "reason": "grounding: итог: да"}, "uid": "c5c6922366f8"}
+{"grounding": {"ok": true, "reason": "grounding: итог: да"}, "uid": "c5c6922366f8", "consistency": {"ok": false, "reason": "consistency: сходство 62 < 70"}}
+{"grounding": {"ok": true, "reason": "grounding: итог: да"}, "uid": "911be78001ec"}
+{"grounding": {"ok": true, "reason": "grounding: итог: да"}, "uid": "911be78001ec", "consistency": {"ok": true, "reason": "ok"}}
+{"grounding": {"ok": true, "reason": "grounding: итог: да"}, "uid": "06a07e7ba8f2"}
+{"grounding": {"ok": true, "reason": "grounding: итог: да"}, "uid": "06a07e7ba8f2", "consistency": {"ok": false, "reason": "consistency: сходство 69 < 70"}}
+{"grounding": {"ok": true, "reason": "grounding: итог: да"}, "uid": "73625e47fb26"}
+{"grounding": {"ok": true, "reason": "grounding: итог: да"}, "uid": "73625e47fb26", "consistency": {"ok": true, "reason": "ok"}}
+{"grounding": {"ok": true, "reason": "grounding: итог: да"}, "uid": "707ff2b3aaa3"}
+{"grounding": {"ok": true, "reason": "grounding: итог: да"}, "uid": "98d9530946a9"}
+{"grounding": {"ok": true, "reason": "grounding: итог: да"}, "uid": "793796374500"}
+{"grounding": {"ok": true, "reason": "grounding: итог: да"}, "uid": "60435cd112fe"}
+{"grounding": {"ok": true, "reason": "grounding: итог: да"}, "uid": "92af1bb743df"}
+{"grounding": {"ok": false, "reason": "grounding: итог: нет"}, "uid": "ad4e352367cb"}
+{"grounding": {"ok": true, "reason": "grounding: итог: да  "}, "uid": "7a3706687336"}
+{"grounding": {"ok": true, "reason": "grounding: итог: да"}, "uid": "e853d85e7701"}
+{"grounding": {"ok": true, "reason": "grounding: итог: да"}, "uid": "28abaac4afc1"}
+{"grounding": {"ok": true, "reason": "grounding: итог: да"}, "uid": "9ded1d8394de"}
+{"grounding": {"ok": true, "reason": "grounding: итог: да"}, "uid": "5f7a77906332"}
+{"grounding": {"ok": true, "reason": "grounding: итог: да"}, "uid": "fa92cd2da37b"}
+{"grounding": {"ok": true, "reason": "grounding: итог: да"}, "uid": "088c609cfab5"}
+{"grounding": {"ok": true, "reason": "grounding: итог: да  "}, "uid": "f5513d8fd645"}
+{"grounding": {"ok": true, "reason": "grounding: итог: да"}, "uid": "a91088951947"}
+{"grounding": {"ok": true, "reason": "grounding: итог: да"}, "uid": "e379daa36c8d"}
+{"grounding": {"ok": true, "reason": "grounding: итог: да"}, "uid": "85c33a76797e"}
+{"grounding": {"ok": true, "reason": "grounding: итог: да"}, "uid": "c8ab9189e6dc"}
+{"grounding": {"ok": true, "reason": "grounding: итог: да"}, "uid": "548c4493cf1e"}
+{"grounding": {"ok": true, "reason": "grounding: итог: да"}, "uid": "bd2d173b63ee"}
+{"grounding": {"ok": false, "reason": "grounding: итог: нет  "}, "uid": "76968d6dd7f8"}
+{"grounding": {"ok": false, "reason": "grounding: итог: нет"}, "uid": "f332d29bbc90"}
+{"grounding": {"ok": false, "reason": "grounding: итог: нет"}, "uid": "fbfe4ec2295e"}
+{"grounding": {"ok": true, "reason": "grounding: итог: да"}, "uid": "c5c6922366f8"}
+{"grounding": {"ok": true, "reason": "grounding: итог: да"}, "uid": "911be78001ec"}
+{"grounding": {"ok": true, "reason": "grounding: итог: да"}, "uid": "06a07e7ba8f2"}
+{"grounding": {"ok": true, "reason": "grounding: итог: да  "}, "uid": "73625e47fb26"}
+{"grounding": {"ok": true, "reason": "grounding: итог: да"}, "uid": "f184d46d0e53"}
+{"grounding": {"ok": true, "reason": "grounding: итог: да"}, "uid": "2c4018cf573b"}
+{"grounding": {"ok": true, "reason": "grounding: итог: да"}, "uid": "89ad250fa414"}
+{"grounding": {"ok": true, "reason": "grounding: итог: да"}, "uid": "5243895d9f61"}
+{"grounding": {"ok": true, "reason": "grounding: итог: да"}, "uid": "0b35937f75ae"}
+{"grounding": {"ok": true, "reason": "grounding: итог: да"}, "uid": "7bd6fd84eb28"}
+{"grounding": {"ok": true, "reason": "grounding: итог: да"}, "uid": "1267a90e0669"}
+{"grounding": {"ok": true, "reason": "grounding: итог: да"}, "uid": "d76adcbab073"}
+{"grounding": {"ok": false, "reason": "grounding: итог: нет"}, "uid": "ea5eff08ee94"}
+{"grounding": {"ok": true, "reason": "grounding: итог: да"}, "uid": "e68409b40ad7"}
+{"grounding": {"ok": true, "reason": "grounding: итог: да"}, "uid": "56e0f4a3caa8"}
+{"grounding": {"ok": true, "reason": "grounding: итог: да"}, "uid": "3ae3e9240217"}
+{"grounding": {"ok": true, "reason": "grounding: итог: да"}, "uid": "26efb271ee0e"}
+{"grounding": {"ok": true, "reason": "grounding: итог: да"}, "uid": "1733f1d4dc73"}
+{"grounding": {"ok": true, "reason": "grounding: итог: да"}, "uid": "c8c9e9ce38f4"}
+{"grounding": {"ok": true, "reason": "grounding: итог: да"}, "uid": "13c28ab4cef5"}
+{"grounding": {"ok": true, "reason": "grounding: итог: да"}, "uid": "748e5a0f1077"}
+{"grounding": {"ok": true, "reason": "grounding: итог: да  "}, "uid": "ed9cdecf4ac5"}
+{"grounding": {"ok": true, "reason": "grounding: итог: да"}, "uid": "ac1fd4d257d0"}
+{"grounding": {"ok": true, "reason": "grounding: итог: да"}, "uid": "f62af13462dd"}
+{"grounding": {"ok": true, "reason": "grounding: итог: да"}, "uid": "f13aa5d8a12d"}
+{"grounding": {"ok": true, "reason": "grounding: итог: да"}, "uid": "03b3b8de81c3"}
+{"grounding": {"ok": true, "reason": "grounding: итог: да"}, "uid": "07a4921fd209"}
+{"grounding": {"ok": true, "reason": "grounding: итог: да"}, "uid": "311150636ca0"}
+{"grounding": {"ok": true, "reason": "grounding: итог: да"}, "uid": "a6d8f386c132"}
+{"grounding": {"ok": false, "reason": "grounding: итог: нет"}, "uid": "1585eb942146"}
+{"grounding": {"ok": true, "reason": "grounding: итог: да"}, "uid": "e7d956375107"}
+{"grounding": {"ok": true, "reason": "grounding: итог: да  "}, "uid": "a16ae8f8a682"}
+{"grounding": {"ok": false, "reason": "grounding: итог: нет  "}, "uid": "71da54634b38"}
+{"grounding": {"ok": true, "reason": "grounding: итог: да"}, "uid": "5c6d17dda0fd"}
+{"grounding": {"ok": true, "reason": "grounding: итог: да"}, "uid": "070cef7a7059"}
+{"grounding": {"ok": false, "reason": "grounding: итог: нет"}, "uid": "b98fcc6b31b4"}
+{"grounding": {"ok": false, "reason": "grounding: итог: нет"}, "uid": "b83c3a65e88d"}
+{"grounding": {"ok": false, "reason": "grounding: итог: нет"}, "uid": "88e4202407bf"}
+{"grounding": {"ok": true, "reason": "grounding: итог: да"}, "uid": "8e31425f3903"}
+{"grounding": {"ok": true, "reason": "grounding: итог: да"}, "uid": "63639168ea37"}
+{"grounding": {"ok": true, "reason": "grounding: итог: да"}, "uid": "f7383b6ab74c"}
+{"grounding": {"ok": true, "reason": "grounding: итог: да"}, "uid": "880ddf5cbcea"}
+{"grounding": {"ok": true, "reason": "grounding: итог: да"}, "uid": "e5e1196f0d87"}
+{"grounding": {"ok": true, "reason": "grounding: итог: да"}, "uid": "d29b45da6260"}
+{"grounding": {"ok": true, "reason": "grounding: итог: да"}, "uid": "477e779c5034"}
+{"grounding": {"ok": true, "reason": "grounding: итог: да"}, "uid": "dceeb568e63c"}
+{"grounding": {"ok": true, "reason": "grounding: итог: да"}, "uid": "752c4facc3b2"}
+{"grounding": {"ok": true, "reason": "grounding: итог: да  "}, "uid": "159e5753d403"}
+{"grounding": {"ok": false, "reason": "grounding: итог: нет"}, "uid": "46b883d588ea"}
+{"grounding": {"ok": false, "reason": "grounding: итог: нет"}, "uid": "638d980df137"}
+{"grounding": {"ok": false, "reason": "grounding: итог: нет"}, "uid": "56fc4c79c72a"}
+{"grounding": {"ok": false, "reason": "grounding: итог: нет"}, "uid": "5984d4ceb841"}
+{"grounding": {"ok": true, "reason": "grounding: итог: да"}, "uid": "0fad494afa49"}
+{"grounding": {"ok": true, "reason": "grounding: итог: да"}, "uid": "e632260a0c16"}
+{"grounding": {"ok": true, "reason": "grounding: итог: да"}, "uid": "b520fb004bc8"}
+{"grounding": {"ok": true, "reason": "grounding: итог: да"}, "uid": "8a613d836809"}
+{"grounding": {"ok": true, "reason": "grounding: итог: да"}, "uid": "78822b28caa9"}
+{"grounding": {"ok": true, "reason": "grounding: итог: да"}, "uid": "0075a082d4cf"}
+{"grounding": {"ok": false, "reason": "grounding: итог: нет"}, "uid": "8a87c598de63"}
+{"grounding": {"ok": true, "reason": "grounding: итог: да"}, "uid": "e7ef5e902faf"}
+{"grounding": {"ok": true, "reason": "grounding: итог: да"}, "uid": "09999c8d07e0"}
+{"grounding": {"ok": true, "reason": "grounding: итог: да"}, "uid": "d70214a59782"}
+{"grounding": {"ok": true, "reason": "grounding: итог: да"}, "uid": "8a77cfb761e4"}
+{"grounding": {"ok": true, "reason": "grounding: итог: да"}, "uid": "03a03683afd7"}
+{"grounding": {"ok": true, "reason": "grounding: итог: да"}, "uid": "d0113fd50479"}
+{"grounding": {"ok": true, "reason": "grounding: итог: да"}, "uid": "9b2781a516fd"}
+{"grounding": {"ok": true, "reason": "grounding: итог: да"}, "uid": "66b14d180e07"}
+{"grounding": {"ok": false, "reason": "grounding: итог: нет"}, "uid": "4a8453aee589"}
+{"grounding": {"ok": false, "reason": "grounding: итог: нет"}, "uid": "3922d7941fe4"}
+{"grounding": {"ok": false, "reason": "grounding: итог: нет"}, "uid": "b00d1318562e"}
+{"grounding": {"ok": true, "reason": "grounding: итог: да"}, "uid": "85bda215fae8"}
+{"grounding": {"ok": true, "reason": "grounding: итог: да"}, "uid": "c91a3802045b"}
+{"grounding": {"ok": true, "reason": "grounding: итог: да"}, "uid": "f8a7182a2f45"}
+{"grounding": {"ok": false, "reason": "grounding: итог: нет"}, "uid": "7a78a3120ca8"}
+{"grounding": {"ok": true, "reason": "grounding: итог: да"}, "uid": "a677826ec7b7"}
+{"grounding": {"ok": false, "reason": "grounding: итог: нет"}, "uid": "e7330038fa84"}
+{"grounding": {"ok": false, "reason": "grounding: итог: нет"}, "uid": "5d41b6b6da9a"}
+{"grounding": {"ok": true, "reason": "grounding: итог: да"}, "uid": "a9e7bb810fdd"}
+{"grounding": {"ok": true, "reason": "grounding: итог: да"}, "uid": "44cd961f3eed"}
+{"grounding": {"ok": true, "reason": "grounding: итог: да  "}, "uid": "9d367300e80b"}
+{"grounding": {"ok": true, "reason": "grounding: итог: да  "}, "uid": "e7dac0e8e4ae"}
+{"grounding": {"ok": true, "reason": "grounding: итог: да"}, "uid": "c3c312b28102"}
+{"grounding": {"ok": true, "reason": "grounding: итог: да"}, "uid": "70f03f2e81b6"}
+{"grounding": {"ok": true, "reason": "grounding: итог: да"}, "uid": "89739a826964"}
+{"grounding": {"ok": true, "reason": "grounding: итог: да"}, "uid": "ed475728d518"}
+{"grounding": {"ok": true, "reason": "grounding: итог: да"}, "uid": "4e2a532e8ddf"}
+{"grounding": {"ok": true, "reason": "grounding: итог: да"}, "uid": "471540ee9f8a"}
+{"grounding": {"ok": true, "reason": "grounding: итог: да"}, "uid": "0d23578c53be"}
+{"grounding": {"ok": true, "reason": "grounding: итог: да"}, "uid": "c3711cb875d7"}
+{"grounding": {"ok": true, "reason": "grounding: итог: да"}, "uid": "e173ef7aa1e9"}
+{"grounding": {"ok": true, "reason": "grounding: итог: да"}, "uid": "cc67e6355df3"}
+{"grounding": {"ok": true, "reason": "grounding: итог: да"}, "uid": "baa60530e7e3"}
+{"grounding": {"ok": true, "reason": "grounding: итог: да"}, "uid": "0148bc26f575"}
+{"grounding": {"ok": true, "reason": "grounding: итог: да  "}, "uid": "68e4c9d00abe"}
+{"grounding": {"ok": true, "reason": "grounding: итог: да"}, "uid": "a044bfdd0062"}
+{"grounding": {"ok": true, "reason": "grounding: итог: да"}, "uid": "3ba972102629"}
+{"grounding": {"ok": true, "reason": "grounding: итог: да"}, "uid": "00215c1044d3"}
+{"grounding": {"ok": true, "reason": "grounding: итог: да"}, "uid": "84ea9d831abc"}
+{"grounding": {"ok": true, "reason": "grounding: итог: да"}, "uid": "5d8a78bf8cc6"}
+{"grounding": {"ok": true, "reason": "grounding: итог: да"}, "uid": "b1bbc0641132"}
+{"grounding": {"ok": true, "reason": "grounding: итог: да"}, "uid": "759050fc30ef"}
+{"grounding": {"ok": true, "reason": "grounding: итог: да"}, "uid": "2567ae8e3a41"}
+{"grounding": {"ok": true, "reason": "grounding: итог: да"}, "uid": "b4888fbab20b"}
+{"grounding": {"ok": true, "reason": "grounding: итог: да"}, "uid": "a4cfc31d4965"}
+{"grounding": {"ok": true, "reason": "grounding: итог: да"}, "uid": "00a5b7cce92a"}
+{"grounding": {"ok": true, "reason": "grounding: итог: да"}, "uid": "d117a8e1f146"}
+{"grounding": {"ok": true, "reason": "grounding: итог: да"}, "uid": "0b712df36f4a"}
+{"grounding": {"ok": false, "reason": "grounding: итог: нет"}, "uid": "fb5f09c15c56"}
+{"grounding": {"ok": true, "reason": "grounding: итог: да"}, "uid": "31903c75d544"}
+{"grounding": {"ok": true, "reason": "grounding: итог: да  "}, "uid": "1ebab082ecdd"}
+{"grounding": {"ok": false, "reason": "grounding: итог: нет"}, "uid": "a62c8aa7050a"}
+{"grounding": {"ok": true, "reason": "grounding: итог: да"}, "uid": "7a5d9a7502c5"}
+{"grounding": {"ok": true, "reason": "grounding: итог: да"}, "uid": "ceee0df61f14"}
+{"grounding": {"ok": true, "reason": "grounding: итог: да"}, "uid": "a2f96893f424"}
+{"grounding": {"ok": true, "reason": "grounding: итог: да"}, "uid": "f4c97f2b8f8c"}
+{"grounding": {"ok": true, "reason": "grounding: итог: да"}, "uid": "9a2905680f43"}
+{"grounding": {"ok": true, "reason": "grounding: итог: да"}, "uid": "df471e19c8bf"}
+{"grounding": {"ok": true, "reason": "grounding: итог: да"}, "uid": "eaae58f31311"}
+{"grounding": {"ok": true, "reason": "grounding: итог: да"}, "uid": "cb6a7e02a3e7"}
+{"grounding": {"ok": true, "reason": "grounding: итог: да"}, "uid": "49bf565c8e12"}
+{"grounding": {"ok": true, "reason": "grounding: итог: да"}, "uid": "686cd5f5a328"}
+{"grounding": {"ok": true, "reason": "grounding: итог: да"}, "uid": "dff32494a581"}
+{"grounding": {"ok": true, "reason": "grounding: итог: да"}, "uid": "db003b1b28b1"}
+{"grounding": {"ok": true, "reason": "grounding: итог: да"}, "uid": "057ad5add37f"}
+{"grounding": {"ok": true, "reason": "grounding: итог: да"}, "uid": "55d8bc63cf05"}
+{"grounding": {"ok": true, "reason": "grounding: итог: да"}, "uid": "631086dad958"}
+{"grounding": {"ok": true, "reason": "grounding: итог: да"}, "uid": "cb2be49b8513"}
+{"grounding": {"ok": true, "reason": "grounding: итог: да"}, "uid": "988a8e4bb16f"}
+{"grounding": {"ok": true, "reason": "grounding: итог: да"}, "uid": "316fa66674a5"}
+{"grounding": {"ok": true, "reason": "grounding: итог: да"}, "uid": "957dc9bb1960"}
+{"grounding": {"ok": true, "reason": "grounding: итог: да"}, "uid": "3d7b9ce89cac"}
+{"grounding": {"ok": true, "reason": "grounding: итог: да"}, "uid": "f499b0b9dc80"}
+{"grounding": {"ok": true, "reason": "grounding: итог: да"}, "uid": "421be28accc0"}
+{"grounding": {"ok": true, "reason": "grounding: итог: да"}, "uid": "3269019b8cf9"}
+{"grounding": {"ok": true, "reason": "grounding: итог: да"}, "uid": "c812ec43dd24"}
+{"grounding": {"ok": false, "reason": "grounding: итог: нет"}, "uid": "d42e46bce60a"}
+{"grounding": {"ok": false, "reason": "grounding: итог: нет  "}, "uid": "0fc4763fc3bb"}
+{"grounding": {"ok": true, "reason": "grounding: итог: да"}, "uid": "0bb504b5afff"}
+{"grounding": {"ok": true, "reason": "grounding: итог: да"}, "uid": "02228be1f7af"}
+{"grounding": {"ok": true, "reason": "grounding: итог: да"}, "uid": "5888c4494c49"}
+{"grounding": {"ok": true, "reason": "grounding: итог: да"}, "uid": "d298c8399926"}
+{"grounding": {"ok": false, "reason": "grounding: итог: нет"}, "uid": "1316bf30b4d7"}
+{"grounding": {"ok": true, "reason": "grounding: итог: да"}, "uid": "75c873c112a1"}
+{"grounding": {"ok": false, "reason": "grounding: итог: нет"}, "uid": "e163c8bb3896"}
+{"grounding": {"ok": false, "reason": "grounding: итог: нет"}, "uid": "571b6589731c"}
+{"grounding": {"ok": true, "reason": "grounding: итог: да"}, "uid": "d9acc46b1ffd"}
+{"grounding": {"ok": false, "reason": "grounding: итог: нет"}, "uid": "0cb82fe3da87"}
+{"grounding": {"ok": false, "reason": "grounding: итог: нет"}, "uid": "f41e96704276"}
+{"grounding": {"ok": true, "reason": "grounding: итог: да"}, "uid": "fa7988d277be"}
+{"grounding": {"ok": true, "reason": "grounding: итог: да"}, "uid": "fc76fb382d54"}
+{"grounding": {"ok": false, "reason": "grounding: итог: нет  "}, "uid": "172aab422738"}
+{"grounding": {"ok": false, "reason": "grounding: итог: нет"}, "uid": "fcc39395bb56"}
+{"grounding": {"ok": true, "reason": "grounding: итог: да"}, "uid": "e796c729c8ef"}
+{"grounding": {"ok": true, "reason": "grounding: итог: да"}, "uid": "a7bb78dcca7b"}
+{"grounding": {"ok": true, "reason": "grounding: итог: да"}, "uid": "dee468f68224"}
+{"grounding": {"ok": true, "reason": "grounding: итог: да"}, "uid": "13e0441ad9b6"}
+{"grounding": {"ok": true, "reason": "grounding: итог: да  "}, "uid": "53c09c0a0213"}
+{"grounding": {"ok": true, "reason": "grounding: итог: да"}, "uid": "aa9817561e7b"}
+{"grounding": {"ok": true, "reason": "grounding: итог: да"}, "uid": "613045cecb74"}
+{"grounding": {"ok": true, "reason": "grounding: итог: да"}, "uid": "11dc6a06a16e"}
+{"grounding": {"ok": true, "reason": "grounding: итог: да"}, "uid": "ac885a562649"}
+{"grounding": {"ok": true, "reason": "grounding: итог: да"}, "uid": "0c1987df12b7"}
+{"grounding": {"ok": true, "reason": "grounding: итог: да  "}, "uid": "bc6ce8199438"}
+{"grounding": {"ok": true, "reason": "grounding: итог: да  "}, "uid": "bfab213d08d6"}
+{"grounding": {"ok": true, "reason": "grounding: итог: да  "}, "uid": "820d1f745f7f"}
+{"grounding": {"ok": true, "reason": "grounding: итог: да"}, "uid": "a76154a432fc"}
+{"grounding": {"ok": true, "reason": "grounding: итог: да"}, "uid": "7c5a1be8ff70"}
+{"grounding": {"ok": true, "reason": "grounding: итог: да"}, "uid": "be6815967663"}
+{"grounding": {"ok": false, "reason": "grounding: итог: нет  "}, "uid": "1b8e21108372"}
+{"grounding": {"ok": false, "reason": "grounding: итог: нет"}, "uid": "3c309db1a308"}
+{"grounding": {"ok": false, "reason": "grounding: итог: нет"}, "uid": "2fa4dc07c185"}
+{"grounding": {"ok": true, "reason": "grounding: итог: да"}, "uid": "d471aa146101"}
+{"grounding": {"ok": true, "reason": "grounding: итог: да"}, "uid": "a8e46d213b1a"}
+{"grounding": {"ok": true, "reason": "grounding: итог: да"}, "uid": "dac2070fa3d5"}
+{"grounding": {"ok": true, "reason": "grounding: итог: да"}, "uid": "eb6488659d02"}
+{"grounding": {"ok": true, "reason": "grounding: итог: да"}, "uid": "56161df54da7"}
+{"grounding": {"ok": true, "reason": "grounding: итог: да"}, "uid": "e0b2820a3747"}
+{"grounding": {"ok": true, "reason": "grounding: итог: да"}, "uid": "7cd4e8587ea6"}
+{"grounding": {"ok": true, "reason": "grounding: итог: да"}, "uid": "5bb1d8ff2ebf"}
+{"grounding": {"ok": true, "reason": "grounding: итог: да"}, "uid": "333af9f21b1f"}
+{"grounding": {"ok": true, "reason": "grounding: итог: да"}, "uid": "c0cb00eee0bf"}
+{"grounding": {"ok": true, "reason": "grounding: итог: да"}, "uid": "a82fae37c3ad"}
+{"grounding": {"ok": false, "reason": "grounding: итог: нет"}, "uid": "b711bec95d21"}
+{"grounding": {"ok": true, "reason": "grounding: итог: да"}, "uid": "f56919c840bf"}
+{"grounding": {"ok": true, "reason": "grounding: итог: да  "}, "uid": "42a078fcac79"}
+{"grounding": {"ok": true, "reason": "grounding: итог: да"}, "uid": "bc3b12321594"}
+{"grounding": {"ok": false, "reason": "grounding: итог: нет"}, "uid": "4dad49081836"}
+{"grounding": {"ok": true, "reason": "grounding: итог: да"}, "uid": "b39ee013248a"}
+{"grounding": {"ok": true, "reason": "grounding: итог: да"}, "uid": "97b46f71f539"}
+{"grounding": {"ok": true, "reason": "grounding: итог: да"}, "uid": "3ac54213b024"}
+{"grounding": {"ok": true, "reason": "grounding: итог: да"}, "uid": "09117d031486"}
+{"grounding": {"ok": false, "reason": "grounding: итог: нет"}, "uid": "0990042a8402"}
+{"grounding": {"ok": true, "reason": "grounding: итог: да"}, "uid": "6823c6eb8b7c"}
+{"grounding": {"ok": true, "reason": "grounding: итог: да"}, "uid": "f9ee0cc77401"}
+{"grounding": {"ok": false, "reason": "grounding: итог: нет"}, "uid": "cce4f1398482"}
+{"grounding": {"ok": true, "reason": "grounding: итог: да"}, "uid": "6d9aeecec6e7"}
+{"grounding": {"ok": true, "reason": "grounding: итог: да"}, "uid": "4974424cd67b"}
+{"grounding": {"ok": true, "reason": "grounding: итог: да"}, "uid": "a3b03a703b69"}
+{"grounding": {"ok": true, "reason": "grounding: итог: да"}, "uid": "54d2de877d18"}
+{"grounding": {"ok": true, "reason": "grounding: итог: да"}, "uid": "29f3a4e219b2"}
+{"grounding": {"ok": true, "reason": "grounding: итог: да"}, "uid": "cd8ec9633008"}
+{"grounding": {"ok": true, "reason": "grounding: итог: да  "}, "uid": "1f2dbaf84f55"}
+{"grounding": {"ok": true, "reason": "grounding: итог: да"}, "uid": "b9b41751d869"}
+{"grounding": {"ok": true, "reason": "grounding: итог: да"}, "uid": "a3ed9115899d"}
+{"grounding": {"ok": true, "reason": "grounding: итог: да"}, "uid": "1b15ef4266f0"}
+{"grounding": {"ok": true, "reason": "grounding: итог: да"}, "uid": "9c6e144e104a"}
+{"grounding": {"ok": true, "reason": "grounding: итог: да"}, "uid": "69bdeed24100"}
+{"grounding": {"ok": true, "reason": "grounding: итог: да"}, "uid": "7b43f4456626"}
+{"grounding": {"ok": true, "reason": "grounding: итог: да"}, "uid": "e1265470af73"}
+{"grounding": {"ok": true, "reason": "grounding: итог: да"}, "uid": "0e5f8ce3a77d"}
+{"grounding": {"ok": true, "reason": "grounding: итог: да"}, "uid": "661cd99eaa32"}
+{"grounding": {"ok": false, "reason": "grounding: итог: нет"}, "uid": "60516184a90c"}
+{"grounding": {"ok": true, "reason": "grounding: итог: да"}, "uid": "fe69551b2bab"}
+{"grounding": {"ok": true, "reason": "grounding: итог: да"}, "uid": "208d2a82cb48"}
+{"grounding": {"ok": true, "reason": "grounding: итог: да"}, "uid": "156c6de6e79e"}
+{"grounding": {"ok": true, "reason": "grounding: итог: да"}, "uid": "26cc79bd065c"}
+{"grounding": {"ok": false, "reason": "grounding: итог: нет"}, "uid": "9551789f6e2e"}
+{"grounding": {"ok": false, "reason": "grounding: итог: нет"}, "uid": "b4bb3f1658c6"}
+{"grounding": {"ok": true, "reason": "grounding: итог: да"}, "uid": "581623b1c972"}
+{"grounding": {"ok": true, "reason": "grounding: итог: да"}, "uid": "85602cc15126"}
+{"grounding": {"ok": true, "reason": "grounding: итог: да"}, "uid": "9b664ba72de4"}
+{"grounding": {"ok": true, "reason": "grounding: итог: да"}, "uid": "0ee3b9331095"}
+{"grounding": {"ok": true, "reason": "grounding: итог: да"}, "uid": "d0ec0e4b92f0"}
+{"grounding": {"ok": true, "reason": "grounding: итог: да"}, "uid": "995036fad103"}
+{"grounding": {"ok": true, "reason": "grounding: итог: да"}, "uid": "afa5cfac63a3"}
+{"grounding": {"ok": true, "reason": "grounding: итог: да"}, "uid": "35c01e8e155f"}
+{"grounding": {"ok": true, "reason": "grounding: итог: да"}, "uid": "59501954f134"}
+{"grounding": {"ok": true, "reason": "grounding: итог: да"}, "uid": "2092f77bbe4e"}
+{"grounding": {"ok": true, "reason": "grounding: итог: да"}, "uid": "dea576b9cbbc"}
+{"grounding": {"ok": true, "reason": "grounding: итог: да"}, "uid": "ab13b2732c6a"}
+{"grounding": {"ok": true, "reason": "grounding: итог: да  "}, "uid": "84a15b691de7"}
+{"grounding": {"ok": false, "reason": "grounding: итог: нет"}, "uid": "0cc1fbbece27"}
+{"grounding": {"ok": false, "reason": "grounding: итог: нет  "}, "uid": "c6ef2e279f81"}
+{"grounding": {"ok": true, "reason": "grounding: итог: да  "}, "uid": "8cabbd3de87c"}
+{"grounding": {"ok": true, "reason": "grounding: итог: да"}, "uid": "d2ab81008f7c"}
+{"grounding": {"ok": true, "reason": "grounding: итог: да  "}, "uid": "2c35cdd08a10"}
+{"grounding": {"ok": true, "reason": "grounding: итог: да"}, "uid": "7525311749f5"}
+{"grounding": {"ok": true, "reason": "grounding: итог: да"}, "uid": "652fc6c6721b"}
+{"grounding": {"ok": true, "reason": "grounding: итог: да"}, "uid": "98657ae06241"}
+{"grounding": {"ok": true, "reason": "grounding: итог: да"}, "uid": "96e2dc366976"}
+{"grounding": {"ok": true, "reason": "grounding: итог: да"}, "uid": "2cc3765a52f1"}
+{"grounding": {"ok": true, "reason": "grounding: итог: да"}, "uid": "db105d8fa039"}
+{"grounding": {"ok": true, "reason": "grounding: итог: да"}, "uid": "15de3248bc07"}
+{"grounding": {"ok": true, "reason": "grounding: итог: да"}, "uid": "ab063b2a1739"}
+{"grounding": {"ok": true, "reason": "grounding: итог: да"}, "uid": "8d22a75733ff"}
+{"grounding": {"ok": true, "reason": "grounding: итог: да  "}, "uid": "8de9d4943817"}
+{"grounding": {"ok": false, "reason": "grounding: итог: нет"}, "uid": "b0c074b1a656"}
+{"grounding": {"ok": false, "reason": "grounding: итог: нет"}, "uid": "98657f77bea0"}
+{"grounding": {"ok": true, "reason": "grounding: итог: да  "}, "uid": "ff18ed5c82cb"}
+{"grounding": {"ok": true, "reason": "grounding: итог: да  "}, "uid": "a352f9b35981"}
+{"grounding": {"ok": true, "reason": "grounding: итог: да"}, "uid": "8594f6a7407c"}
+{"grounding": {"ok": true, "reason": "grounding: итог: да"}, "uid": "90c306431863"}
+{"grounding": {"ok": true, "reason": "grounding: итог: да"}, "uid": "14962829a290"}
+{"grounding": {"ok": true, "reason": "grounding: итог: да"}, "uid": "253f68aea6c4"}
+{"grounding": {"ok": true, "reason": "grounding: итог: да"}, "uid": "226a0b5929ad"}
+{"grounding": {"ok": true, "reason": "grounding: итог: да"}, "uid": "7668103d0695"}
+{"grounding": {"ok": true, "reason": "grounding: итог: да"}, "uid": "9b8f784bdacf"}
+{"grounding": {"ok": true, "reason": "grounding: итог: да"}, "uid": "21af53c2f618"}
+{"grounding": {"ok": true, "reason": "grounding: итог: да"}, "uid": "eb5d30e6ae01"}
+{"grounding": {"ok": true, "reason": "grounding: итог: да"}, "uid": "8cb3f3cc7b25"}
+{"grounding": {"ok": true, "reason": "grounding: итог: да"}, "uid": "98f5e559f970"}
+{"grounding": {"ok": true, "reason": "grounding: итог: да"}, "uid": "d10280212ff0"}
+{"grounding": {"ok": true, "reason": "grounding: итог: да"}, "uid": "f79a683d6edb"}
+{"grounding": {"ok": true, "reason": "grounding: итог: да"}, "uid": "0a58802e0307"}
+{"grounding": {"ok": true, "reason": "grounding: итог: да"}, "uid": "15238e66e438"}
+{"grounding": {"ok": true, "reason": "grounding: итог: да"}, "uid": "1d8b4e57d400"}
+{"grounding": {"ok": true, "reason": "grounding: итог: да"}, "uid": "79fb7f7f2563"}
+{"grounding": {"ok": false, "reason": "grounding: итог: нет"}, "uid": "8c05b5537e0d"}
+{"grounding": {"ok": true, "reason": "grounding: итог: да"}, "uid": "f919d69a4211"}
+{"grounding": {"ok": true, "reason": "grounding: итог: да  "}, "uid": "ee8956a06f09"}
+{"grounding": {"ok": true, "reason": "grounding: итог: да"}, "uid": "743f27e6bf46"}
+{"grounding": {"ok": false, "reason": "grounding: итог: нет"}, "uid": "2de07948c614"}
+{"grounding": {"ok": false, "reason": "grounding: итог: нет  "}, "uid": "8d82d30e2c8d"}
+{"grounding": {"ok": true, "reason": "grounding: итог: да"}, "uid": "da4fee81763b"}
+{"grounding": {"ok": true, "reason": "grounding: итог: да"}, "uid": "bb4700bf9b88"}
+{"grounding": {"ok": true, "reason": "grounding: итог: да"}, "uid": "d5d87ebd3815"}
+{"grounding": {"ok": true, "reason": "grounding: итог: да"}, "uid": "433256441ea3"}
+{"grounding": {"ok": true, "reason": "grounding: итог: да"}, "uid": "7089214003d5"}
+{"grounding": {"ok": true, "reason": "grounding: итог: да"}, "uid": "528503e2a674"}
+{"grounding": {"ok": false, "reason": "grounding: итог: нет"}, "uid": "0d47873c0c6e"}
+{"grounding": {"ok": true, "reason": "grounding: итог: да"}, "uid": "c6c2d37e5d34"}
+{"grounding": {"ok": true, "reason": "grounding: итог: да"}, "uid": "a5bec97f3185"}
+{"grounding": {"ok": true, "reason": "grounding: итог: да"}, "uid": "4fc0c10782b7"}
+{"grounding": {"ok": true, "reason": "grounding: итог: да"}, "uid": "a13b45818d1e"}
+{"grounding": {"ok": true, "reason": "grounding: итог: да  "}, "uid": "496b242ecbf1"}
+{"grounding": {"ok": true, "reason": "grounding: итог: да"}, "uid": "f7d8a76578da"}
+{"grounding": {"ok": true, "reason": "grounding: итог: да"}, "uid": "3a5baf9346db"}
+{"grounding": {"ok": false, "reason": "grounding: итог: нет  "}, "uid": "e00edc5fbb8f"}
+{"grounding": {"ok": true, "reason": "grounding: итог: да"}, "uid": "e407e1910ae6"}
+{"grounding": {"ok": true, "reason": "grounding: итог: да"}, "uid": "9790ab989f0c"}
+{"grounding": {"ok": true, "reason": "grounding: итог: да"}, "uid": "b60383305596"}
+{"grounding": {"ok": false, "reason": "grounding: итог: нет  "}, "uid": "e71a39e1ec6f"}
+{"grounding": {"ok": true, "reason": "grounding: итог: да  "}, "uid": "ee1fe627fdca"}
+{"grounding": {"ok": true, "reason": "grounding: итог: да"}, "uid": "de784bd40b1d"}
+{"grounding": {"ok": true, "reason": "grounding: итог: да"}, "uid": "5d5912f5b27c"}
+{"grounding": {"ok": true, "reason": "grounding: итог: да"}, "uid": "a70310da1a59"}
+{"grounding": {"ok": true, "reason": "grounding: итог: да"}, "uid": "5d845fc9f42d"}
+{"grounding": {"ok": false, "reason": "grounding: итог: нет"}, "uid": "e9d34e7b7df2"}
+{"grounding": {"ok": false, "reason": "grounding: итог: нет"}, "uid": "9dd1efe4c993"}
+{"grounding": {"ok": true, "reason": "grounding: итог: да"}, "uid": "9119ca938593"}
+{"grounding": {"ok": true, "reason": "grounding: итог: да"}, "uid": "a18703a9213f"}
+{"grounding": {"ok": true, "reason": "grounding: итог: да"}, "uid": "4af5967c4c8d"}
+{"grounding": {"ok": true, "reason": "grounding: итог: да"}, "uid": "cb2f0cee4323"}
+{"grounding": {"ok": true, "reason": "grounding: итог: да  "}, "uid": "dcdfa0237f77"}
+{"grounding": {"ok": true, "reason": "grounding: итог: да"}, "uid": "413461329aa5"}
+{"grounding": {"ok": true, "reason": "grounding: итог: да"}, "uid": "f593127b2e3f"}
+{"grounding": {"ok": true, "reason": "grounding: итог: да"}, "uid": "edf8d1566aa7"}
+{"grounding": {"ok": false, "reason": "grounding: итог: нет"}, "uid": "3ddf1aa385f4"}
+{"grounding": {"ok": true, "reason": "grounding: итог: да"}, "uid": "2d7cac0b8994"}
+{"grounding": {"ok": true, "reason": "grounding: итог: да"}, "uid": "a33a8f5f9820"}
+{"grounding": {"ok": true, "reason": "grounding: итог: да"}, "uid": "816e2094229f"}
+{"grounding": {"ok": true, "reason": "grounding: итог: да"}, "uid": "53bf225a1953"}
+{"grounding": {"ok": true, "reason": "grounding: итог: да"}, "uid": "df2ec69840a4"}
+{"grounding": {"ok": true, "reason": "grounding: итог: да"}, "uid": "4a24f952ecd4"}
+{"grounding": {"ok": true, "reason": "grounding: итог: да"}, "uid": "d6f97164bc04"}
+{"grounding": {"ok": true, "reason": "grounding: итог: да"}, "uid": "0ac66f279e76"}
+{"grounding": {"ok": false, "reason": "grounding: итог: нет"}, "uid": "ee3cac51ecb5"}
+{"grounding": {"ok": false, "reason": "grounding: итог: нет"}, "uid": "5535a4196c3a"}
+{"grounding": {"ok": true, "reason": "grounding: итог: да"}, "uid": "f221efb89347"}
+{"grounding": {"ok": true, "reason": "grounding: итог: да"}, "uid": "d759fd63404e"}
+{"grounding": {"ok": true, "reason": "grounding: итог: да"}, "uid": "51c254c0e694"}
+{"grounding": {"ok": true, "reason": "grounding: итог: да"}, "uid": "b73e078c92e4"}
+{"grounding": {"ok": true, "reason": "grounding: итог: да"}, "uid": "f7e34a790ccc"}
+{"grounding": {"ok": true, "reason": "grounding: итог: да"}, "uid": "76a886377d20"}
+{"grounding": {"ok": true, "reason": "grounding: итог: да"}, "uid": "43690a95ec46"}
+{"grounding": {"ok": false, "reason": "grounding: итог: нет"}, "uid": "771f1ff1cfd0"}
+{"grounding": {"ok": false, "reason": "grounding: итог: нет"}, "uid": "45e99b07a2a7"}
+{"grounding": {"ok": true, "reason": "grounding: итог: да  "}, "uid": "6a649576f347"}
+{"grounding": {"ok": true, "reason": "grounding: итог: да"}, "uid": "c22854fae073"}
+{"grounding": {"ok": false, "reason": "grounding: итог: нет"}, "uid": "8d9057ea6b8c"}
+{"grounding": {"ok": true, "reason": "grounding: итог: да"}, "uid": "4eaf701eb8e9"}
+{"grounding": {"ok": true, "reason": "grounding: итог: да"}, "uid": "26afacf7223f"}
+{"grounding": {"ok": true, "reason": "grounding: итог: да"}, "uid": "2e1bb989ce32"}
+{"grounding": {"ok": true, "reason": "grounding: итог: да  "}, "uid": "fd79bc662883"}
+{"grounding": {"ok": true, "reason": "grounding: итог: да  "}, "uid": "e1f51167af42"}
+{"grounding": {"ok": true, "reason": "grounding: итог: да"}, "uid": "ddf9a86f7d2c"}
+{"grounding": {"ok": true, "reason": "grounding: итог: да"}, "uid": "393d60d91396"}
+{"grounding": {"ok": false, "reason": "grounding: итог: нет"}, "uid": "cbd4a78fe9a3"}
+{"grounding": {"ok": true, "reason": "grounding: итог: да"}, "uid": "5971579bd758"}
+{"grounding": {"ok": true, "reason": "grounding: итог: да"}, "uid": "01fc434d629f"}
+{"grounding": {"ok": true, "reason": "grounding: итог: да"}, "uid": "9faf300dde6d"}
+{"grounding": {"ok": true, "reason": "grounding: итог: да"}, "uid": "c78e5c441eeb"}
+{"grounding": {"ok": false, "reason": "grounding: итог: нет"}, "uid": "e773a19294b5"}
+{"grounding": {"ok": false, "reason": "grounding: итог: нет"}, "uid": "4a899577f6e0"}
+{"grounding": {"ok": true, "reason": "grounding: итог: да"}, "uid": "f335dbd583a7"}
+{"grounding": {"ok": true, "reason": "grounding: итог: да"}, "uid": "cb7e805763c9"}
+{"grounding": {"ok": true, "reason": "grounding: итог: да  "}, "uid": "858f48ccfbef"}
+{"grounding": {"ok": true, "reason": "grounding: итог: да  "}, "uid": "270647f3d42d"}
+{"grounding": {"ok": true, "reason": "grounding: итог: да  "}, "uid": "d7e028077a2d"}
+{"grounding": {"ok": true, "reason": "grounding: итог: да"}, "uid": "06133e0bb113"}
+{"grounding": {"ok": true, "reason": "grounding: итог: да"}, "uid": "783089338b24"}
+{"grounding": {"ok": true, "reason": "grounding: итог: да"}, "uid": "8543edb07538"}
+{"grounding": {"ok": true, "reason": "grounding: итог: да"}, "uid": "c98b1570c065"}
+{"grounding": {"ok": false, "reason": "grounding: итог: нет"}, "uid": "e5d910eff8c2"}
+{"grounding": {"ok": true, "reason": "grounding: итог: да  "}, "uid": "38ef6a34651d"}
+{"grounding": {"ok": true, "reason": "grounding: итог: да"}, "uid": "de43d9ad8441"}
+{"grounding": {"ok": true, "reason": "grounding: итог: да  "}, "uid": "9ae8052f0636"}
+{"grounding": {"ok": true, "reason": "grounding: итог: да"}, "uid": "2bd74be541b5"}
+{"grounding": {"ok": true, "reason": "grounding: итог: да"}, "uid": "a5d907fedeb3"}
+{"grounding": {"ok": true, "reason": "grounding: итог: да"}, "uid": "a7ab7cb40b10"}
+{"grounding": {"ok": true, "reason": "grounding: итог: да"}, "uid": "4bc80f0f6773"}
+{"grounding": {"ok": true, "reason": "grounding: итог: да"}, "uid": "062cde771b27"}
+{"grounding": {"ok": true, "reason": "grounding: итог: да"}, "uid": "783bc1a5f070"}
+{"grounding": {"ok": false, "reason": "grounding: итог: нет"}, "uid": "ff9690b827ad"}
+{"grounding": {"ok": true, "reason": "grounding: итог: да"}, "uid": "73c576010979"}
+{"grounding": {"ok": true, "reason": "grounding: итог: да"}, "uid": "e14eb6919902"}
+{"grounding": {"ok": true, "reason": "grounding: итог: да"}, "uid": "cc7d230a2b8a"}
+{"grounding": {"ok": true, "reason": "grounding: итог: да"}, "uid": "3d367d394882"}
+{"grounding": {"ok": true, "reason": "grounding: итог: да"}, "uid": "47a92407706a"}
+{"grounding": {"ok": true, "reason": "grounding: итог: да"}, "uid": "f68651fc318c"}
+{"grounding": {"ok": true, "reason": "grounding: итог: да"}, "uid": "57059f35cd0b"}
+{"grounding": {"ok": true, "reason": "grounding: итог: да"}, "uid": "896334aa4af5"}
+{"grounding": {"ok": true, "reason": "grounding: итог: да"}, "uid": "4d26e8506335"}
+{"grounding": {"ok": true, "reason": "grounding: итог: да"}, "uid": "9dac69c993c3"}
+{"grounding": {"ok": true, "reason": "grounding: итог: да"}, "uid": "c83d8977d609"}
+{"grounding": {"ok": true, "reason": "grounding: итог: да"}, "uid": "81dbde78f32b"}
+{"grounding": {"ok": true, "reason": "grounding: итог: да"}, "uid": "6981e544502c"}
+{"grounding": {"ok": true, "reason": "grounding: итог: да"}, "uid": "7f9a2445a668"}
+{"grounding": {"ok": true, "reason": "grounding: итог: да"}, "uid": "f3bf2363d98b"}
+{"grounding": {"ok": true, "reason": "grounding: итог: да"}, "uid": "057c23e4ae70"}
+{"grounding": {"ok": true, "reason": "grounding: итог: да"}, "uid": "8eb7f7faedf5"}
+{"grounding": {"ok": true, "reason": "grounding: итог: да"}, "uid": "738a749857d8"}
+{"grounding": {"ok": true, "reason": "grounding: итог: да"}, "uid": "e01a160a9a05"}
+{"grounding": {"ok": true, "reason": "grounding: итог: да"}, "uid": "1cdd8f615494"}
+{"grounding": {"ok": true, "reason": "grounding: итог: да"}, "uid": "dc3b69e1487a"}
+{"grounding": {"ok": true, "reason": "grounding: итог: да"}, "uid": "e00f554cc638"}
+{"grounding": {"ok": true, "reason": "grounding: итог: да"}, "uid": "4875422c76fc"}
+{"grounding": {"ok": true, "reason": "grounding: итог: да"}, "uid": "674efe6ad78e"}
+{"grounding": {"ok": true, "reason": "grounding: итог: да"}, "uid": "e89a9231d906"}
+{"grounding": {"ok": true, "reason": "grounding: итог: да"}, "uid": "723334f86455"}
+{"grounding": {"ok": true, "reason": "grounding: итог: да"}, "uid": "54a01886594c"}
+{"grounding": {"ok": true, "reason": "grounding: итог: да"}, "uid": "74382248392c"}
+{"grounding": {"ok": true, "reason": "grounding: итог: да"}, "uid": "04c02b778739"}
+{"grounding": {"ok": true, "reason": "grounding: итог: да"}, "uid": "e413b6162d09"}
+{"grounding": {"ok": true, "reason": "grounding: итог: да"}, "uid": "7bbc858b2ff3"}
+{"grounding": {"ok": true, "reason": "grounding: итог: да"}, "uid": "bcff5a616a80"}
+{"grounding": {"ok": true, "reason": "grounding: итог: да"}, "uid": "83d807f5b164"}
+{"grounding": {"ok": true, "reason": "grounding: итог: да"}, "uid": "7774e456b9ca"}
+{"grounding": {"ok": true, "reason": "grounding: итог: да  "}, "uid": "6cc502b4c145"}
+{"grounding": {"ok": true, "reason": "grounding: итог: да"}, "uid": "8c72cdc3f525"}
+{"grounding": {"ok": false, "reason": "grounding: итог: нет"}, "uid": "68a700f78939"}
+{"grounding": {"ok": false, "reason": "grounding: итог: нет"}, "uid": "a324db030b41"}
+{"grounding": {"ok": true, "reason": "grounding: итог: да"}, "uid": "adfa9b546922"}
+{"grounding": {"ok": false, "reason": "grounding: итог: нет"}, "uid": "1c89954d47f6"}
+{"grounding": {"ok": true, "reason": "grounding: итог: да"}, "uid": "60898cae068e"}
+{"grounding": {"ok": true, "reason": "grounding: итог: да"}, "uid": "bcbf9684c90a"}
+{"grounding": {"ok": true, "reason": "grounding: итог: да"}, "uid": "e42870a908c6"}
+{"grounding": {"ok": true, "reason": "grounding: итог: да"}, "uid": "0095c423f114"}
+{"grounding": {"ok": true, "reason": "grounding: итог: да"}, "uid": "302cb86792ac"}
+{"grounding": {"ok": false, "reason": "grounding: итог: нет"}, "uid": "78391ab48870"}
+{"grounding": {"ok": true, "reason": "grounding: итог: да"}, "uid": "251ec971a8f4"}
+{"grounding": {"ok": false, "reason": "grounding: итог: нет"}, "uid": "a7f36742d9a1"}
+{"grounding": {"ok": true, "reason": "grounding: итог: да"}, "uid": "6932706c182b"}
+{"grounding": {"ok": true, "reason": "grounding: итог: да"}, "uid": "a7592b027243"}
+{"grounding": {"ok": true, "reason": "grounding: итог: да"}, "uid": "a1862c68c315"}
+{"grounding": {"ok": true, "reason": "grounding: итог: да"}, "uid": "85333867cccb"}
+{"grounding": {"ok": true, "reason": "grounding: итог: да"}, "uid": "c62d41fca4f0"}
+{"grounding": {"ok": true, "reason": "grounding: итог: да"}, "uid": "3319105ca78f"}
+{"grounding": {"ok": true, "reason": "grounding: итог: да"}, "uid": "698f6f5b9002"}
+{"grounding": {"ok": true, "reason": "grounding: итог: да"}, "uid": "39d710b613e1"}
+{"grounding": {"ok": true, "reason": "grounding: итог: да"}, "uid": "c57a06db670b"}
+{"grounding": {"ok": true, "reason": "grounding: итог: да"}, "uid": "fdd290631d2a"}
+{"grounding": {"ok": true, "reason": "grounding: итог: да"}, "uid": "eba332f176d8"}
+{"grounding": {"ok": true, "reason": "grounding: итог: да"}, "uid": "d361bf7e50f4"}
+{"grounding": {"ok": true, "reason": "grounding: итог: да"}, "uid": "140da3686eca"}
+{"grounding": {"ok": true, "reason": "grounding: итог: да"}, "uid": "fa1d8bf8b4a8"}
+{"grounding": {"ok": false, "reason": "grounding: итог: нет  "}, "uid": "e0014c432c10"}
+{"grounding": {"ok": false, "reason": "grounding: итог: нет"}, "uid": "21a8f91cf1fd"}
+{"grounding": {"ok": true, "reason": "grounding: итог: да"}, "uid": "c1a4b3d79ecd"}
+{"grounding": {"ok": false, "reason": "grounding: итог: нет"}, "uid": "aeb8df523e18"}
+{"grounding": {"ok": true, "reason": "grounding: итог: да"}, "uid": "a8216d5d8de6"}
+{"grounding": {"ok": false, "reason": "grounding: итог: нет"}, "uid": "75aafe7a0cce"}
+{"grounding": {"ok": true, "reason": "grounding: итог: да"}, "uid": "62b10b746148"}
+{"grounding": {"ok": true, "reason": "grounding: итог: да"}, "uid": "fb30fcb9acb8"}
+{"grounding": {"ok": true, "reason": "grounding: итог: да"}, "uid": "ecdff5ede22b"}
+{"grounding": {"ok": false, "reason": "grounding: итог: нет"}, "uid": "090a8f8ed6f5"}
+{"grounding": {"ok": true, "reason": "grounding: итог: да"}, "uid": "53177cb53278"}
+{"grounding": {"ok": true, "reason": "grounding: итог: да"}, "uid": "144e95715233"}
+{"grounding": {"ok": true, "reason": "grounding: итог: да"}, "uid": "02dca48ec717"}
+{"grounding": {"ok": true, "reason": "grounding: итог: да"}, "uid": "5056f00c3ba3"}
+{"grounding": {"ok": true, "reason": "grounding: итог: да"}, "uid": "ac90328c3bea"}
+{"grounding": {"ok": true, "reason": "grounding: итог: да"}, "uid": "73d6239d4c84"}
+{"grounding": {"ok": true, "reason": "grounding: итог: да"}, "uid": "37b75afa3f3f"}
+{"grounding": {"ok": true, "reason": "grounding: итог: да"}, "uid": "133a982b8635"}
+{"grounding": {"ok": false, "reason": "grounding: итог: нет"}, "uid": "c51266ba9de1"}
+{"grounding": {"ok": true, "reason": "grounding: итог: да  "}, "uid": "6fe70e84cd88"}
+{"grounding": {"ok": true, "reason": "grounding: итог: да"}, "uid": "4ac2cb14a4f9"}
+{"grounding": {"ok": true, "reason": "grounding: итог: да"}, "uid": "31d4fbd71ff0"}
+{"grounding": {"ok": true, "reason": "grounding: итог: да"}, "uid": "5d14d143bba9"}
+{"grounding": {"ok": true, "reason": "grounding: итог: да  "}, "uid": "3aadd942c8ce"}
+{"grounding": {"ok": true, "reason": "grounding: итог: да"}, "uid": "6a6f422fe588"}
+{"grounding": {"ok": true, "reason": "grounding: итог: да"}, "uid": "5381fd34582e"}
+{"grounding": {"ok": true, "reason": "grounding: итог: да"}, "uid": "384588767d5d"}
+{"grounding": {"ok": true, "reason": "grounding: итог: да"}, "uid": "78986063979b"}
+{"grounding": {"ok": true, "reason": "grounding: итог: да"}, "uid": "09112a1512d6"}
+{"grounding": {"ok": true, "reason": "grounding: итог: да"}, "uid": "c35ffed314f5"}
+{"grounding": {"ok": true, "reason": "grounding: итог: да"}, "uid": "28069761d301"}
+{"grounding": {"ok": true, "reason": "grounding: итог: да"}, "uid": "d5480dedf4dc"}
+{"grounding": {"ok": true, "reason": "grounding: итог: да"}, "uid": "99d0c91bae33"}
+{"grounding": {"ok": true, "reason": "grounding: итог: да"}, "uid": "cf5db8f31b07"}
+{"grounding": {"ok": false, "reason": "grounding: итог: нет"}, "uid": "79b84c29c8f9"}
+{"grounding": {"ok": false, "reason": "grounding: итог: нет"}, "uid": "ced8ecf6d1fb"}
+{"grounding": {"ok": false, "reason": "grounding: итог: нет"}, "uid": "54a04bd52a7a"}
+{"grounding": {"ok": false, "reason": "grounding: итог: нет"}, "uid": "4ce2386c3338"}
+{"grounding": {"ok": true, "reason": "grounding: итог: да"}, "uid": "c92cc00ef105"}
+{"grounding": {"ok": true, "reason": "grounding: итог: да  "}, "uid": "77d091494106"}
+{"grounding": {"ok": false, "reason": "grounding: итог: нет  "}, "uid": "4511951aeaa0"}
+{"grounding": {"ok": true, "reason": "grounding: итог: да"}, "uid": "6b83f79a66b6"}
+{"grounding": {"ok": true, "reason": "grounding: итог: да"}, "uid": "7f26a5f074a9"}
+{"grounding": {"ok": true, "reason": "grounding: итог: да"}, "uid": "a09c5ff08f5b"}
+{"grounding": {"ok": true, "reason": "grounding: итог: да"}, "uid": "5891676012b7"}
+{"grounding": {"ok": true, "reason": "grounding: итог: да"}, "uid": "7c9c181f15b7"}
+{"grounding": {"ok": true, "reason": "grounding: итог: да"}, "uid": "3a1ee7a0e764"}
+{"grounding": {"ok": true, "reason": "grounding: итог: да"}, "uid": "1280649c4c8e"}
+{"grounding": {"ok": true, "reason": "grounding: итог: да"}, "uid": "0dcbca4adcc5"}
+{"grounding": {"ok": true, "reason": "grounding: итог: да  "}, "uid": "7415395b7f74"}
+{"grounding": {"ok": true, "reason": "grounding: итог: да"}, "uid": "f8fc3c0236ff"}
+{"grounding": {"ok": true, "reason": "grounding: итог: да"}, "uid": "eeacac399342"}
+{"grounding": {"ok": false, "reason": "grounding: итог: нет"}, "uid": "caf7da98a3f8"}
+{"grounding": {"ok": true, "reason": "grounding: итог: да"}, "uid": "74fa3c348f22"}
+{"grounding": {"ok": false, "reason": "grounding: итог: нет"}, "uid": "5a0f71fd1b82"}
+{"grounding": {"ok": false, "reason": "grounding: итог: нет"}, "uid": "2686e6a52054"}
+{"grounding": {"ok": true, "reason": "grounding: итог: да"}, "uid": "677366aa0c70"}
+{"grounding": {"ok": true, "reason": "grounding: итог: да"}, "uid": "7a02dfe2d5a2"}
+{"grounding": {"ok": true, "reason": "grounding: итог: да"}, "uid": "4aa89883f736"}
+{"grounding": {"ok": true, "reason": "grounding: итог: да"}, "uid": "770a513d3460"}
+{"grounding": {"ok": true, "reason": "grounding: итог: да"}, "uid": "a3d140fb642d"}
+{"grounding": {"ok": true, "reason": "grounding: итог: да"}, "uid": "0c1e3d419743"}
+{"grounding": {"ok": true, "reason": "grounding: итог: да"}, "uid": "a41f64340d3b"}
+{"grounding": {"ok": true, "reason": "grounding: итог: да"}, "uid": "c77d7c9f2c3f"}
+{"grounding": {"ok": true, "reason": "grounding: итог: да"}, "uid": "20be1b1c9fc0"}
+{"grounding": {"ok": true, "reason": "grounding: итог: да"}, "uid": "22fd88108949"}
+{"grounding": {"ok": true, "reason": "grounding: итог: да"}, "uid": "7db04ab414aa"}
+{"grounding": {"ok": true, "reason": "grounding: итог: да"}, "uid": "06ac7138ab21"}
+{"grounding": {"ok": true, "reason": "grounding: итог: да"}, "uid": "29202eee5a3c"}
+{"grounding": {"ok": true, "reason": "grounding: итог: да"}, "uid": "d99c260dd4ce"}
+{"grounding": {"ok": true, "reason": "grounding: итог: да"}, "uid": "86875c09401e"}
+{"grounding": {"ok": true, "reason": "grounding: итог: да"}, "uid": "743054aebcd7"}
+{"grounding": {"ok": true, "reason": "grounding: итог: да"}, "uid": "c0a4a327328d"}
+{"grounding": {"ok": true, "reason": "grounding: итог: да"}, "uid": "aa931f4a16c9"}
+{"grounding": {"ok": true, "reason": "grounding: итог: да"}, "uid": "00710ed796c6"}
+{"grounding": {"ok": true, "reason": "grounding: итог: да"}, "uid": "236c2269ae9d"}
+{"grounding": {"ok": true, "reason": "grounding: итог: да"}, "uid": "61c80882c431"}
+{"grounding": {"ok": false, "reason": "grounding: итог: нет  "}, "uid": "362c4201ce6d"}
+{"grounding": {"ok": true, "reason": "grounding: итог: да  "}, "uid": "9639afc65deb"}
+{"grounding": {"ok": true, "reason": "grounding: итог: да"}, "uid": "368f4a6c9712"}
+{"grounding": {"ok": false, "reason": "grounding: итог: нет  "}, "uid": "44fda630e266"}
+{"grounding": {"ok": true, "reason": "grounding: итог: да"}, "uid": "4c735f45390c"}
+{"grounding": {"ok": true, "reason": "grounding: итог: да"}, "uid": "906559ccbed8"}
+{"grounding": {"ok": true, "reason": "grounding: итог: да"}, "uid": "40dc568cd2bc"}
+{"grounding": {"ok": true, "reason": "grounding: итог: да"}, "uid": "f1b92f37018d"}
+{"grounding": {"ok": false, "reason": "grounding: итог: нет  "}, "uid": "8d819a423ca2"}
+{"grounding": {"ok": true, "reason": "grounding: итог: да  "}, "uid": "2de552205faa"}
+{"grounding": {"ok": true, "reason": "grounding: итог: да  "}, "uid": "e58026a5c6a9"}
+{"grounding": {"ok": true, "reason": "grounding: итог: да"}, "uid": "056fdf26ef1c"}
+{"grounding": {"ok": false, "reason": "grounding: итог: нет"}, "uid": "8b4c37703f0b"}
+{"grounding": {"ok": true, "reason": "grounding: итог: да"}, "uid": "0f39077e3bf9"}
+{"grounding": {"ok": true, "reason": "grounding: итог: да"}, "uid": "6a2e9ea6bfa1"}
+{"grounding": {"ok": true, "reason": "grounding: итог: да  "}, "uid": "fdabcea47041"}
+{"grounding": {"ok": true, "reason": "grounding: итог: да  "}, "uid": "c39d55f0b1cb"}
+{"grounding": {"ok": true, "reason": "grounding: итог: да  "}, "uid": "75a3ce24606e"}
+{"grounding": {"ok": true, "reason": "grounding: итог: да"}, "uid": "69122b92bbdf"}
+{"grounding": {"ok": true, "reason": "grounding: итог: да"}, "uid": "f74b6a8b8c20"}
+{"grounding": {"ok": true, "reason": "grounding: итог: да"}, "uid": "5781ce99a820"}
+{"grounding": {"ok": true, "reason": "grounding: итог: да"}, "uid": "b50ed03916f4"}
+{"grounding": {"ok": true, "reason": "grounding: итог: да"}, "uid": "f48a8ce13d1c"}
+{"grounding": {"ok": true, "reason": "grounding: итог: да"}, "uid": "f6ada39fd429"}
+{"grounding": {"ok": true, "reason": "grounding: итог: да"}, "uid": "c6ca17cc84da"}
+{"grounding": {"ok": true, "reason": "grounding: итог: да"}, "uid": "d8aa2b06642a"}
+{"grounding": {"ok": true, "reason": "grounding: итог: да"}, "uid": "90e3d5074243"}
+{"grounding": {"ok": true, "reason": "grounding: итог: да"}, "uid": "c8a98b7e1645"}
+{"grounding": {"ok": true, "reason": "grounding: итог: да"}, "uid": "7370b7a469fd"}
+{"grounding": {"ok": true, "reason": "grounding: итог: да"}, "uid": "bc0c27c68d56"}
+{"grounding": {"ok": true, "reason": "grounding: итог: да"}, "uid": "994721a0cb53"}
+{"grounding": {"ok": true, "reason": "grounding: итог: да"}, "uid": "bbd39927e467"}
+{"grounding": {"ok": true, "reason": "grounding: итог: да"}, "uid": "b962ce7ad01f"}
+{"grounding": {"ok": true, "reason": "grounding: итог: да"}, "uid": "e545c09dfeae"}
+{"grounding": {"ok": true, "reason": "grounding: итог: да"}, "uid": "c9530ce0fc79"}
+{"grounding": {"ok": true, "reason": "grounding: итог: да"}, "uid": "1d6b2a41b378"}
+{"grounding": {"ok": true, "reason": "grounding: итог: да"}, "uid": "4c4a48df2389"}
+{"grounding": {"ok": true, "reason": "grounding: итог: да"}, "uid": "16ec1cb57c04"}
+{"grounding": {"ok": true, "reason": "grounding: итог: да  "}, "uid": "65b468ef51ea"}
+{"grounding": {"ok": true, "reason": "grounding: итог: да"}, "uid": "766fb1e4813e"}
+{"grounding": {"ok": true, "reason": "grounding: итог: да"}, "uid": "1c0f3a4cbd53"}
+{"grounding": {"ok": true, "reason": "grounding: итог: да  "}, "uid": "ccd4cf3ae803"}
+{"grounding": {"ok": true, "reason": "grounding: итог: да"}, "uid": "152ae93f146f"}
+{"grounding": {"ok": true, "reason": "grounding: итог: да"}, "uid": "3d9324e68bf8"}
+{"grounding": {"ok": false, "reason": "grounding: итог: нет"}, "uid": "34e58d36ad6b"}
+{"grounding": {"ok": true, "reason": "grounding: итог: да"}, "uid": "28bc6084e2d1"}
+{"grounding": {"ok": true, "reason": "grounding: итог: да"}, "uid": "dacbb987ab12"}
+{"grounding": {"ok": true, "reason": "grounding: итог: да"}, "uid": "bd2a087273d3"}
+{"grounding": {"ok": true, "reason": "grounding: итог: да"}, "uid": "e1fc8da8e2f4"}
+{"grounding": {"ok": true, "reason": "grounding: итог: да"}, "uid": "4b3fdf303344"}
+{"grounding": {"ok": false, "reason": "grounding: итог: нет"}, "uid": "7a82968e2920"}
+{"grounding": {"ok": true, "reason": "grounding: итог: да  "}, "uid": "fb191ed22e6b"}
+{"grounding": {"ok": true, "reason": "grounding: итог: да"}, "uid": "3dc9f6f35fa9"}
+{"grounding": {"ok": true, "reason": "grounding: итог: да"}, "uid": "aa7572c788d4"}
+{"grounding": {"ok": true, "reason": "grounding: итог: да"}, "uid": "ae90ef71ce2a"}
+{"grounding": {"ok": true, "reason": "grounding: итог: да"}, "uid": "cdcddaae56b5"}
+{"grounding": {"ok": true, "reason": "grounding: итог: да  "}, "uid": "3531edb54634"}
+{"grounding": {"ok": true, "reason": "grounding: итог: да"}, "uid": "55eef84fc6af"}
+{"grounding": {"ok": true, "reason": "grounding: итог: да"}, "uid": "76683d3ecc33"}
+{"grounding": {"ok": true, "reason": "grounding: итог: да"}, "uid": "b3a2228b14a3"}
+{"grounding": {"ok": false, "reason": "grounding: итог: нет"}, "uid": "a4240bb7576e"}
+{"grounding": {"ok": true, "reason": "grounding: итог: да  "}, "uid": "6e2ddc1cbdf5"}
+{"grounding": {"ok": true, "reason": "grounding: итог: да  "}, "uid": "63985c357b49"}
+{"grounding": {"ok": false, "reason": "grounding: итог: нет  "}, "uid": "4da4b78b9add"}
+{"grounding": {"ok": false, "reason": "grounding: итог: нет  "}, "uid": "00249e732bea"}
+{"grounding": {"ok": true, "reason": "grounding: итог: да"}, "uid": "a2d97281cb10"}
+{"grounding": {"ok": true, "reason": "grounding: итог: да"}, "uid": "4a167c029bab"}
+{"grounding": {"ok": true, "reason": "grounding: итог: да"}, "uid": "bc4266e1c143"}
+{"grounding": {"ok": true, "reason": "grounding: итог: да"}, "uid": "ef20c55f2cd7"}
+{"grounding": {"ok": true, "reason": "grounding: итог: да"}, "uid": "28691856929a"}
+{"grounding": {"ok": true, "reason": "grounding: итог: да"}, "uid": "cc501e018ff0"}
+{"grounding": {"ok": true, "reason": "grounding: итог: да"}, "uid": "b1bcd875d15d"}
+{"grounding": {"ok": true, "reason": "grounding: итог: да"}, "uid": "08e528f3cb22"}
+{"grounding": {"ok": true, "reason": "grounding: итог: да"}, "uid": "f5e19af6a699"}
+{"grounding": {"ok": true, "reason": "grounding: итог: да"}, "uid": "4ce5720fd265"}
+{"grounding": {"ok": true, "reason": "grounding: итог: да"}, "uid": "d7988603e9f3"}
+{"grounding": {"ok": false, "reason": "grounding: итог: нет  "}, "uid": "af9496a86c69"}
+{"grounding": {"ok": true, "reason": "grounding: итог: да"}, "uid": "961b8538e388"}
+{"grounding": {"ok": true, "reason": "grounding: итог: да"}, "uid": "55e30a33e1c1"}
+{"grounding": {"ok": true, "reason": "grounding: итог: да"}, "uid": "c20d203e9783"}
+{"grounding": {"ok": true, "reason": "grounding: итог: да"}, "uid": "bee4a84cbd3f"}
+{"grounding": {"ok": false, "reason": "grounding: итог: нет"}, "uid": "2f609ca94696"}
+{"grounding": {"ok": true, "reason": "grounding: итог: да"}, "uid": "25830625a1c0"}
+{"grounding": {"ok": true, "reason": "grounding: итог: да"}, "uid": "9edb797bfd5e"}
+{"grounding": {"ok": true, "reason": "grounding: итог: да"}, "uid": "2a6d7e3185cd"}
+{"grounding": {"ok": true, "reason": "grounding: итог: да"}, "uid": "836353669f73"}
+{"grounding": {"ok": true, "reason": "grounding: итог: да"}, "uid": "25bf529fda20"}
+{"grounding": {"ok": true, "reason": "grounding: итог: да"}, "uid": "7e6f2152ffd3"}
+{"grounding": {"ok": true, "reason": "grounding: итог: да"}, "uid": "6fb43b79d0da"}
+{"grounding": {"ok": true, "reason": "grounding: итог: да"}, "uid": "7bc972fc21bf"}
+{"grounding": {"ok": true, "reason": "grounding: итог: да"}, "uid": "d72603751466"}
+{"grounding": {"ok": true, "reason": "grounding: итог: да"}, "uid": "a7c7a51ec5d1"}
+{"grounding": {"ok": true, "reason": "grounding: итог: да"}, "uid": "cb4e972e965d"}
+{"grounding": {"ok": true, "reason": "grounding: итог: да"}, "uid": "19ab9cf11c9b"}
+{"grounding": {"ok": true, "reason": "grounding: итог: да"}, "uid": "a866ac26842d"}
+{"grounding": {"ok": true, "reason": "grounding: итог: да"}, "uid": "623ac2ea10d7"}
+{"grounding": {"ok": false, "reason": "grounding: итог: нет"}, "uid": "cb5a42fb0c28"}
+{"grounding": {"ok": true, "reason": "grounding: итог: да"}, "uid": "3036809e2830"}
+{"grounding": {"ok": false, "reason": "grounding: итог: нет  "}, "uid": "35826852406f"}
+{"grounding": {"ok": false, "reason": "grounding: итог: нет"}, "uid": "330d0ccd400e"}
+{"grounding": {"ok": true, "reason": "grounding: итог: да"}, "uid": "d7049d381ec6"}
+{"grounding": {"ok": true, "reason": "grounding: итог: да"}, "uid": "88e7fac93ddb"}
+{"grounding": {"ok": false, "reason": "grounding: итог: нет"}, "uid": "50773b5cf2f3"}
+{"grounding": {"ok": true, "reason": "grounding: итог: да"}, "uid": "38629e7cf39e"}
+{"grounding": {"ok": true, "reason": "grounding: итог: да"}, "uid": "d89b939ae1b6"}
+{"grounding": {"ok": false, "reason": "grounding: итог: нет  "}, "uid": "3d2a70a08408"}
+{"grounding": {"ok": true, "reason": "grounding: итог: да"}, "uid": "353fab094599"}
+{"grounding": {"ok": true, "reason": "grounding: итог: да  "}, "uid": "d01a8a836dfb"}
+{"grounding": {"ok": true, "reason": "grounding: итог: да"}, "uid": "878380291998"}
+{"grounding": {"ok": false, "reason": "grounding: итог: нет"}, "uid": "4e015e948b80"}
+{"grounding": {"ok": false, "reason": "grounding: итог: нет"}, "uid": "ee9aa173a5b8"}
+{"grounding": {"ok": false, "reason": "grounding: итог: нет"}, "uid": "c829364ff302"}
+{"grounding": {"ok": true, "reason": "grounding: итог: да"}, "uid": "883420a2cae0"}
+{"grounding": {"ok": true, "reason": "grounding: итог: да"}, "uid": "a765d4f81720"}
+{"grounding": {"ok": true, "reason": "grounding: итог: да"}, "uid": "11ea50b3ea11"}
+{"grounding": {"ok": false, "reason": "grounding: итог: нет"}, "uid": "692ca4d9d0bb"}
+{"grounding": {"ok": true, "reason": "grounding: итог: да"}, "uid": "5720829ac1ed"}
+{"grounding": {"ok": true, "reason": "grounding: итог: да"}, "uid": "aa22b4264968"}
+{"grounding": {"ok": true, "reason": "grounding: итог: да"}, "uid": "7738e0eb4f10"}
+{"grounding": {"ok": true, "reason": "grounding: итог: да"}, "uid": "022d226efe0a"}
+{"grounding": {"ok": true, "reason": "grounding: итог: да"}, "uid": "a87f6155986b"}
+{"grounding": {"ok": true, "reason": "grounding: итог: да"}, "uid": "11e66f6b39a4"}
+{"grounding": {"ok": true, "reason": "grounding: итог: да"}, "uid": "5086b841eed2"}
+{"grounding": {"ok": true, "reason": "grounding: итог: да"}, "uid": "935d82dda2a5"}
+{"grounding": {"ok": true, "reason": "grounding: итог: да"}, "uid": "5fe55d5a387b"}
+{"grounding": {"ok": true, "reason": "grounding: итог: да"}, "uid": "d96c730032a8"}
+{"grounding": {"ok": true, "reason": "grounding: итог: да"}, "uid": "50aa7c75394b"}
+{"grounding": {"ok": true, "reason": "grounding: итог: да"}, "uid": "7358c5dd5938"}
+{"grounding": {"ok": true, "reason": "grounding: итог: да"}, "uid": "98444fee8ff3"}
+{"grounding": {"ok": true, "reason": "grounding: итог: да"}, "uid": "f7df7e729c27"}
+{"grounding": {"ok": true, "reason": "grounding: итог: да"}, "uid": "1ebc5f07c5e3"}
+{"grounding": {"ok": true, "reason": "grounding: итог: да"}, "uid": "5860534567ef"}
+{"grounding": {"ok": true, "reason": "grounding: итог: да"}, "uid": "7a47db44927a"}
+{"grounding": {"ok": true, "reason": "grounding: итог: да"}, "uid": "283ffdb4fe86"}
+{"grounding": {"ok": true, "reason": "grounding: итог: да"}, "uid": "a528cc82e53b"}
+{"grounding": {"ok": true, "reason": "grounding: итог: да"}, "uid": "93b7e3318e57"}
+{"grounding": {"ok": true, "reason": "grounding: итог: да"}, "uid": "4b71a316b747"}
+{"grounding": {"ok": true, "reason": "grounding: итог: да  "}, "uid": "4df753d4bc89"}
+{"grounding": {"ok": true, "reason": "grounding: итог: да"}, "uid": "bca4e485bdf9"}
+{"grounding": {"ok": true, "reason": "grounding: итог: да  "}, "uid": "b5984419d800"}
+{"grounding": {"ok": false, "reason": "grounding: итог: нет"}, "uid": "18f68dfe1f03"}
+{"grounding": {"ok": true, "reason": "grounding: итог: да"}, "uid": "64cea28ce412"}
+{"grounding": {"ok": true, "reason": "grounding: итог: да"}, "uid": "796ab572288f"}
+{"grounding": {"ok": true, "reason": "grounding: итог: да"}, "uid": "1074648d304c"}
+{"grounding": {"ok": true, "reason": "grounding: итог: да"}, "uid": "3db82f5a64c1"}
+{"grounding": {"ok": true, "reason": "grounding: итог: да"}, "uid": "663aeede9598"}
+{"grounding": {"ok": true, "reason": "grounding: итог: да"}, "uid": "7f10d6d1b91d"}
+{"grounding": {"ok": true, "reason": "grounding: итог: да"}, "uid": "e52262cba376"}
+{"grounding": {"ok": true, "reason": "grounding: итог: да"}, "uid": "ba894e1c41ba"}
+{"grounding": {"ok": true, "reason": "grounding: итог: да"}, "uid": "7377404709c3"}
+{"grounding": {"ok": true, "reason": "grounding: итог: да"}, "uid": "4d54fc9bdd16"}
+{"grounding": {"ok": true, "reason": "grounding: итог: да"}, "uid": "e3aef4dcf38e"}
+{"grounding": {"ok": true, "reason": "grounding: итог: да"}, "uid": "9e8ad25c9731"}
+{"grounding": {"ok": true, "reason": "grounding: итог: да"}, "uid": "d7a729d8d619"}
+{"grounding": {"ok": true, "reason": "grounding: итог: да"}, "uid": "c50d1cf406af"}
+{"grounding": {"ok": false, "reason": "grounding: итог: нет"}, "uid": "c499184d9e8d"}
+{"grounding": {"ok": true, "reason": "grounding: итог: да"}, "uid": "b867a8d595b7"}
+{"grounding": {"ok": true, "reason": "grounding: итог: да"}, "uid": "d2fdbb1edc70"}
+{"grounding": {"ok": true, "reason": "grounding: итог: да"}, "uid": "6795a1f5260d"}
+{"grounding": {"ok": true, "reason": "grounding: итог: да"}, "uid": "fc994096aa40"}
+{"grounding": {"ok": true, "reason": "grounding: итог: да"}, "uid": "64184b7663d0"}
+{"grounding": {"ok": true, "reason": "grounding: итог: да"}, "uid": "3a25f8d7c77e"}
+{"grounding": {"ok": false, "reason": "grounding: итог: нет"}, "uid": "f98fd5c50c2c"}
+{"grounding": {"ok": false, "reason": "grounding: итог: нет"}, "uid": "384669b8fcbd"}
+{"grounding": {"ok": true, "reason": "grounding: итог: да"}, "uid": "b72c868ca3e0"}
+{"grounding": {"ok": true, "reason": "grounding: итог: да"}, "uid": "250a7bef61c1"}
+{"grounding": {"ok": false, "reason": "grounding: итог: нет  "}, "uid": "a055d2a78c11"}
+{"grounding": {"ok": true, "reason": "grounding: итог: да"}, "uid": "06c4e0c43b77"}
+{"grounding": {"ok": true, "reason": "grounding: итог: да"}, "uid": "1e75c714118f"}
+{"grounding": {"ok": true, "reason": "grounding: итог: да"}, "uid": "d9f02395de4a"}
+{"grounding": {"ok": true, "reason": "grounding: итог: да"}, "uid": "b0999a75fc58"}
+{"grounding": {"ok": true, "reason": "grounding: итог: да"}, "uid": "100d3df4ef01"}
+{"grounding": {"ok": true, "reason": "grounding: итог: да"}, "uid": "9b0ca68b5e12"}
+{"grounding": {"ok": true, "reason": "grounding: итог: да"}, "uid": "9920fea74fd1"}
+{"grounding": {"ok": false, "reason": "grounding: итог: нет"}, "uid": "e8bf86f9212b"}
+{"grounding": {"ok": true, "reason": "grounding: итог: да"}, "uid": "6a9a72b0a376"}
+{"grounding": {"ok": true, "reason": "grounding: итог: да"}, "uid": "923ae6ab2237"}
+{"grounding": {"ok": true, "reason": "grounding: итог: да"}, "uid": "f7fd8d156eae"}
+{"grounding": {"ok": true, "reason": "grounding: итог: да"}, "uid": "9015daf0a15b"}
+{"grounding": {"ok": true, "reason": "grounding: итог: да"}, "uid": "11f5978b8b12"}
+{"grounding": {"ok": true, "reason": "grounding: итог: да"}, "uid": "67b211c7e6bf"}
+{"grounding": {"ok": true, "reason": "grounding: итог: да"}, "uid": "f4bbd3d41b04"}
+{"grounding": {"ok": true, "reason": "grounding: итог: да"}, "uid": "be78f2ebbd37"}
+{"grounding": {"ok": true, "reason": "grounding: итог: да"}, "uid": "f47a14be6076"}
+{"grounding": {"ok": true, "reason": "grounding: итог: да"}, "uid": "07451fb1951f"}
+{"grounding": {"ok": true, "reason": "grounding: итог: да"}, "uid": "3e4660906493"}
+{"grounding": {"ok": true, "reason": "grounding: итог: да"}, "uid": "40b3206bb17b"}
+{"grounding": {"ok": true, "reason": "grounding: итог: да"}, "uid": "1e6c0c0966e1"}
+{"grounding": {"ok": true, "reason": "grounding: итог: да"}, "uid": "d3c9107f99a7"}
+{"grounding": {"ok": true, "reason": "grounding: итог: да"}, "uid": "2692e409b852"}
+{"grounding": {"ok": true, "reason": "grounding: итог: да"}, "uid": "d49a6a5887be"}
+{"grounding": {"ok": true, "reason": "grounding: итог: да"}, "uid": "7b01bed3ee70"}
+{"grounding": {"ok": true, "reason": "grounding: итог: да"}, "uid": "4d51d8b626e4"}
+{"grounding": {"ok": true, "reason": "grounding: итог: да"}, "uid": "fa7bfbc5aec6"}
+{"grounding": {"ok": true, "reason": "grounding: итог: да"}, "uid": "fa340cd704ad"}
+{"grounding": {"ok": true, "reason": "grounding: итог: да"}, "uid": "a91df8334b7f"}
+{"grounding": {"ok": false, "reason": "grounding: итог: нет"}, "uid": "94a87f5a2ef9"}
+{"grounding": {"ok": true, "reason": "grounding: итог: да"}, "uid": "4d5ff9a58574"}
+{"grounding": {"ok": false, "reason": "grounding: итог: нет"}, "uid": "d6be351a2dae"}
+{"grounding": {"ok": false, "reason": "grounding: итог: нет"}, "uid": "475cf67ebdf4"}
+{"grounding": {"ok": true, "reason": "grounding: итог: да"}, "uid": "0b8aabdc9c81"}
+{"grounding": {"ok": true, "reason": "grounding: итог: да"}, "uid": "86ca7af8fce6"}
+{"grounding": {"ok": true, "reason": "grounding: итог: да"}, "uid": "271b002f290c"}
+{"grounding": {"ok": true, "reason": "grounding: итог: да"}, "uid": "2026bbab4b0e"}
+{"grounding": {"ok": false, "reason": "grounding: итог: нет  "}, "uid": "19f8b364e673"}
+{"grounding": {"ok": false, "reason": "grounding: итог: нет"}, "uid": "752a2acd49f7"}
+{"grounding": {"ok": true, "reason": "grounding: итог: да"}, "uid": "9af31ae79912"}
+{"grounding": {"ok": false, "reason": "grounding: итог: нет"}, "uid": "73205cc742a5"}
+{"grounding": {"ok": true, "reason": "grounding: итог: да"}, "uid": "a465b3f28e6b"}
+{"grounding": {"ok": true, "reason": "grounding: итог: да"}, "uid": "d5076adc5019"}
+{"grounding": {"ok": true, "reason": "grounding: итог: да"}, "uid": "01037a383d79"}
+{"grounding": {"ok": true, "reason": "grounding: итог: да"}, "uid": "5e4df2316264"}
+{"grounding": {"ok": true, "reason": "grounding: итог: да"}, "uid": "ffb3d2aac941"}
+{"grounding": {"ok": true, "reason": "grounding: итог: да"}, "uid": "e9eb675e1085"}
+{"grounding": {"ok": true, "reason": "grounding: итог: да"}, "uid": "70bbf5c72279"}
+{"grounding": {"ok": true, "reason": "grounding: итог: да"}, "uid": "35da9fc612f8"}
+{"grounding": {"ok": true, "reason": "grounding: итог: да"}, "uid": "4aa94733d787"}
+{"grounding": {"ok": true, "reason": "grounding: итог: да"}, "uid": "7f07483e8500"}
+{"grounding": {"ok": true, "reason": "grounding: итог: да"}, "uid": "3b093344796d"}
+{"grounding": {"ok": true, "reason": "grounding: итог: да"}, "uid": "2b7b94791183"}
+{"grounding": {"ok": true, "reason": "grounding: итог: да"}, "uid": "6ff0072b0bb8"}
+{"grounding": {"ok": true, "reason": "grounding: итог: да"}, "uid": "af21c1f1b64d"}
+{"grounding": {"ok": true, "reason": "grounding: итог: да"}, "uid": "8cfbf0504c9f"}
+{"grounding": {"ok": false, "reason": "grounding: итог: нет"}, "uid": "281e02cb2333"}
+{"grounding": {"ok": true, "reason": "grounding: итог: да"}, "uid": "2881e6d47106"}
+{"grounding": {"ok": true, "reason": "grounding: итог: да"}, "uid": "f4f5d9115140"}
+{"grounding": {"ok": true, "reason": "grounding: итог: да"}, "uid": "c35b68c27ef0"}
+{"grounding": {"ok": false, "reason": "grounding: итог: нет"}, "uid": "7ad85735d95a"}
+{"grounding": {"ok": true, "reason": "grounding: итог: да"}, "uid": "d75c59b14d51"}
+{"grounding": {"ok": false, "reason": "grounding: итог: нет"}, "uid": "21aee1d9251c"}
+{"grounding": {"ok": true, "reason": "grounding: итог: да"}, "uid": "21594a7d9d76"}
+{"grounding": {"ok": true, "reason": "grounding: итог: да"}, "uid": "4884f6a4f2c1"}
+{"grounding": {"ok": true, "reason": "grounding: итог: да"}, "uid": "b5a3475b5364"}
+{"grounding": {"ok": true, "reason": "grounding: итог: да"}, "uid": "7be2b18c218b"}
+{"grounding": {"ok": true, "reason": "grounding: итог: да"}, "uid": "5bd565a0a67d"}
+{"grounding": {"ok": true, "reason": "grounding: итог: да"}, "uid": "4626d24e9a26"}
+{"grounding": {"ok": false, "reason": "grounding: итог: нет"}, "uid": "f4f00828ecfe"}
+{"grounding": {"ok": true, "reason": "grounding: итог: да"}, "uid": "b2be1b6abb5d"}
+{"grounding": {"ok": true, "reason": "grounding: итог: да"}, "uid": "2f3b45dc1e33"}
+{"grounding": {"ok": true, "reason": "grounding: итог: да"}, "uid": "b01cd8021d31"}
+{"grounding": {"ok": true, "reason": "grounding: итог: да"}, "uid": "2e8945a71e04"}
+{"grounding": {"ok": true, "reason": "grounding: итог: да"}, "uid": "7c1504cc1c11"}
+{"grounding": {"ok": true, "reason": "grounding: итог: да"}, "uid": "c6f7bf32672c"}
+{"grounding": {"ok": false, "reason": "grounding: итог: нет"}, "uid": "b05aaff1afcb"}
+{"grounding": {"ok": false, "reason": "grounding: итог: нет  "}, "uid": "6d5776b5a567"}
+{"grounding": {"ok": true, "reason": "grounding: итог: да"}, "uid": "a9493edf7759"}
+{"grounding": {"ok": true, "reason": "grounding: итог: да"}, "uid": "eeca971c8c79"}
+{"grounding": {"ok": true, "reason": "grounding: итог: да"}, "uid": "e8491daff854"}
+{"grounding": {"ok": false, "reason": "grounding: итог: нет"}, "uid": "6c90c92757ba"}
+{"grounding": {"ok": true, "reason": "grounding: итог: да"}, "uid": "0b736f6536d3"}
+{"grounding": {"ok": true, "reason": "grounding: итог: да  "}, "uid": "76f7ec3b1859"}
+{"grounding": {"ok": true, "reason": "grounding: итог: да  "}, "uid": "0fa85184b01b"}
+{"grounding": {"ok": true, "reason": "grounding: итог: да  "}, "uid": "66e7e3a50259"}
+{"grounding": {"ok": true, "reason": "grounding: итог: да"}, "uid": "f2551ff2615a"}
+{"grounding": {"ok": true, "reason": "grounding: итог: да"}, "uid": "d4b82d8df002"}
+{"grounding": {"ok": true, "reason": "grounding: итог: да"}, "uid": "a8c56340dc75"}
+{"grounding": {"ok": false, "reason": "grounding: итог: нет"}, "uid": "98f8e88d44e6"}
+{"grounding": {"ok": true, "reason": "grounding: итог: да"}, "uid": "8df316fe488b"}
+{"grounding": {"ok": false, "reason": "grounding: итог: нет"}, "uid": "6fcafc728d5d"}
+{"grounding": {"ok": true, "reason": "grounding: итог: да"}, "uid": "b76e3c3e5c8d"}
+{"grounding": {"ok": true, "reason": "grounding: итог: да"}, "uid": "6dc88f03b29f"}
+{"grounding": {"ok": true, "reason": "grounding: итог: да"}, "uid": "4576aae8459a"}
+{"grounding": {"ok": true, "reason": "grounding: итог: да"}, "uid": "8b2c4e6806ea"}
+{"grounding": {"ok": true, "reason": "grounding: итог: да"}, "uid": "afb2a6484dee"}
+{"grounding": {"ok": true, "reason": "grounding: итог: да"}, "uid": "1ea8b898cdf3"}
+{"grounding": {"ok": true, "reason": "grounding: итог: да"}, "uid": "c726c5cb2d50"}
+{"grounding": {"ok": true, "reason": "grounding: итог: да"}, "uid": "b1ec51d8aedf"}
+{"grounding": {"ok": true, "reason": "grounding: итог: да"}, "uid": "c1c0fdcf6741"}
+{"grounding": {"ok": true, "reason": "grounding: итог: да"}, "uid": "b7cf32cd9156"}
+{"grounding": {"ok": true, "reason": "grounding: итог: да"}, "uid": "850919f6d5b3"}
+{"grounding": {"ok": true, "reason": "grounding: итог: да"}, "uid": "6e6735aa5e46"}
+{"grounding": {"ok": true, "reason": "grounding: итог: да"}, "uid": "ef49d0536600"}
+{"grounding": {"ok": true, "reason": "grounding: итог: да"}, "uid": "926199d6ce0d"}
+{"grounding": {"ok": true, "reason": "grounding: итог: да"}, "uid": "c58a790eae53"}
+{"grounding": {"ok": true, "reason": "grounding: итог: да"}, "uid": "d1a399b1f7d9"}
+{"grounding": {"ok": true, "reason": "grounding: итог: да"}, "uid": "d74ddcec78c5"}
+{"grounding": {"ok": true, "reason": "grounding: итог: да"}, "uid": "05151cedba61"}
+{"grounding": {"ok": true, "reason": "grounding: итог: да"}, "uid": "4f3f3cc78fe1"}
+{"grounding": {"ok": true, "reason": "grounding: итог: да"}, "uid": "08578f954866"}
+{"grounding": {"ok": true, "reason": "grounding: итог: да"}, "uid": "12f92a34e6b2"}
+{"grounding": {"ok": true, "reason": "grounding: итог: да"}, "uid": "3e256f1c8795"}
+{"grounding": {"ok": true, "reason": "grounding: итог: да"}, "uid": "303378657987"}
+{"grounding": {"ok": true, "reason": "grounding: итог: да"}, "uid": "6796fa5efd0a"}
+{"grounding": {"ok": true, "reason": "grounding: итог: да"}, "uid": "8563d410cb63"}
+{"grounding": {"ok": true, "reason": "grounding: итог: да"}, "uid": "0d2170d6f6c5"}
+{"grounding": {"ok": true, "reason": "grounding: итог: да"}, "uid": "ffe6312a7d20"}
+{"grounding": {"ok": true, "reason": "grounding: итог: да"}, "uid": "13814c9ff5ac"}
+{"grounding": {"ok": true, "reason": "grounding: итог: да"}, "uid": "fe8d896866de"}
+{"grounding": {"ok": true, "reason": "grounding: итог: да"}, "uid": "dc52d18e0cee"}
+{"grounding": {"ok": true, "reason": "grounding: итог: да"}, "uid": "190c33a3545e"}
+{"grounding": {"ok": true, "reason": "grounding: итог: да"}, "uid": "7833d54faab9"}
+{"grounding": {"ok": true, "reason": "grounding: итог: да"}, "uid": "d4827076b7bd"}
+{"grounding": {"ok": true, "reason": "grounding: итог: да"}, "uid": "dad359b2f7dc"}
+{"grounding": {"ok": true, "reason": "grounding: итог: да"}, "uid": "2a8784c35be5"}
+{"grounding": {"ok": true, "reason": "grounding: итог: да"}, "uid": "347de0e0846f"}
+{"grounding": {"ok": true, "reason": "grounding: итог: да  "}, "uid": "c69ec3592c45"}
+{"grounding": {"ok": true, "reason": "grounding: итог: да"}, "uid": "94728e112b9f"}
+{"grounding": {"ok": true, "reason": "grounding: итог: да"}, "uid": "7ed5ff6e18b5"}
+{"grounding": {"ok": true, "reason": "grounding: итог: да"}, "uid": "bae173635b86"}
+{"grounding": {"ok": true, "reason": "grounding: итог: да"}, "uid": "4a631a6ee141"}
+{"grounding": {"ok": true, "reason": "grounding: итог: да"}, "uid": "47f74c20c3c2"}
+{"grounding": {"ok": false, "reason": "grounding: итог: нет  "}, "uid": "00b8008161ad"}
+{"grounding": {"ok": true, "reason": "grounding: итог: да"}, "uid": "8bf1f3a19304"}
+{"grounding": {"ok": true, "reason": "grounding: итог: да"}, "uid": "e3721deefab2"}
+{"grounding": {"ok": true, "reason": "grounding: итог: да"}, "uid": "c3ac20781664"}
+{"grounding": {"ok": true, "reason": "grounding: итог: да"}, "uid": "c9e1ce2ce7d1"}
+{"grounding": {"ok": false, "reason": "grounding: итог: нет"}, "uid": "8a2e9c767a82"}
+{"grounding": {"ok": true, "reason": "grounding: итог: да"}, "uid": "5c499a20079d"}
+{"grounding": {"ok": true, "reason": "grounding: итог: да"}, "uid": "b230b60e97e6"}
+{"grounding": {"ok": true, "reason": "grounding: итог: да"}, "uid": "dff0a0dddf3f"}
+{"grounding": {"ok": true, "reason": "grounding: итог: да"}, "uid": "76242ca26bb5"}
+{"grounding": {"ok": true, "reason": "grounding: итог: да"}, "uid": "a594775726b4"}
+{"grounding": {"ok": true, "reason": "grounding: итог: да"}, "uid": "602c486eb440"}
+{"grounding": {"ok": false, "reason": "grounding: итог: нет"}, "uid": "ce27a661f509"}
+{"grounding": {"ok": true, "reason": "grounding: итог: да"}, "uid": "a37140f9d548"}
+{"grounding": {"ok": true, "reason": "grounding: итог: да"}, "uid": "55da8d48b8c0"}
+{"grounding": {"ok": true, "reason": "grounding: итог: да"}, "uid": "537bbaefc334"}
+{"grounding": {"ok": true, "reason": "grounding: итог: да"}, "uid": "78ed5f783dd6"}
+{"grounding": {"ok": true, "reason": "grounding: итог: да"}, "uid": "5c22199a74a7"}
+{"grounding": {"ok": true, "reason": "grounding: итог: да"}, "uid": "862edd59e2e2"}
+{"grounding": {"ok": true, "reason": "grounding: итог: да"}, "uid": "1413204debf7"}
+{"grounding": {"ok": true, "reason": "grounding: итог: да"}, "uid": "8df0b54dea20"}
+{"grounding": {"ok": true, "reason": "grounding: итог: да"}, "uid": "86f445160165"}
+{"grounding": {"ok": true, "reason": "grounding: итог: да"}, "uid": "be70eb205bc6"}
+{"grounding": {"ok": true, "reason": "grounding: итог: да"}, "uid": "522e5959747a"}
+{"grounding": {"ok": false, "reason": "grounding: итог: нет"}, "uid": "b4463fbfd378"}
+{"grounding": {"ok": false, "reason": "grounding: итог: нет"}, "uid": "5098bb5cf4f4"}
+{"grounding": {"ok": true, "reason": "grounding: итог: да"}, "uid": "c3bc39d42b85"}
+{"grounding": {"ok": true, "reason": "grounding: итог: да"}, "uid": "b3ddd0414660"}
+{"grounding": {"ok": true, "reason": "grounding: итог: да"}, "uid": "5b7db9bdbc3b"}
+{"grounding": {"ok": true, "reason": "grounding: итог: да"}, "uid": "56b2213f2b0d"}
+{"grounding": {"ok": true, "reason": "grounding: итог: да"}, "uid": "dec20f534340"}
+{"grounding": {"ok": true, "reason": "grounding: итог: да"}, "uid": "49c7a39692b6"}
+{"grounding": {"ok": false, "reason": "grounding: итог: нет"}, "uid": "bb6fb40e5803"}
+{"grounding": {"ok": true, "reason": "grounding: итог: да"}, "uid": "22e6783d8027"}
+{"grounding": {"ok": true, "reason": "grounding: итог: да"}, "uid": "a4bb66e94240"}
+{"grounding": {"ok": true, "reason": "grounding: итог: да"}, "uid": "f40cc14e4a9b"}
+{"grounding": {"ok": true, "reason": "grounding: итог: да  "}, "uid": "e99681d438b1"}
+{"grounding": {"ok": true, "reason": "grounding: итог: да"}, "uid": "a6e3e21be9fc"}
+{"grounding": {"ok": true, "reason": "grounding: итог: да"}, "uid": "e86535bc52a0"}
+{"grounding": {"ok": true, "reason": "grounding: итог: да"}, "uid": "76af40cd2d2e"}
+{"grounding": {"ok": true, "reason": "grounding: итог: да"}, "uid": "97c68f12a6c2"}
+{"grounding": {"ok": true, "reason": "grounding: итог: да"}, "uid": "52b587977752"}
+{"grounding": {"ok": true, "reason": "grounding: итог: да"}, "uid": "42541bc800b6"}
+{"grounding": {"ok": true, "reason": "grounding: итог: да"}, "uid": "59bd34954de3"}
+{"grounding": {"ok": true, "reason": "grounding: итог: да"}, "uid": "cc2f4ccd15e5"}
+{"grounding": {"ok": true, "reason": "grounding: итог: да"}, "uid": "12a0a4857610"}
+{"grounding": {"ok": true, "reason": "grounding: итог: да"}, "uid": "fc06be5f5b34"}
+{"grounding": {"ok": true, "reason": "grounding: итог: да"}, "uid": "9e7905cbba25"}
+{"grounding": {"ok": true, "reason": "grounding: итог: да"}, "uid": "fa6b7fe8edc8"}
+{"grounding": {"ok": true, "reason": "grounding: итог: да"}, "uid": "4b0ac98f464d"}
+{"grounding": {"ok": true, "reason": "grounding: итог: да"}, "uid": "2928dd3dd10e"}
+{"grounding": {"ok": true, "reason": "grounding: итог: да"}, "uid": "e5fce7261477"}
+{"grounding": {"ok": true, "reason": "grounding: итог: да"}, "uid": "1b8bec972f52"}
+{"grounding": {"ok": true, "reason": "grounding: итог: да"}, "uid": "93283beb9ef0"}
+{"grounding": {"ok": true, "reason": "grounding: итог: да"}, "uid": "2e120a9e650b"}
+{"grounding": {"ok": true, "reason": "grounding: итог: да  "}, "uid": "295ff3afd756"}
+{"grounding": {"ok": false, "reason": "grounding: итог: нет"}, "uid": "0f836ca2577c"}
+{"grounding": {"ok": true, "reason": "grounding: итог: да"}, "uid": "30096218ab42"}
+{"grounding": {"ok": false, "reason": "grounding: итог: нет  "}, "uid": "afcb24580c79"}
+{"grounding": {"ok": true, "reason": "grounding: итог: да"}, "uid": "3ff66dcdc574"}
+{"grounding": {"ok": true, "reason": "grounding: итог: да"}, "uid": "4fca6a3b03e9"}
+{"grounding": {"ok": true, "reason": "grounding: итог: да"}, "uid": "fd877379208e"}
+{"grounding": {"ok": true, "reason": "grounding: итог: да"}, "uid": "e317db1ab139"}
+{"grounding": {"ok": true, "reason": "grounding: итог: да"}, "uid": "90298358338c"}
+{"grounding": {"ok": true, "reason": "grounding: итог: да"}, "uid": "e768df845a02"}
+{"grounding": {"ok": true, "reason": "grounding: итог: да"}, "uid": "0c0f34325ff0"}
+{"grounding": {"ok": true, "reason": "grounding: итог: да"}, "uid": "5e85bfde7bd8"}
+{"grounding": {"ok": true, "reason": "grounding: итог: да"}, "uid": "abb61be546ab"}
+{"grounding": {"ok": true, "reason": "grounding: итог: да"}, "uid": "cc6bcf63e5aa"}
+{"grounding": {"ok": true, "reason": "grounding: итог: да"}, "uid": "ce2d3b9e7191"}
+{"grounding": {"ok": true, "reason": "grounding: итог: да"}, "uid": "84eb96a3a33f"}
+{"grounding": {"ok": true, "reason": "grounding: итог: да  "}, "uid": "a8eee701c5bf"}
+{"grounding": {"ok": true, "reason": "grounding: итог: да  "}, "uid": "1c2582667604"}
+{"grounding": {"ok": true, "reason": "grounding: итог: да"}, "uid": "56ce439277a3"}
+{"grounding": {"ok": true, "reason": "grounding: итог: да"}, "uid": "f2e9c9231a24"}
+{"grounding": {"ok": true, "reason": "grounding: итог: да"}, "uid": "893f573b7009"}
+{"grounding": {"ok": true, "reason": "grounding: итог: да"}, "uid": "b2b83e79b134"}
+{"grounding": {"ok": true, "reason": "grounding: итог: да"}, "uid": "fee3da777b09"}
+{"grounding": {"ok": true, "reason": "grounding: итог: да"}, "uid": "62609d3534f9"}
+{"grounding": {"ok": true, "reason": "grounding: итог: да"}, "uid": "efeda2ba86c7"}
+{"grounding": {"ok": true, "reason": "grounding: итог: да"}, "uid": "ccf2fe6f3152"}
+{"grounding": {"ok": true, "reason": "grounding: итог: да"}, "uid": "5d89b7ff9e59"}
+{"grounding": {"ok": true, "reason": "grounding: итог: да"}, "uid": "6749721cc16b"}
+{"grounding": {"ok": true, "reason": "grounding: итог: да"}, "uid": "67dc49d6bde8"}
+{"grounding": {"ok": true, "reason": "grounding: итог: да"}, "uid": "271a6bf27ea0"}
+{"grounding": {"ok": true, "reason": "grounding: итог: да"}, "uid": "abfd42ac3ab3"}
+{"grounding": {"ok": true, "reason": "grounding: итог: да"}, "uid": "5688f1d9d32b"}
+{"grounding": {"ok": true, "reason": "grounding: итог: да"}, "uid": "697bb81e643b"}
+{"grounding": {"ok": true, "reason": "grounding: итог: да"}, "uid": "1cc6e028ef63"}
+{"grounding": {"ok": true, "reason": "grounding: итог: да"}, "uid": "6593d1ce6d88"}
+{"grounding": {"ok": true, "reason": "grounding: итог: да"}, "uid": "87b4a5c44716"}
+{"grounding": {"ok": true, "reason": "grounding: итог: да"}, "uid": "e6ecaf09ce8c"}
+{"grounding": {"ok": true, "reason": "grounding: итог: да"}, "uid": "6b215d3132bc"}
+{"grounding": {"ok": true, "reason": "grounding: итог: да"}, "uid": "d0428a54a32c"}
+{"grounding": {"ok": true, "reason": "grounding: итог: да"}, "uid": "4b04e9dc7cb2"}
+{"grounding": {"ok": true, "reason": "grounding: итог: да"}, "uid": "4c43b0e062dd"}
+{"grounding": {"ok": true, "reason": "grounding: итог: да"}, "uid": "b97c39ff9c96"}
+{"grounding": {"ok": true, "reason": "grounding: итог: да"}, "uid": "d5dc35ac68e3"}
+{"grounding": {"ok": true, "reason": "grounding: итог: да"}, "uid": "0474535fe6d1"}
+{"grounding": {"ok": true, "reason": "grounding: итог: да"}, "uid": "84f91e683024"}
+{"grounding": {"ok": false, "reason": "grounding: итог: нет"}, "uid": "c81d5de41e0f"}
+{"grounding": {"ok": true, "reason": "grounding: итог: да"}, "uid": "f87563b5a1c0"}
+{"grounding": {"ok": true, "reason": "grounding: итог: да"}, "uid": "2de3db46b504"}
+{"grounding": {"ok": true, "reason": "grounding: итог: да"}, "uid": "b41b6e608fb2"}
+{"grounding": {"ok": true, "reason": "grounding: итог: да"}, "uid": "584071875b18"}
+{"grounding": {"ok": true, "reason": "grounding: итог: да"}, "uid": "eaf7007c12a4"}
+{"grounding": {"ok": true, "reason": "grounding: итог: да"}, "uid": "bd1fccf7ee96"}
+{"grounding": {"ok": true, "reason": "grounding: итог: да"}, "uid": "5d2a420adba1"}
+{"grounding": {"ok": true, "reason": "grounding: итог: да"}, "uid": "a49d48c1b383"}
+{"grounding": {"ok": true, "reason": "grounding: итог: да"}, "uid": "f7818a35a332"}
+{"grounding": {"ok": true, "reason": "grounding: итог: да"}, "uid": "7831c34a3402"}
+{"grounding": {"ok": true, "reason": "grounding: итог: да"}, "uid": "6b184e302773"}
+{"grounding": {"ok": true, "reason": "grounding: итог: да"}, "uid": "520e5353e224"}
+{"grounding": {"ok": true, "reason": "grounding: итог: да"}, "uid": "15f9ed063012"}
+{"grounding": {"ok": true, "reason": "grounding: итог: да"}, "uid": "af1d3a622926"}
+{"grounding": {"ok": true, "reason": "grounding: итог: да"}, "uid": "2eaf2aa428db"}
+{"grounding": {"ok": true, "reason": "grounding: итог: да"}, "uid": "85758347f200"}
+{"grounding": {"ok": false, "reason": "grounding: итог: нет"}, "uid": "9d753e240767"}
+{"grounding": {"ok": true, "reason": "grounding: итог: да"}, "uid": "423b3f624e7f"}
+{"grounding": {"ok": false, "reason": "grounding: итог: нет"}, "uid": "763ed9629f93"}
+{"grounding": {"ok": false, "reason": "grounding: итог: нет"}, "uid": "316ed959d9ee"}
+{"grounding": {"ok": true, "reason": "grounding: итог: да"}, "uid": "a0078bb8f17d"}
+{"grounding": {"ok": true, "reason": "grounding: итог: да"}, "uid": "60fe73b3c834"}
+{"grounding": {"ok": true, "reason": "grounding: итог: да  "}, "uid": "46fde307cd38"}
+{"grounding": {"ok": true, "reason": "grounding: итог: да"}, "uid": "b8b6ac8dba91"}
+{"grounding": {"ok": true, "reason": "grounding: итог: да"}, "uid": "32a71cb9ae46"}
+{"grounding": {"ok": true, "reason": "grounding: итог: да"}, "uid": "95ce016950cd"}
+{"grounding": {"ok": true, "reason": "grounding: итог: да"}, "uid": "9fd0728f2ce1"}
+{"grounding": {"ok": true, "reason": "grounding: итог: да"}, "uid": "03d1d25866c5"}
+{"grounding": {"ok": true, "reason": "grounding: итог: да"}, "uid": "8be686095929"}
+{"grounding": {"ok": true, "reason": "grounding: итог: да"}, "uid": "157689740fd4"}
+{"grounding": {"ok": true, "reason": "grounding: итог: да"}, "uid": "31f4b2e230cf"}
+{"grounding": {"ok": true, "reason": "grounding: итог: да"}, "uid": "27771ae47957"}
+{"grounding": {"ok": false, "reason": "grounding: итог: нет  "}, "uid": "b906d610fc33"}
+{"grounding": {"ok": true, "reason": "grounding: итог: да"}, "uid": "aae2c94ed469"}
+{"grounding": {"ok": false, "reason": "grounding: итог: нет  "}, "uid": "468398048cb6"}
+{"grounding": {"ok": true, "reason": "grounding: итог: да"}, "uid": "3196b7de05e3"}
+{"grounding": {"ok": false, "reason": "grounding: итог: нет"}, "uid": "a1c056ab4998"}
+{"grounding": {"ok": true, "reason": "grounding: итог: да"}, "uid": "47aa7f274eeb"}
+{"grounding": {"ok": true, "reason": "grounding: итог: да"}, "uid": "d3c8c6dbf644"}
+{"grounding": {"ok": true, "reason": "grounding: итог: да"}, "uid": "87c281470aed"}
+{"grounding": {"ok": true, "reason": "grounding: итог: да"}, "uid": "736f2a92b814"}
+{"grounding": {"ok": true, "reason": "grounding: итог: да"}, "uid": "eac690c310b1"}
+{"grounding": {"ok": true, "reason": "grounding: итог: да"}, "uid": "f6d782dd80a4"}
+{"grounding": {"ok": true, "reason": "grounding: итог: да"}, "uid": "7ed7c1c7ce00"}
+{"grounding": {"ok": true, "reason": "grounding: итог: да"}, "uid": "c075496b7b0a"}
+{"grounding": {"ok": true, "reason": "grounding: итог: да"}, "uid": "98d6b3383a9b"}
+{"grounding": {"ok": true, "reason": "grounding: итог: да"}, "uid": "c04868d4f1bd"}
+{"grounding": {"ok": true, "reason": "grounding: итог: да"}, "uid": "26f0d6ae9d96"}
+{"grounding": {"ok": true, "reason": "grounding: итог: да"}, "uid": "c0bcf0d840c9"}
+{"grounding": {"ok": true, "reason": "grounding: итог: да"}, "uid": "8c4801024dd4"}
+{"grounding": {"ok": true, "reason": "grounding: итог: да"}, "uid": "e51ee0e468cd"}
+{"grounding": {"ok": true, "reason": "grounding: итог: да"}, "uid": "07dc636bbd48"}
+{"grounding": {"ok": true, "reason": "grounding: итог: да"}, "uid": "d3fa151eb19f"}
+{"grounding": {"ok": true, "reason": "grounding: итог: да"}, "uid": "09924072eb81"}
+{"grounding": {"ok": false, "reason": "grounding: итог: нет"}, "uid": "4c6acec750da"}
+{"grounding": {"ok": true, "reason": "grounding: итог: да"}, "uid": "b9581abc0ce7"}
+{"grounding": {"ok": true, "reason": "grounding: итог: да"}, "uid": "3840543eff23"}
+{"grounding": {"ok": false, "reason": "grounding: итог: нет"}, "uid": "9442e66a256c"}
+{"grounding": {"ok": true, "reason": "grounding: итог: да"}, "uid": "919eada24650"}
+{"grounding": {"ok": false, "reason": "grounding: итог: нет  "}, "uid": "1ffd64d23b6e"}
+{"grounding": {"ok": true, "reason": "grounding: итог: да"}, "uid": "d29cd45f71b7"}
+{"grounding": {"ok": false, "reason": "grounding: итог: нет"}, "uid": "ce4e1952a221"}
+{"grounding": {"ok": true, "reason": "grounding: итог: да"}, "uid": "2d4cd67b5a4c"}
+{"grounding": {"ok": true, "reason": "grounding: итог: да"}, "uid": "ab3e3d868d84"}
+{"grounding": {"ok": true, "reason": "grounding: итог: да"}, "uid": "8ba42026708f"}
+{"grounding": {"ok": true, "reason": "grounding: итог: да"}, "uid": "06978d428d32"}
+{"grounding": {"ok": true, "reason": "grounding: итог: да"}, "uid": "7a088f958736"}
+{"grounding": {"ok": true, "reason": "grounding: итог: да"}, "uid": "ef3886b12c57"}
+{"grounding": {"ok": true, "reason": "grounding: итог: да"}, "uid": "ffada3b00a66"}
+{"grounding": {"ok": true, "reason": "grounding: итог: да"}, "uid": "e455ef1dec0c"}
+{"grounding": {"ok": false, "reason": "grounding: итог: нет"}, "uid": "c8369b185a8e"}
+{"grounding": {"ok": true, "reason": "grounding: итог: да"}, "uid": "21015710a6b3"}
+{"grounding": {"ok": true, "reason": "grounding: итог: да"}, "uid": "b404fe7f1166"}
+{"grounding": {"ok": true, "reason": "grounding: итог: да"}, "uid": "5ff957e044ad"}
+{"grounding": {"ok": true, "reason": "grounding: итог: да"}, "uid": "1c8bc93f68eb"}
+{"grounding": {"ok": true, "reason": "grounding: итог: да"}, "uid": "25bcc8034bd1"}
+{"grounding": {"ok": true, "reason": "grounding: итог: да"}, "uid": "b659b0efa37c"}
+{"grounding": {"ok": true, "reason": "grounding: итог: да"}, "uid": "e6d8466fcedf"}
+{"grounding": {"ok": true, "reason": "grounding: итог: да"}, "uid": "3e111a16d5db"}
+{"grounding": {"ok": true, "reason": "grounding: итог: да"}, "uid": "05a3edbb6c16"}
+{"grounding": {"ok": true, "reason": "grounding: итог: да"}, "uid": "db72e1521ccf"}
+{"grounding": {"ok": true, "reason": "grounding: итог: да"}, "uid": "54aafc496c31"}
+{"grounding": {"ok": true, "reason": "grounding: итог: да"}, "uid": "b15eeb613719"}
+{"grounding": {"ok": true, "reason": "grounding: итог: да"}, "uid": "5b4c0bf83470"}
+{"grounding": {"ok": true, "reason": "grounding: итог: да"}, "uid": "40160496d6e5"}
+{"grounding": {"ok": false, "reason": "grounding: итог: нет  "}, "uid": "e6bd4dae5e56"}
+{"grounding": {"ok": true, "reason": "grounding: итог: да  "}, "uid": "b961066a2e8a"}
+{"grounding": {"ok": true, "reason": "grounding: итог: да"}, "uid": "98ee9cd6501d"}
+{"grounding": {"ok": true, "reason": "grounding: итог: да"}, "uid": "a3c228fce61c"}
+{"grounding": {"ok": true, "reason": "grounding: итог: да"}, "uid": "857e471c18e4"}
+{"grounding": {"ok": false, "reason": "grounding: итог: нет"}, "uid": "58278d524bfc"}
+{"grounding": {"ok": true, "reason": "grounding: итог: да"}, "uid": "bac69acf1f48"}
+{"grounding": {"ok": true, "reason": "grounding: итог: да"}, "uid": "8a980d53a16c"}
+{"grounding": {"ok": true, "reason": "grounding: итог: да"}, "uid": "aa4e977ade24"}
+{"grounding": {"ok": false, "reason": "grounding: итог: нет"}, "uid": "adc45ca6b646"}
+{"grounding": {"ok": true, "reason": "grounding: итог: да"}, "uid": "a06a79be92b4"}
+{"grounding": {"ok": true, "reason": "grounding: итог: да"}, "uid": "371d1d52c3dd"}
+{"grounding": {"ok": true, "reason": "grounding: итог: да"}, "uid": "7028ea0a73cb"}
+{"grounding": {"ok": true, "reason": "grounding: итог: да"}, "uid": "38aaf8b758b1"}
+{"grounding": {"ok": true, "reason": "grounding: итог: да"}, "uid": "aa8d1b53bb31"}
+{"grounding": {"ok": true, "reason": "grounding: итог: да"}, "uid": "d3fd58f3b5ec"}
+{"grounding": {"ok": true, "reason": "grounding: итог: да"}, "uid": "c15afa3ab184"}
+{"grounding": {"ok": true, "reason": "grounding: итог: да"}, "uid": "0ce86e12ad0f"}
+{"grounding": {"ok": false, "reason": "grounding: итог: нет"}, "uid": "9e8aa46dea9b"}
+{"grounding": {"ok": false, "reason": "grounding: итог: нет"}, "uid": "a792bf76e720"}
+{"grounding": {"ok": false, "reason": "grounding: итог: нет"}, "uid": "7d73d043285b"}
+{"grounding": {"ok": false, "reason": "grounding: итог: нет  "}, "uid": "ef8bfe85d7ff"}
+{"grounding": {"ok": true, "reason": "grounding: итог: да"}, "uid": "a50ee48e0a42"}
+{"grounding": {"ok": true, "reason": "grounding: итог: да"}, "uid": "a96c29a29cd2"}
+{"grounding": {"ok": true, "reason": "grounding: итог: да"}, "uid": "847531ae3248"}
+{"grounding": {"ok": true, "reason": "grounding: итог: да"}, "uid": "37c832d58ef6"}
+{"grounding": {"ok": true, "reason": "grounding: итог: да"}, "uid": "712ab1c89ebf"}
+{"grounding": {"ok": true, "reason": "grounding: итог: да"}, "uid": "09b1f175a201"}
+{"grounding": {"ok": true, "reason": "grounding: итог: да"}, "uid": "dfd127f87bd2"}
+{"grounding": {"ok": true, "reason": "grounding: итог: да"}, "uid": "b13030f7db3a"}
+{"grounding": {"ok": true, "reason": "grounding: итог: да"}, "uid": "a9b714d48ed6"}
+{"grounding": {"ok": true, "reason": "grounding: итог: да"}, "uid": "e635ef50f773"}
+{"grounding": {"ok": false, "reason": "grounding: итог: нет"}, "uid": "a36beea17325"}
+{"grounding": {"ok": true, "reason": "grounding: итог: да"}, "uid": "4990eff47f54"}
+{"grounding": {"ok": true, "reason": "grounding: итог: да"}, "uid": "aa3925c70639"}
+{"grounding": {"ok": true, "reason": "grounding: итог: да"}, "uid": "49b94e3dfc92"}
+{"grounding": {"ok": true, "reason": "grounding: итог: да"}, "uid": "3d91d2fb0137"}
+{"grounding": {"ok": true, "reason": "grounding: итог: да  "}, "uid": "49c5693bd987"}
+{"grounding": {"ok": true, "reason": "grounding: итог: да"}, "uid": "2a452dc6a93e"}
+{"grounding": {"ok": true, "reason": "grounding: итог: да  "}, "uid": "ffabd0a773fc"}
+{"grounding": {"ok": true, "reason": "grounding: итог: да"}, "uid": "5514441e23de"}
+{"grounding": {"ok": true, "reason": "grounding: итог: да  "}, "uid": "fbdb8c29d0fe"}
+{"grounding": {"ok": true, "reason": "grounding: итог: да"}, "uid": "623e635cb235"}
+{"grounding": {"ok": true, "reason": "grounding: итог: да"}, "uid": "85cb93475a3c"}
+{"grounding": {"ok": true, "reason": "grounding: итог: да"}, "uid": "83644305fa6f"}
+{"grounding": {"ok": true, "reason": "grounding: итог: да"}, "uid": "100bc16b7201"}
+{"grounding": {"ok": true, "reason": "grounding: итог: да"}, "uid": "f3650c239051"}
+{"grounding": {"ok": true, "reason": "grounding: итог: да"}, "uid": "5e89f473fb7a"}
+{"grounding": {"ok": true, "reason": "grounding: итог: да"}, "uid": "77e1707dbd14"}
+{"grounding": {"ok": true, "reason": "grounding: итог: да"}, "uid": "026659cb957a"}
+{"grounding": {"ok": true, "reason": "grounding: итог: да"}, "uid": "0026ef3d4658"}
+{"grounding": {"ok": true, "reason": "grounding: итог: да"}, "uid": "53f9b9efd7c9"}
+{"grounding": {"ok": true, "reason": "grounding: итог: да"}, "uid": "8997109e0db2"}
+{"grounding": {"ok": true, "reason": "grounding: итог: да"}, "uid": "07552941d2fc"}
+{"grounding": {"ok": true, "reason": "grounding: итог: да"}, "uid": "e53709bf589e"}
+{"grounding": {"ok": true, "reason": "grounding: итог: да"}, "uid": "b3a7a40c89e8"}
+{"grounding": {"ok": true, "reason": "grounding: итог: да"}, "uid": "3b9d478643e9"}
+{"grounding": {"ok": false, "reason": "grounding: итог: нет  "}, "uid": "9962d55e8427"}
+{"grounding": {"ok": false, "reason": "grounding: итог: нет"}, "uid": "0c5c78e32333"}
+{"grounding": {"ok": false, "reason": "grounding: итог: нет"}, "uid": "94f2ef9ddc03"}
+{"grounding": {"ok": false, "reason": "grounding: итог: нет"}, "uid": "680632c53e3e"}
+{"grounding": {"ok": true, "reason": "grounding: итог: да"}, "uid": "42a1719e099b"}
+{"grounding": {"ok": true, "reason": "grounding: итог: да"}, "uid": "58922351f7b0"}
+{"grounding": {"ok": true, "reason": "grounding: итог: да"}, "uid": "f008983601d0"}
+{"grounding": {"ok": false, "reason": "grounding: итог: нет  "}, "uid": "7ba4311179d4"}
+{"grounding": {"ok": true, "reason": "grounding: итог: да  "}, "uid": "8eedda2081f1"}
+{"grounding": {"ok": true, "reason": "grounding: итог: да  "}, "uid": "8890fb49a26e"}
+{"grounding": {"ok": true, "reason": "grounding: итог: да"}, "uid": "3c19fe368690"}
+{"grounding": {"ok": true, "reason": "grounding: итог: да"}, "uid": "52acc29b1079"}
+{"grounding": {"ok": true, "reason": "grounding: итог: да"}, "uid": "a13616db0e69"}
+{"grounding": {"ok": true, "reason": "grounding: итог: да"}, "uid": "0c6213fbe6b0"}
+{"grounding": {"ok": true, "reason": "grounding: итог: да"}, "uid": "c49ddbaab299"}
+{"grounding": {"ok": true, "reason": "grounding: итог: да"}, "uid": "195dbc8c243a"}
+{"grounding": {"ok": true, "reason": "grounding: итог: да"}, "uid": "e612f0fa9468"}
+{"grounding": {"ok": true, "reason": "grounding: итог: да"}, "uid": "2c7291fb2dd8"}
+{"grounding": {"ok": true, "reason": "grounding: итог: да"}, "uid": "9fc00fe02cf3"}
+{"grounding": {"ok": true, "reason": "grounding: итог: да"}, "uid": "b9892d6b2f7e"}
+{"grounding": {"ok": true, "reason": "grounding: итог: да"}, "uid": "9212e26bba04"}
+{"grounding": {"ok": true, "reason": "grounding: итог: да"}, "uid": "abbf64e40c28"}
+{"grounding": {"ok": true, "reason": "grounding: итог: да"}, "uid": "ddce8aac9030"}
+{"grounding": {"ok": true, "reason": "grounding: итог: да"}, "uid": "b83f9e3d03cd"}
+{"grounding": {"ok": true, "reason": "grounding: итог: да"}, "uid": "fba5bc65ce64"}
+{"grounding": {"ok": true, "reason": "grounding: итог: да"}, "uid": "39270ffdf6b7"}
+{"grounding": {"ok": true, "reason": "grounding: итог: да"}, "uid": "53b99300dc57"}
+{"grounding": {"ok": true, "reason": "grounding: итог: да"}, "uid": "9706f66c3811"}
+{"grounding": {"ok": false, "reason": "grounding: итог: нет"}, "uid": "effdc0867c46"}
+{"grounding": {"ok": true, "reason": "grounding: итог: да"}, "uid": "2f76a56ac3d7"}
+{"grounding": {"ok": true, "reason": "grounding: итог: да"}, "uid": "5d88707a6ff2"}
+{"grounding": {"ok": true, "reason": "grounding: итог: да"}, "uid": "8e533d895122"}
+{"grounding": {"ok": true, "reason": "grounding: итог: да"}, "uid": "424c51b4f589"}
+{"grounding": {"ok": true, "reason": "grounding: итог: да"}, "uid": "9ee4929ab5d2"}
+{"grounding": {"ok": false, "reason": "grounding: итог: нет"}, "uid": "f220876d6b87"}
+{"grounding": {"ok": true, "reason": "grounding: итог: да"}, "uid": "c38b976ad885"}
+{"grounding": {"ok": true, "reason": "grounding: итог: да"}, "uid": "d4b92cb3900f"}
+{"grounding": {"ok": true, "reason": "grounding: итог: да"}, "uid": "53c932f243e5"}
+{"grounding": {"ok": true, "reason": "grounding: итог: да"}, "uid": "57736ebca40e"}
+{"grounding": {"ok": true, "reason": "grounding: итог: да"}, "uid": "d0c7ea452ba9"}
+{"grounding": {"ok": true, "reason": "grounding: итог: да"}, "uid": "cb917901ff2b"}
+{"grounding": {"ok": true, "reason": "grounding: итог: да"}, "uid": "39287d6cffd9"}
+{"grounding": {"ok": true, "reason": "grounding: итог: да"}, "uid": "34d3a3ce3433"}
+{"grounding": {"ok": true, "reason": "grounding: итог: да"}, "uid": "36d70e32e809"}
+{"grounding": {"ok": true, "reason": "grounding: итог: да"}, "uid": "8dd9eed2ad83"}
+{"grounding": {"ok": true, "reason": "grounding: итог: да"}, "uid": "e7b8cefa13d3"}
+{"grounding": {"ok": false, "reason": "grounding: итог: нет  "}, "uid": "d56060ef9906"}
+{"grounding": {"ok": false, "reason": "grounding: итог: нет"}, "uid": "f79178116d7a"}
+{"grounding": {"ok": true, "reason": "grounding: итог: да"}, "uid": "397c0bc88465"}
+{"grounding": {"ok": true, "reason": "grounding: итог: да"}, "uid": "c1dfd1a3b82f"}
+{"grounding": {"ok": true, "reason": "grounding: итог: да"}, "uid": "24e5d5650947"}
+{"grounding": {"ok": false, "reason": "grounding: итог: нет"}, "uid": "dfa5ea8700f6"}
+{"grounding": {"ok": true, "reason": "grounding: итог: да"}, "uid": "650c9e9f3822"}
+{"grounding": {"ok": true, "reason": "grounding: итог: да  "}, "uid": "4336145f73a8"}
+{"grounding": {"ok": true, "reason": "grounding: итог: да"}, "uid": "01e1477f3563"}
+{"grounding": {"ok": true, "reason": "grounding: итог: да"}, "uid": "289ee53c1259"}
+{"grounding": {"ok": true, "reason": "grounding: итог: да"}, "uid": "5ed2721f0619"}
+{"grounding": {"ok": true, "reason": "grounding: итог: да"}, "uid": "3fd312c602d2"}
+{"grounding": {"ok": true, "reason": "grounding: итог: да"}, "uid": "3b536abb6dc3"}
+{"grounding": {"ok": false, "reason": "grounding: итог: нет"}, "uid": "5f1ebf6cc846"}
+{"grounding": {"ok": true, "reason": "grounding: итог: да"}, "uid": "3f2302b0fc8e"}
+{"grounding": {"ok": true, "reason": "grounding: итог: да"}, "uid": "4ed1d59da216"}
+{"grounding": {"ok": true, "reason": "grounding: итог: да"}, "uid": "23bd34284b98"}
+{"grounding": {"ok": true, "reason": "grounding: итог: да"}, "uid": "df2b724eaddf"}
+{"grounding": {"ok": true, "reason": "grounding: итог: да"}, "uid": "b1a0a86bc4a6"}
+{"grounding": {"ok": false, "reason": "grounding: итог: нет"}, "uid": "86115212151e"}
+{"grounding": {"ok": true, "reason": "grounding: итог: да"}, "uid": "e2793da14e57"}
+{"grounding": {"ok": false, "reason": "grounding: итог: нет"}, "uid": "84e9550163a9"}
+{"grounding": {"ok": true, "reason": "grounding: итог: да"}, "uid": "32bcf1eba799"}
+{"grounding": {"ok": false, "reason": "grounding: итог: нет"}, "uid": "496901856133"}
+{"grounding": {"ok": true, "reason": "grounding: итог: да"}, "uid": "c0cabaabdf73"}
+{"grounding": {"ok": false, "reason": "grounding: итог: нет"}, "uid": "916348386614"}
+{"grounding": {"ok": true, "reason": "grounding: итог: да"}, "uid": "e219c808af08"}
+{"grounding": {"ok": true, "reason": "grounding: итог: да"}, "uid": "9bb2bffccf1a"}
+{"grounding": {"ok": true, "reason": "grounding: итог: да  "}, "uid": "1777269169fd"}
+{"grounding": {"ok": true, "reason": "grounding: итог: да"}, "uid": "02cb45165792"}
+{"grounding": {"ok": true, "reason": "grounding: итог: да"}, "uid": "c5344035b700"}
+{"grounding": {"ok": false, "reason": "grounding: итог: нет"}, "uid": "fd6b3ffd339f"}
+{"grounding": {"ok": true, "reason": "grounding: итог: да"}, "uid": "4a62e0d12c64"}
+{"grounding": {"ok": true, "reason": "grounding: итог: да"}, "uid": "2b503b2a982a"}
+{"grounding": {"ok": true, "reason": "grounding: итог: да"}, "uid": "dfd8feb91586"}
+{"grounding": {"ok": true, "reason": "grounding: итог: да"}, "uid": "fadb0a83b6c2"}
+{"grounding": {"ok": true, "reason": "grounding: итог: да"}, "uid": "6038c8d463c9"}
+{"grounding": {"ok": true, "reason": "grounding: итог: да"}, "uid": "a8d8dc190666"}
+{"grounding": {"ok": true, "reason": "grounding: итог: да"}, "uid": "a754034b33b7"}
+{"grounding": {"ok": true, "reason": "grounding: итог: да"}, "uid": "bcc5bbce4b3c"}
+{"grounding": {"ok": true, "reason": "grounding: итог: да"}, "uid": "9c17f3cf7113"}
+{"grounding": {"ok": true, "reason": "grounding: итог: да"}, "uid": "231aebffbb68"}
+{"grounding": {"ok": true, "reason": "grounding: итог: да"}, "uid": "e6e710184596"}
+{"grounding": {"ok": true, "reason": "grounding: итог: да"}, "uid": "75a8b3100efd"}
+{"grounding": {"ok": true, "reason": "grounding: итог: да"}, "uid": "5012c9eba1ae"}
+{"grounding": {"ok": true, "reason": "grounding: итог: да"}, "uid": "9a0ad027b02b"}
+{"grounding": {"ok": true, "reason": "grounding: итог: да"}, "uid": "4b4df1ab06a6"}
+{"grounding": {"ok": true, "reason": "grounding: итог: да"}, "uid": "639311010aae"}
+{"grounding": {"ok": true, "reason": "grounding: итог: да"}, "uid": "2fce5bb0dd24"}
+{"grounding": {"ok": true, "reason": "grounding: итог: да"}, "uid": "a13dfaea7e5d"}
+{"grounding": {"ok": true, "reason": "grounding: итог: да"}, "uid": "5c0edc60413b"}
+{"grounding": {"ok": true, "reason": "grounding: итог: да"}, "uid": "85c7ae85990f"}
+{"grounding": {"ok": false, "reason": "grounding: итог: нет"}, "uid": "2ff3d7deb85e"}
+{"grounding": {"ok": true, "reason": "grounding: итог: да"}, "uid": "9fab48a00378"}
+{"grounding": {"ok": true, "reason": "grounding: итог: да"}, "uid": "eece6ffabf0a"}
+{"grounding": {"ok": true, "reason": "grounding: итог: да"}, "uid": "b54dffa1d9b0"}
+{"grounding": {"ok": true, "reason": "grounding: итог: да"}, "uid": "ed4efa7389a3"}
+{"grounding": {"ok": true, "reason": "grounding: итог: да"}, "uid": "808690f1f466"}
+{"grounding": {"ok": true, "reason": "grounding: итог: да"}, "uid": "12213bb5d83b"}
+{"grounding": {"ok": true, "reason": "grounding: итог: да"}, "uid": "0653c09e5867"}
+{"grounding": {"ok": true, "reason": "grounding: итог: да"}, "uid": "cd9cec57ce08"}
+{"grounding": {"ok": true, "reason": "grounding: итог: да"}, "uid": "b8aa794261ad"}
+{"grounding": {"ok": true, "reason": "grounding: итог: да"}, "uid": "e822e23406c7"}
+{"grounding": {"ok": true, "reason": "grounding: итог: да"}, "uid": "33ef8340b047"}
+{"grounding": {"ok": true, "reason": "grounding: итог: да"}, "uid": "491ac6c74185"}
+{"grounding": {"ok": true, "reason": "grounding: итог: да"}, "uid": "e589edc7924a"}
+{"grounding": {"ok": true, "reason": "grounding: итог: да"}, "uid": "d30d718b062d"}
+{"grounding": {"ok": true, "reason": "grounding: итог: да"}, "uid": "ad39d7172e4e"}
+{"grounding": {"ok": true, "reason": "grounding: итог: да"}, "uid": "3ec1b904f631"}
+{"grounding": {"ok": true, "reason": "grounding: итог: да"}, "uid": "a2fc3c515c56"}
+{"grounding": {"ok": false, "reason": "grounding: итог: нет"}, "uid": "8599ae71fac5"}
+{"grounding": {"ok": true, "reason": "grounding: итог: да"}, "uid": "8b4bacf7e18a"}
+{"grounding": {"ok": false, "reason": "grounding: итог: нет"}, "uid": "da4a3bb4096d"}
+{"grounding": {"ok": true, "reason": "grounding: итог: да"}, "uid": "a8dcd69bf4df"}
+{"grounding": {"ok": true, "reason": "grounding: итог: да"}, "uid": "728615615603"}
+{"grounding": {"ok": true, "reason": "grounding: итог: да"}, "uid": "fb0809647a81"}
+{"grounding": {"ok": true, "reason": "grounding: итог: да"}, "uid": "6ecf040adf11"}
+{"grounding": {"ok": true, "reason": "grounding: итог: да"}, "uid": "5022800b8d0c"}
+{"grounding": {"ok": true, "reason": "grounding: итог: да"}, "uid": "30ef8f12e601"}
+{"grounding": {"ok": true, "reason": "grounding: итог: да"}, "uid": "2db3214d4405"}
+{"grounding": {"ok": true, "reason": "grounding: итог: да"}, "uid": "e5437b987729"}
+{"grounding": {"ok": true, "reason": "grounding: итог: да"}, "uid": "637e897596b4"}
+{"grounding": {"ok": true, "reason": "grounding: итог: да"}, "uid": "1bd729dc6f89"}
+{"grounding": {"ok": true, "reason": "grounding: итог: да"}, "uid": "8e80217d56ea"}
+{"grounding": {"ok": true, "reason": "grounding: итог: да"}, "uid": "f85114494471"}
+{"grounding": {"ok": true, "reason": "grounding: итог: да"}, "uid": "335d0e04bd2a"}
+{"grounding": {"ok": false, "reason": "grounding: итог: нет"}, "uid": "5bec7b768e18"}
+{"grounding": {"ok": true, "reason": "grounding: итог: да"}, "uid": "30f8ee41029d"}
+{"grounding": {"ok": true, "reason": "grounding: итог: да"}, "uid": "8dff9f5b3909"}
+{"grounding": {"ok": true, "reason": "grounding: итог: да"}, "uid": "729321f608a6"}
+{"grounding": {"ok": true, "reason": "grounding: итог: да"}, "uid": "1a3a10f482d0"}
+{"grounding": {"ok": true, "reason": "grounding: итог: да"}, "uid": "57001180a2d2"}
+{"grounding": {"ok": true, "reason": "grounding: итог: да"}, "uid": "6385fa67d88b"}
+{"grounding": {"ok": true, "reason": "grounding: итог: да"}, "uid": "d71a3f95d82b"}
+{"grounding": {"ok": true, "reason": "grounding: итог: да"}, "uid": "c7ad513ae276"}
+{"grounding": {"ok": true, "reason": "grounding: итог: да"}, "uid": "f4787c8bcbe5"}
+{"grounding": {"ok": true, "reason": "grounding: итог: да"}, "uid": "fd400d8320cc"}
+{"grounding": {"ok": true, "reason": "grounding: итог: да"}, "uid": "a172cf29241d"}
+{"grounding": {"ok": true, "reason": "grounding: итог: да"}, "uid": "33b3a73ad647"}
+{"grounding": {"ok": true, "reason": "grounding: итог: да"}, "uid": "80cce745c197"}
+{"grounding": {"ok": true, "reason": "grounding: итог: да"}, "uid": "1fda10629f6e"}
+{"grounding": {"ok": true, "reason": "grounding: итог: да"}, "uid": "2a88fd9860ba"}
+{"grounding": {"ok": true, "reason": "grounding: итог: да"}, "uid": "d4dda37a199e"}
+{"grounding": {"ok": true, "reason": "grounding: итог: да"}, "uid": "23716e9fc202"}
+{"grounding": {"ok": true, "reason": "grounding: итог: да  "}, "uid": "5ddfe636fcf5"}
+{"grounding": {"ok": true, "reason": "grounding: итог: да"}, "uid": "04e169228b50"}
+{"grounding": {"ok": true, "reason": "grounding: итог: да"}, "uid": "5596c5041eb5"}
+{"grounding": {"ok": true, "reason": "grounding: итог: да"}, "uid": "196743a379ae"}
+{"grounding": {"ok": true, "reason": "grounding: итог: да"}, "uid": "d283e607529c"}
+{"grounding": {"ok": true, "reason": "grounding: итог: да"}, "uid": "0a7b8fed3074"}
+{"grounding": {"ok": true, "reason": "grounding: итог: да"}, "uid": "73673e575c54"}
+{"grounding": {"ok": true, "reason": "grounding: итог: да"}, "uid": "782e6be37490"}
+{"grounding": {"ok": true, "reason": "grounding: итог: да"}, "uid": "760a7e329188"}
+{"grounding": {"ok": true, "reason": "grounding: итог: да"}, "uid": "3f8bcc902b5b"}
+{"grounding": {"ok": true, "reason": "grounding: итог: да"}, "uid": "9c9ef170d389"}
+{"grounding": {"ok": true, "reason": "grounding: итог: да"}, "uid": "954a5eadb9f9"}
+{"grounding": {"ok": true, "reason": "grounding: итог: да"}, "uid": "d513353415c9"}
+{"grounding": {"ok": true, "reason": "grounding: итог: да"}, "uid": "84708c605254"}
+{"grounding": {"ok": true, "reason": "grounding: итог: да"}, "uid": "034e19a02751"}
+{"grounding": {"ok": true, "reason": "grounding: итог: да"}, "uid": "0b5e550b2ab8"}
+{"grounding": {"ok": true, "reason": "grounding: итог: да"}, "uid": "937ec76b7811"}
+{"grounding": {"ok": true, "reason": "grounding: итог: да"}, "uid": "cf2fe7f544ab"}
+{"grounding": {"ok": true, "reason": "grounding: итог: да"}, "uid": "52685ea9b833"}
+{"grounding": {"ok": true, "reason": "grounding: итог: да"}, "uid": "9ea1b69c7a35"}
+{"grounding": {"ok": true, "reason": "grounding: итог: да"}, "uid": "452232794d31"}
+{"grounding": {"ok": true, "reason": "grounding: итог: да"}, "uid": "ce0228c44c43"}
+{"grounding": {"ok": true, "reason": "grounding: итог: да"}, "uid": "8717e1784b49"}
+{"grounding": {"ok": true, "reason": "grounding: итог: да"}, "uid": "d1184bf6c4d3"}
+{"grounding": {"ok": true, "reason": "grounding: итог: да"}, "uid": "c29939cda9ed"}
+{"grounding": {"ok": true, "reason": "grounding: итог: да"}, "uid": "22947b1d963d"}
+{"grounding": {"ok": true, "reason": "grounding: итог: да  "}, "uid": "a0152b741346"}
+{"grounding": {"ok": true, "reason": "grounding: итог: да"}, "uid": "6e8657ff0b8e"}
+{"grounding": {"ok": true, "reason": "grounding: итог: да"}, "uid": "37bfc3b35b09"}
+{"grounding": {"ok": true, "reason": "grounding: итог: да"}, "uid": "b471e06375fd"}
+{"grounding": {"ok": true, "reason": "grounding: итог: да"}, "uid": "7464f71afb59"}
+{"grounding": {"ok": true, "reason": "grounding: итог: да"}, "uid": "c144fade49aa"}
+{"grounding": {"ok": false, "reason": "grounding: итог: нет"}, "uid": "90126e2367cc"}
+{"grounding": {"ok": false, "reason": "grounding: итог: нет"}, "uid": "d63d66abaeda"}
+{"grounding": {"ok": true, "reason": "grounding: итог: да"}, "uid": "3fd4e1f68b5d"}
+{"grounding": {"ok": true, "reason": "grounding: итог: да"}, "uid": "29769fb0909a"}
+{"grounding": {"ok": true, "reason": "grounding: итог: да"}, "uid": "dd036d1c23a3"}
+{"grounding": {"ok": true, "reason": "grounding: итог: да"}, "uid": "81a6603dea32"}
+{"grounding": {"ok": true, "reason": "grounding: итог: да"}, "uid": "da6d3b6ec9c0"}
+{"grounding": {"ok": true, "reason": "grounding: итог: да"}, "uid": "f676e302cc62"}
+{"grounding": {"ok": true, "reason": "grounding: итог: да"}, "uid": "84bb7dc478f6"}
+{"grounding": {"ok": true, "reason": "grounding: итог: да"}, "uid": "60f7a94256ec"}
+{"grounding": {"ok": true, "reason": "grounding: итог: да"}, "uid": "bb9d50edf9d3"}
+{"grounding": {"ok": true, "reason": "grounding: итог: да"}, "uid": "d5795c297fef"}
+{"grounding": {"ok": true, "reason": "grounding: итог: да"}, "uid": "20f84d3695ce"}
+{"grounding": {"ok": true, "reason": "grounding: итог: да"}, "uid": "bc3c9a1cf4ae"}
+{"grounding": {"ok": true, "reason": "grounding: итог: да"}, "uid": "6242ccdc2334"}
+{"grounding": {"ok": true, "reason": "grounding: итог: да"}, "uid": "84df31280fc7"}
+{"grounding": {"ok": true, "reason": "grounding: итог: да"}, "uid": "08e2d377e424"}
+{"grounding": {"ok": true, "reason": "grounding: итог: да"}, "uid": "6d6bceed65cf"}
+{"grounding": {"ok": true, "reason": "grounding: итог: да"}, "uid": "75e85ddd3454"}
+{"grounding": {"ok": true, "reason": "grounding: итог: да"}, "uid": "8d24d577c425"}
+{"grounding": {"ok": true, "reason": "grounding: итог: да"}, "uid": "fca62fc7eaf0"}
+{"grounding": {"ok": true, "reason": "grounding: итог: да"}, "uid": "ea710fd46fcc"}
+{"grounding": {"ok": true, "reason": "grounding: итог: да"}, "uid": "1d8fcaf31cf1"}
+{"grounding": {"ok": true, "reason": "grounding: итог: да"}, "uid": "fa738c7d7a16"}
+{"grounding": {"ok": true, "reason": "grounding: итог: да"}, "uid": "97d7a810ff60"}
+{"grounding": {"ok": true, "reason": "grounding: итог: да"}, "uid": "0912c44f1de6"}
+{"grounding": {"ok": false, "reason": "grounding: итог: нет"}, "uid": "83a111b4d78a"}
+{"grounding": {"ok": true, "reason": "grounding: итог: да"}, "uid": "31fe65eab45f"}
+{"grounding": {"ok": true, "reason": "grounding: итог: да"}, "uid": "57c722c26f81"}
+{"grounding": {"ok": true, "reason": "grounding: итог: да"}, "uid": "d6c8b28e6bfc"}
+{"grounding": {"ok": true, "reason": "grounding: итог: да"}, "uid": "b107cc91503f"}
+{"grounding": {"ok": true, "reason": "grounding: итог: да"}, "uid": "db5cc914abdf"}
+{"grounding": {"ok": true, "reason": "grounding: итог: да"}, "uid": "ed9379ad78c6"}
+{"grounding": {"ok": true, "reason": "grounding: итог: да"}, "uid": "9888872227a2"}
+{"grounding": {"ok": true, "reason": "grounding: итог: да"}, "uid": "969d2d9834a0"}
+{"grounding": {"ok": true, "reason": "grounding: итог: да"}, "uid": "27e404f1e244"}
+{"grounding": {"ok": true, "reason": "grounding: итог: да"}, "uid": "0a28b2b18a82"}
+{"grounding": {"ok": true, "reason": "grounding: итог: да"}, "uid": "d224baccde81"}
+{"grounding": {"ok": true, "reason": "grounding: итог: да"}, "uid": "175a89d608c7"}
+{"grounding": {"ok": true, "reason": "grounding: итог: да"}, "uid": "8a2c8d7216c7"}
+{"grounding": {"ok": true, "reason": "grounding: итог: да"}, "uid": "3de26a49371d"}
+{"grounding": {"ok": true, "reason": "grounding: итог: да"}, "uid": "daf2038c18f9"}
+{"grounding": {"ok": true, "reason": "grounding: итог: да"}, "uid": "2dc883653a6b"}
+{"grounding": {"ok": true, "reason": "grounding: итог: да"}, "uid": "6c945bab6b84"}
+{"grounding": {"ok": true, "reason": "grounding: итог: да"}, "uid": "60126c22a417"}
+{"grounding": {"ok": true, "reason": "grounding: итог: да"}, "uid": "4f687e3a3b03"}
+{"grounding": {"ok": true, "reason": "grounding: итог: да  "}, "uid": "0bdd3c85f2e1"}
+{"grounding": {"ok": true, "reason": "grounding: итог: да"}, "uid": "e47840702722"}
+{"grounding": {"ok": true, "reason": "grounding: итог: да"}, "uid": "736ed60f1494"}
+{"grounding": {"ok": true, "reason": "grounding: итог: да"}, "uid": "bc6a0c5d9c4b"}
+{"grounding": {"ok": true, "reason": "grounding: итог: да"}, "uid": "bde4c7b764c0"}
+{"grounding": {"ok": true, "reason": "grounding: итог: да"}, "uid": "38863ff57cba"}
+{"grounding": {"ok": false, "reason": "grounding: итог: нет"}, "uid": "94c8fa437383"}
+{"grounding": {"ok": true, "reason": "grounding: итог: да"}, "uid": "1defe559a0f3"}
+{"grounding": {"ok": true, "reason": "grounding: итог: да"}, "uid": "c6540bf0d98e"}
+{"grounding": {"ok": true, "reason": "grounding: итог: да"}, "uid": "26e4c767512a"}
+{"grounding": {"ok": true, "reason": "grounding: итог: да"}, "uid": "3240c9ae7abf"}
+{"grounding": {"ok": true, "reason": "grounding: итог: да"}, "uid": "d925d2dfa148"}
+{"grounding": {"ok": true, "reason": "grounding: итог: да"}, "uid": "bf2018f8b07e"}
+{"grounding": {"ok": true, "reason": "grounding: итог: да"}, "uid": "3d3491ad4612"}
+{"grounding": {"ok": true, "reason": "grounding: итог: да"}, "uid": "d64298ba90bc"}
+{"grounding": {"ok": true, "reason": "grounding: итог: да"}, "uid": "beaaa2524506"}
+{"grounding": {"ok": true, "reason": "grounding: итог: да"}, "uid": "e3915887dfcc"}
+{"grounding": {"ok": true, "reason": "grounding: итог: да"}, "uid": "f0e56a6f883b"}
+{"grounding": {"ok": true, "reason": "grounding: итог: да"}, "uid": "3a1ede1db0e1"}
+{"grounding": {"ok": true, "reason": "grounding: итог: да"}, "uid": "f2a8f86a6e1a"}
+{"grounding": {"ok": true, "reason": "grounding: итог: да"}, "uid": "93603367ee5d"}
+{"grounding": {"ok": true, "reason": "grounding: итог: да"}, "uid": "4cefa3e95909"}
+{"grounding": {"ok": true, "reason": "grounding: итог: да"}, "uid": "7d0b67d7895a"}
+{"grounding": {"ok": true, "reason": "grounding: итог: да"}, "uid": "295dcdffe604"}
+{"grounding": {"ok": true, "reason": "grounding: итог: да"}, "uid": "ba79aa496b3f"}
+{"grounding": {"ok": true, "reason": "grounding: итог: да"}, "uid": "0b04cec1c4c5"}
+{"grounding": {"ok": true, "reason": "grounding: итог: да"}, "uid": "bcce8648e7a7"}
+{"grounding": {"ok": true, "reason": "grounding: итог: да"}, "uid": "6191e9c9b37d"}
+{"grounding": {"ok": true, "reason": "grounding: итог: да"}, "uid": "3556284f6c03"}
+{"grounding": {"ok": true, "reason": "grounding: итог: да"}, "uid": "63d03952e1cf"}
+{"grounding": {"ok": true, "reason": "grounding: итог: да"}, "uid": "c1f25cf798ea"}
+{"grounding": {"ok": true, "reason": "grounding: итог: да"}, "uid": "bf5f281937ed"}
+{"grounding": {"ok": true, "reason": "grounding: итог: да"}, "uid": "0ae52b7c4c30"}
+{"grounding": {"ok": true, "reason": "grounding: итог: да"}, "uid": "4373884a1132"}
+{"grounding": {"ok": true, "reason": "grounding: итог: да"}, "uid": "e709e9f5d449"}
+{"grounding": {"ok": true, "reason": "grounding: итог: да"}, "uid": "e26c3dc9c416"}
+{"grounding": {"ok": true, "reason": "grounding: итог: да"}, "uid": "c60f252009a8"}
+{"grounding": {"ok": true, "reason": "grounding: итог: да"}, "uid": "a0a7b12a0a9a"}
+{"grounding": {"ok": true, "reason": "grounding: итог: да"}, "uid": "f9ec8d205d57"}
+{"grounding": {"ok": true, "reason": "grounding: итог: да"}, "uid": "1677a2a11beb"}
+{"grounding": {"ok": true, "reason": "grounding: итог: да"}, "uid": "f3b191e85359"}
+{"grounding": {"ok": true, "reason": "grounding: итог: да"}, "uid": "617690a0beb6"}
+{"grounding": {"ok": true, "reason": "grounding: итог: да"}, "uid": "6fc3ad3f63a9"}
+{"grounding": {"ok": false, "reason": "grounding: итог: нет"}, "uid": "ff8975e3ef44"}
+{"grounding": {"ok": true, "reason": "grounding: итог: да"}, "uid": "c9fb2b203ba8"}
+{"grounding": {"ok": true, "reason": "grounding: итог: да"}, "uid": "033980882c44"}
+{"grounding": {"ok": true, "reason": "grounding: итог: да"}, "uid": "9538d753ee6c"}
+{"grounding": {"ok": true, "reason": "grounding: итог: да"}, "uid": "5e48a152309f"}
+{"grounding": {"ok": true, "reason": "grounding: итог: да"}, "uid": "d8ef38970f53"}
+{"grounding": {"ok": true, "reason": "grounding: итог: да"}, "uid": "ffe46b238cb9"}
+{"grounding": {"ok": true, "reason": "grounding: итог: да"}, "uid": "d4c190ec5e6c"}
+{"grounding": {"ok": true, "reason": "grounding: итог: да"}, "uid": "bf79af2c42bd"}
+{"grounding": {"ok": false, "reason": "grounding: итог: нет"}, "uid": "c58563c0f556"}
+{"grounding": {"ok": true, "reason": "grounding: итог: да"}, "uid": "2688becfb3c5"}
+{"grounding": {"ok": true, "reason": "grounding: итог: да"}, "uid": "24040508aa2a"}
+{"grounding": {"ok": true, "reason": "grounding: итог: да"}, "uid": "db379f5b2b43"}
+{"grounding": {"ok": true, "reason": "grounding: итог: да"}, "uid": "5ced40da8f72"}
+{"grounding": {"ok": true, "reason": "grounding: итог: да"}, "uid": "5c010b388775"}
+{"grounding": {"ok": true, "reason": "grounding: итог: да"}, "uid": "59d8ba992bf5"}
+{"grounding": {"ok": true, "reason": "grounding: итог: да"}, "uid": "83caf992b6df"}
+{"grounding": {"ok": true, "reason": "grounding: итог: да"}, "uid": "7b6944a21f51"}
+{"grounding": {"ok": true, "reason": "grounding: итог: да"}, "uid": "ddbe9002710c"}
+{"grounding": {"ok": true, "reason": "grounding: итог: да"}, "uid": "76e589263bfd"}
+{"grounding": {"ok": true, "reason": "grounding: итог: да"}, "uid": "1e40301b3863"}
+{"grounding": {"ok": true, "reason": "grounding: итог: да"}, "uid": "86e60e110f96"}
+{"grounding": {"ok": true, "reason": "grounding: итог: да"}, "uid": "094575ba086f"}
+{"grounding": {"ok": true, "reason": "grounding: итог: да"}, "uid": "79bbbf8c3227"}
+{"grounding": {"ok": false, "reason": "grounding: итог: нет"}, "uid": "2a0b66068a0e"}
+{"grounding": {"ok": true, "reason": "grounding: итог: да"}, "uid": "615f52cfa8f8"}
+{"grounding": {"ok": true, "reason": "grounding: итог: да"}, "uid": "0bf9c192570c"}
+{"grounding": {"ok": true, "reason": "grounding: итог: да"}, "uid": "e186cfb8a65c"}
+{"grounding": {"ok": true, "reason": "grounding: итог: да"}, "uid": "6733de4ce090"}
+{"grounding": {"ok": true, "reason": "grounding: итог: да"}, "uid": "7bc4f2a786da"}
+{"grounding": {"ok": true, "reason": "grounding: итог: да"}, "uid": "803dd2f685b6"}
+{"grounding": {"ok": true, "reason": "grounding: итог: да"}, "uid": "f87e66859354"}
+{"grounding": {"ok": true, "reason": "grounding: итог: да"}, "uid": "0a41697a4a9c"}
+{"grounding": {"ok": true, "reason": "grounding: итог: да"}, "uid": "e5e74316ea24"}
+{"grounding": {"ok": true, "reason": "grounding: итог: да"}, "uid": "5f0a4528b729"}
+{"grounding": {"ok": false, "reason": "grounding: итог: нет"}, "uid": "a11598ad97ba"}
+{"grounding": {"ok": true, "reason": "grounding: итог: да"}, "uid": "f4cfec362eba"}
+{"grounding": {"ok": true, "reason": "grounding: итог: да"}, "uid": "b0ed573db625"}
+{"grounding": {"ok": true, "reason": "grounding: итог: да"}, "uid": "614880337530"}
+{"grounding": {"ok": false, "reason": "grounding: итог: нет"}, "uid": "1c2950aad389"}
+{"grounding": {"ok": true, "reason": "grounding: итог: да"}, "uid": "98fd007f9235"}
+{"grounding": {"ok": true, "reason": "grounding: итог: да"}, "uid": "202f8a00f957"}
+{"grounding": {"ok": true, "reason": "grounding: итог: да"}, "uid": "24c5d06aedb5"}
+{"grounding": {"ok": true, "reason": "grounding: итог: да"}, "uid": "b7e40853a787"}
+{"grounding": {"ok": true, "reason": "grounding: итог: да"}, "uid": "dc8e43438723"}
+{"grounding": {"ok": true, "reason": "grounding: итог: да"}, "uid": "92dabc88b199"}
+{"grounding": {"ok": true, "reason": "grounding: итог: да"}, "uid": "2a03a0148f9a"}
+{"grounding": {"ok": true, "reason": "grounding: итог: да"}, "uid": "aa70ab5ae2a4"}
+{"grounding": {"ok": true, "reason": "grounding: итог: да"}, "uid": "c48fbb223d71"}
+{"grounding": {"ok": true, "reason": "grounding: итог: да"}, "uid": "33a511fbb614"}
+{"grounding": {"ok": true, "reason": "grounding: итог: да"}, "uid": "e6844e11b696"}
+{"grounding": {"ok": true, "reason": "grounding: итог: да"}, "uid": "e0bb787cbff4"}
+{"grounding": {"ok": true, "reason": "grounding: итог: да"}, "uid": "bcf9cb4be49f"}
+{"grounding": {"ok": true, "reason": "grounding: итог: да"}, "uid": "48afe844c118"}
+{"grounding": {"ok": true, "reason": "grounding: итог: да"}, "uid": "82e1f9d8184f"}
+{"grounding": {"ok": true, "reason": "grounding: итог: да"}, "uid": "6bd0b549baf4"}
+{"grounding": {"ok": true, "reason": "grounding: итог: да"}, "uid": "f8c7a92c5994"}
+{"grounding": {"ok": true, "reason": "grounding: итог: да"}, "uid": "c964c248b614"}
+{"grounding": {"ok": true, "reason": "grounding: итог: да"}, "uid": "a33e0a3fe415"}
+{"grounding": {"ok": true, "reason": "grounding: итог: да"}, "uid": "e5deee462d32"}
+{"grounding": {"ok": true, "reason": "grounding: итог: да"}, "uid": "ae695b6e955e"}
+{"grounding": {"ok": true, "reason": "grounding: итог: да"}, "uid": "7c5194922a29"}
+{"grounding": {"ok": true, "reason": "grounding: итог: да"}, "uid": "4fb2c4b6122e"}
+{"grounding": {"ok": false, "reason": "grounding: итог: нет"}, "uid": "ac7ff0d627ae"}
+{"grounding": {"ok": true, "reason": "grounding: итог: да"}, "uid": "561acddca9ab"}
+{"grounding": {"ok": true, "reason": "grounding: итог: да"}, "uid": "f892749f9100"}
+{"grounding": {"ok": true, "reason": "grounding: итог: да"}, "uid": "0cd0edfcaf34"}
+{"grounding": {"ok": true, "reason": "grounding: итог: да"}, "uid": "73017f4ffaa8"}
+{"grounding": {"ok": true, "reason": "grounding: итог: да"}, "uid": "680982a913d8"}
+{"grounding": {"ok": true, "reason": "grounding: итог: да"}, "uid": "409efc16d743"}
+{"grounding": {"ok": true, "reason": "grounding: итог: да"}, "uid": "67ccfa3f324c"}
+{"grounding": {"ok": true, "reason": "grounding: итог: да"}, "uid": "785f2e08f0e0"}
+{"grounding": {"ok": true, "reason": "grounding: итог: да"}, "uid": "58a8cde88b5f"}
+{"grounding": {"ok": true, "reason": "grounding: итог: да"}, "uid": "558e49b01822"}
+{"grounding": {"ok": true, "reason": "grounding: итог: да"}, "uid": "794c998bb045"}
+{"grounding": {"ok": true, "reason": "grounding: итог: да"}, "uid": "6e955b8c6223"}
+{"grounding": {"ok": true, "reason": "grounding: итог: да"}, "uid": "d24bed7823f5"}
+{"grounding": {"ok": true, "reason": "grounding: итог: да"}, "uid": "5097f87f74bf"}
+{"grounding": {"ok": true, "reason": "grounding: итог: да"}, "uid": "9097d3851de1"}
+{"grounding": {"ok": true, "reason": "grounding: итог: да"}, "uid": "38b6d50f3296"}
+{"grounding": {"ok": true, "reason": "grounding: итог: да"}, "uid": "70dae1b1b571"}
+{"grounding": {"ok": true, "reason": "grounding: итог: да"}, "uid": "d1dce534de17"}
+{"grounding": {"ok": true, "reason": "grounding: итог: да"}, "uid": "792fdbdccca9"}
+{"grounding": {"ok": true, "reason": "grounding: итог: да"}, "uid": "681600dc792e"}
+{"grounding": {"ok": true, "reason": "grounding: итог: да"}, "uid": "da9c54913657"}
+{"grounding": {"ok": true, "reason": "grounding: итог: да"}, "uid": "80c31ef3da3c"}
+{"grounding": {"ok": true, "reason": "grounding: итог: да"}, "uid": "da34eeae40da"}
+{"grounding": {"ok": true, "reason": "grounding: итог: да"}, "uid": "861d49764974"}
+{"grounding": {"ok": true, "reason": "grounding: итог: да"}, "uid": "c35836d8931c"}
+{"grounding": {"ok": true, "reason": "grounding: итог: да"}, "uid": "a2760702643b"}
+{"grounding": {"ok": true, "reason": "grounding: итог: да"}, "uid": "7158119a4a77"}
+{"grounding": {"ok": true, "reason": "grounding: итог: да"}, "uid": "1521d68c270f"}
+{"grounding": {"ok": true, "reason": "grounding: итог: да"}, "uid": "7d6c7f7e7c66"}
+{"grounding": {"ok": true, "reason": "grounding: итог: да"}, "uid": "cb82eab6a181"}
+{"grounding": {"ok": true, "reason": "grounding: итог: да"}, "uid": "fa1edfc5a908"}
+{"grounding": {"ok": true, "reason": "grounding: итог: да"}, "uid": "9531598fb183"}
+{"grounding": {"ok": true, "reason": "grounding: итог: да"}, "uid": "a4e89b79b2a3"}
+{"grounding": {"ok": true, "reason": "grounding: итог: да"}, "uid": "4394a60f96ab"}
+{"grounding": {"ok": true, "reason": "grounding: итог: да"}, "uid": "425a2b6c7db7"}
+{"grounding": {"ok": true, "reason": "grounding: итог: да"}, "uid": "50de41891bfa"}
+{"grounding": {"ok": false, "reason": "grounding: итог: нет"}, "uid": "33c6e628e6ec"}
+{"grounding": {"ok": false, "reason": "grounding: итог: нет"}, "uid": "83ef5cb433d7"}
+{"grounding": {"ok": false, "reason": "grounding: итог: нет  "}, "uid": "b395cac54587"}
+{"grounding": {"ok": true, "reason": "grounding: итог: да  "}, "uid": "01d522329e0c"}
+{"grounding": {"ok": true, "reason": "grounding: итог: да"}, "uid": "c408baa42de6"}
+{"grounding": {"ok": true, "reason": "grounding: итог: да"}, "uid": "50a67a43c4ad"}
+{"grounding": {"ok": false, "reason": "grounding: итог: нет"}, "uid": "2f84242a0554"}
+{"grounding": {"ok": true, "reason": "grounding: итог: да"}, "uid": "cb5686d794e8"}
+{"grounding": {"ok": true, "reason": "grounding: итог: да"}, "uid": "f3d3d7f11243"}
+{"grounding": {"ok": true, "reason": "grounding: итог: да"}, "uid": "4a7041c54fa4"}
+{"grounding": {"ok": true, "reason": "grounding: итог: да"}, "uid": "4dfca944d229"}
+{"grounding": {"ok": true, "reason": "grounding: итог: да"}, "uid": "7720f9870362"}
+{"grounding": {"ok": true, "reason": "grounding: итог: да"}, "uid": "24ec810cc23b"}
+{"grounding": {"ok": true, "reason": "grounding: итог: да"}, "uid": "0dee9a811d07"}
+{"grounding": {"ok": true, "reason": "grounding: итог: да"}, "uid": "1ee769b9f199"}
+{"grounding": {"ok": true, "reason": "grounding: итог: да"}, "uid": "798a3c4d537d"}
+{"grounding": {"ok": true, "reason": "grounding: итог: да"}, "uid": "65b27f7e8c21"}
+{"grounding": {"ok": false, "reason": "grounding: итог: нет"}, "uid": "03c7ec354360"}
+{"grounding": {"ok": false, "reason": "grounding: итог: нет"}, "uid": "93158ab838d5"}
+{"grounding": {"ok": true, "reason": "grounding: итог: да"}, "uid": "e7186ff49fbc"}
+{"grounding": {"ok": true, "reason": "grounding: итог: да"}, "uid": "80d7e379e50c"}
+{"grounding": {"ok": true, "reason": "grounding: итог: да"}, "uid": "f705ffdd333b"}
+{"grounding": {"ok": true, "reason": "grounding: итог: да"}, "uid": "6ffc047f4c0d"}
+{"grounding": {"ok": true, "reason": "grounding: итог: да"}, "uid": "5174d67cfb73"}
+{"grounding": {"ok": false, "reason": "grounding: итог: нет"}, "uid": "b46164d18727"}
+{"grounding": {"ok": true, "reason": "grounding: итог: да"}, "uid": "2f1d14742629"}
+{"grounding": {"ok": true, "reason": "grounding: итог: да"}, "uid": "eadc41de4cd8"}
+{"grounding": {"ok": true, "reason": "grounding: итог: да"}, "uid": "f17622a61398"}
+{"grounding": {"ok": true, "reason": "grounding: итог: да"}, "uid": "8f76a7d03b64"}
+{"grounding": {"ok": true, "reason": "grounding: итог: да"}, "uid": "868fc6228aef"}
+{"grounding": {"ok": true, "reason": "grounding: итог: да"}, "uid": "8e0df99cb1cd"}
+{"grounding": {"ok": true, "reason": "grounding: итог: да"}, "uid": "0b9d6c44f7bf"}
+{"grounding": {"ok": true, "reason": "grounding: итог: да"}, "uid": "26b48e1e220e"}
+{"grounding": {"ok": true, "reason": "grounding: итог: да"}, "uid": "aebfe93a8279"}
+{"grounding": {"ok": true, "reason": "grounding: итог: да"}, "uid": "30027db72744"}
+{"grounding": {"ok": true, "reason": "grounding: итог: да"}, "uid": "de5046882b0d"}
+{"grounding": {"ok": false, "reason": "grounding: итог: нет"}, "uid": "4a70fcebb413"}
+{"grounding": {"ok": true, "reason": "grounding: итог: да"}, "uid": "d22ff95b41f2"}
+{"grounding": {"ok": true, "reason": "grounding: итог: да"}, "uid": "53d98aab3fad"}
+{"grounding": {"ok": true, "reason": "grounding: итог: да"}, "uid": "a273692539a0"}
+{"grounding": {"ok": true, "reason": "grounding: итог: да"}, "uid": "c8522ceb0527"}
+{"grounding": {"ok": true, "reason": "grounding: итог: да"}, "uid": "e2d79bf7dc41"}
+{"grounding": {"ok": true, "reason": "grounding: итог: да"}, "uid": "82bbededa6ea"}
+{"grounding": {"ok": true, "reason": "grounding: итог: да"}, "uid": "0fc7ea5feb80"}
+{"grounding": {"ok": true, "reason": "grounding: итог: да"}, "uid": "395a9ee8f2f3"}
+{"grounding": {"ok": true, "reason": "grounding: итог: да"}, "uid": "f71dbfc0b46e"}
+{"grounding": {"ok": true, "reason": "grounding: итог: да"}, "uid": "30bbe7b66b78"}
+{"grounding": {"ok": true, "reason": "grounding: итог: да"}, "uid": "2db8ad0174c1"}
+{"grounding": {"ok": true, "reason": "grounding: итог: да"}, "uid": "5c083ee22a07"}
+{"grounding": {"ok": true, "reason": "grounding: итог: да"}, "uid": "efe12afb86db"}
+{"grounding": {"ok": true, "reason": "grounding: итог: да"}, "uid": "601bdb5aced8"}
+{"grounding": {"ok": true, "reason": "grounding: итог: да"}, "uid": "e8fc6190ca41"}
+{"grounding": {"ok": true, "reason": "grounding: итог: да"}, "uid": "cac7917add12"}
+{"grounding": {"ok": true, "reason": "grounding: итог: да"}, "uid": "e7095bd78ca1"}
+{"grounding": {"ok": true, "reason": "grounding: итог: да"}, "uid": "0fb3e19a7ae8"}
+{"grounding": {"ok": true, "reason": "grounding: итог: да"}, "uid": "ca8c6ee32d46"}
+{"grounding": {"ok": false, "reason": "grounding: итог: нет"}, "uid": "0e7464db9494"}
+{"grounding": {"ok": true, "reason": "grounding: итог: да"}, "uid": "a4c264169685"}
+{"grounding": {"ok": true, "reason": "grounding: итог: да"}, "uid": "bb598dcd8eb1"}
+{"grounding": {"ok": true, "reason": "grounding: итог: да"}, "uid": "daacdd44e14e"}
+{"grounding": {"ok": false, "reason": "grounding: итог: нет"}, "uid": "a080d8165ead"}
+{"grounding": {"ok": true, "reason": "grounding: итог: да"}, "uid": "ddc7e1aba5a9"}
+{"grounding": {"ok": true, "reason": "grounding: итог: да  "}, "uid": "018ed326a94e"}
+{"grounding": {"ok": true, "reason": "grounding: итог: да"}, "uid": "81a52a4536d1"}
+{"grounding": {"ok": true, "reason": "grounding: итог: да"}, "uid": "827af1b09f4a"}
+{"grounding": {"ok": true, "reason": "grounding: итог: да"}, "uid": "21479e38f896"}
+{"grounding": {"ok": true, "reason": "grounding: итог: да"}, "uid": "f2fcd8c372f1"}
+{"grounding": {"ok": true, "reason": "grounding: итог: да"}, "uid": "996121c47e33"}
+{"grounding": {"ok": true, "reason": "grounding: итог: да"}, "uid": "0d8c8141855d"}
+{"grounding": {"ok": true, "reason": "grounding: итог: да"}, "uid": "673bfc849f16"}
+{"grounding": {"ok": true, "reason": "grounding: итог: да"}, "uid": "3f5d550ba2c8"}
+{"grounding": {"ok": true, "reason": "grounding: итог: да"}, "uid": "fa57b0ce8a65"}
+{"grounding": {"ok": true, "reason": "grounding: итог: да"}, "uid": "1c36a45cfe93"}
+{"grounding": {"ok": true, "reason": "grounding: итог: да"}, "uid": "a8148c394ac5"}
+{"grounding": {"ok": true, "reason": "grounding: итог: да"}, "uid": "691a71681e3d"}
+{"grounding": {"ok": true, "reason": "grounding: итог: да"}, "uid": "38e8f1484d92"}
+{"grounding": {"ok": true, "reason": "grounding: итог: да"}, "uid": "907083a88e2f"}
+{"grounding": {"ok": true, "reason": "grounding: итог: да"}, "uid": "8198fdcd97e5"}
+{"grounding": {"ok": true, "reason": "grounding: итог: да"}, "uid": "a11a79efb5f1"}
+{"grounding": {"ok": true, "reason": "grounding: итог: да"}, "uid": "0f6f8969c109"}
+{"grounding": {"ok": true, "reason": "grounding: итог: да"}, "uid": "06aa8abeb16a"}
+{"grounding": {"ok": true, "reason": "grounding: итог: да"}, "uid": "e801c1577f1f"}
+{"grounding": {"ok": true, "reason": "grounding: итог: да"}, "uid": "1c16f54e77d6"}
+{"grounding": {"ok": true, "reason": "grounding: итог: да"}, "uid": "cbe6a3e130fc"}
+{"grounding": {"ok": true, "reason": "grounding: итог: да"}, "uid": "18f90b891161"}
+{"grounding": {"ok": true, "reason": "grounding: итог: да  "}, "uid": "8699ef9c95a3"}
+{"grounding": {"ok": true, "reason": "grounding: итог: да"}, "uid": "504d0c4e42a1"}
+{"grounding": {"ok": true, "reason": "grounding: итог: да"}, "uid": "906f319763d8"}
+{"grounding": {"ok": true, "reason": "grounding: итог: да"}, "uid": "045ee2f402ce"}
+{"grounding": {"ok": true, "reason": "grounding: итог: да"}, "uid": "954c9b0472da"}
+{"grounding": {"ok": true, "reason": "grounding: итог: да"}, "uid": "181401a3ac75"}
+{"grounding": {"ok": true, "reason": "grounding: итог: да"}, "uid": "eed8f4e6825f"}
+{"grounding": {"ok": true, "reason": "grounding: итог: да"}, "uid": "f60e4dffaa3a"}
+{"grounding": {"ok": true, "reason": "grounding: итог: да"}, "uid": "06db93e32044"}
+{"grounding": {"ok": true, "reason": "grounding: итог: да"}, "uid": "59a4bf385448"}
+{"grounding": {"ok": true, "reason": "grounding: итог: да"}, "uid": "5ef9c94a0cf1"}
+{"grounding": {"ok": true, "reason": "grounding: итог: да"}, "uid": "3197a495acc5"}
+{"grounding": {"ok": true, "reason": "grounding: итог: да"}, "uid": "682ce5c61799"}
+{"grounding": {"ok": true, "reason": "grounding: итог: да"}, "uid": "ff94f9a23d01"}
+{"grounding": {"ok": true, "reason": "grounding: итог: да"}, "uid": "335ab3e97183"}
+{"grounding": {"ok": true, "reason": "grounding: итог: да"}, "uid": "61f326f488cd"}
+{"grounding": {"ok": true, "reason": "grounding: итог: да"}, "uid": "85170d6ead54"}
+{"grounding": {"ok": true, "reason": "grounding: итог: да"}, "uid": "4595132e04aa"}
+{"grounding": {"ok": true, "reason": "grounding: итог: да"}, "uid": "d15349d60a15"}
+{"grounding": {"ok": true, "reason": "grounding: итог: да"}, "uid": "aaca9277d9c3"}
+{"grounding": {"ok": true, "reason": "grounding: итог: да"}, "uid": "f393abe473bc"}
+{"grounding": {"ok": true, "reason": "grounding: итог: да"}, "uid": "65c86a1ae5ec"}
+{"grounding": {"ok": false, "reason": "grounding: итог: нет"}, "uid": "4026cd028f3e"}
+{"grounding": {"ok": true, "reason": "grounding: итог: да"}, "uid": "b8fd50126db8"}
+{"grounding": {"ok": true, "reason": "grounding: итог: да"}, "uid": "5e96d153ae4c"}
+{"grounding": {"ok": true, "reason": "grounding: итог: да"}, "uid": "a0b2ecb3bf8c"}
+{"grounding": {"ok": true, "reason": "grounding: итог: да"}, "uid": "9695036ed549"}
+{"grounding": {"ok": true, "reason": "grounding: итог: да"}, "uid": "22e563b3f572"}
+{"grounding": {"ok": true, "reason": "grounding: итог: да"}, "uid": "07d39ef77962"}
+{"grounding": {"ok": true, "reason": "grounding: итог: да"}, "uid": "c1e3e6d1ae68"}
+{"grounding": {"ok": true, "reason": "grounding: итог: да"}, "uid": "2771623dd920"}
+{"grounding": {"ok": true, "reason": "grounding: итог: да"}, "uid": "c07d7d337af7"}
+{"grounding": {"ok": true, "reason": "grounding: итог: да"}, "uid": "24b51cb11eb3"}
+{"grounding": {"ok": true, "reason": "grounding: итог: да"}, "uid": "2627b413b780"}
+{"grounding": {"ok": true, "reason": "grounding: итог: да"}, "uid": "5a24ef3ef926"}
+{"grounding": {"ok": true, "reason": "grounding: итог: да"}, "uid": "8d47a2a4fee2"}
+{"grounding": {"ok": true, "reason": "grounding: итог: да"}, "uid": "e49cc28d0985"}
+{"grounding": {"ok": true, "reason": "grounding: итог: да"}, "uid": "11fd2f5898a5"}
+{"grounding": {"ok": true, "reason": "grounding: итог: да"}, "uid": "cc3046a68b16"}
+{"grounding": {"ok": false, "reason": "grounding: итог: нет"}, "uid": "829a526bad31"}
+{"grounding": {"ok": true, "reason": "grounding: итог: да"}, "uid": "0206ba7f40d9"}
+{"grounding": {"ok": true, "reason": "grounding: итог: да"}, "uid": "dc4485308e0a"}
+{"grounding": {"ok": true, "reason": "grounding: итог: да"}, "uid": "fe0969782f6b"}
+{"grounding": {"ok": false, "reason": "grounding: итог: нет  "}, "uid": "54cc0d579847"}
+{"grounding": {"ok": true, "reason": "grounding: итог: да"}, "uid": "becc981e10e2"}
+{"grounding": {"ok": true, "reason": "grounding: итог: да"}, "uid": "877b6d02dd8b"}
+{"grounding": {"ok": true, "reason": "grounding: итог: да"}, "uid": "2e497c9c8b6d"}
+{"grounding": {"ok": true, "reason": "grounding: итог: да"}, "uid": "891bae2563e2"}
+{"grounding": {"ok": true, "reason": "grounding: итог: да"}, "uid": "2829924d047e"}
+{"grounding": {"ok": false, "reason": "grounding: итог: нет"}, "uid": "1b8afb533106"}
+{"grounding": {"ok": true, "reason": "grounding: итог: да"}, "uid": "6caad60c7748"}
+{"grounding": {"ok": true, "reason": "grounding: итог: да"}, "uid": "f5671de0b45c"}
+{"grounding": {"ok": true, "reason": "grounding: итог: да"}, "uid": "be5cc70b71e9"}
+{"grounding": {"ok": true, "reason": "grounding: итог: да"}, "uid": "4f84fefe3a0c"}
+{"grounding": {"ok": true, "reason": "grounding: итог: да"}, "uid": "6847920e0133"}
+{"grounding": {"ok": true, "reason": "grounding: итог: да"}, "uid": "063a8368f1c4"}
+{"grounding": {"ok": true, "reason": "grounding: итог: да"}, "uid": "f95718af122e"}
+{"grounding": {"ok": true, "reason": "grounding: итог: да"}, "uid": "ed78b7827971"}
+{"grounding": {"ok": true, "reason": "grounding: итог: да"}, "uid": "e81e16add896"}
+{"grounding": {"ok": true, "reason": "grounding: итог: да"}, "uid": "2f5a0573976e"}
+{"grounding": {"ok": true, "reason": "grounding: итог: да"}, "uid": "7b84389be605"}
+{"grounding": {"ok": true, "reason": "grounding: итог: да"}, "uid": "f5922751101e"}
+{"grounding": {"ok": true, "reason": "grounding: итог: да"}, "uid": "754f7c5f934e"}
+{"grounding": {"ok": true, "reason": "grounding: итог: да"}, "uid": "b83339fd069a"}
+{"grounding": {"ok": true, "reason": "grounding: итог: да"}, "uid": "79de88861309"}
+{"grounding": {"ok": true, "reason": "grounding: итог: да"}, "uid": "bc6f1fa47aa6"}
+{"grounding": {"ok": true, "reason": "grounding: итог: да"}, "uid": "96a5a3004f8e"}
+{"grounding": {"ok": true, "reason": "grounding: итог: да"}, "uid": "ddd8f7d89391"}
+{"grounding": {"ok": true, "reason": "grounding: итог: да"}, "uid": "989e5a6d3293"}
+{"grounding": {"ok": true, "reason": "grounding: итог: да"}, "uid": "90684ca1b682"}
+{"grounding": {"ok": false, "reason": "grounding: итог: нет"}, "uid": "6023c8846821"}
+{"grounding": {"ok": true, "reason": "grounding: итог: да"}, "uid": "c4c0fede4cb1"}
+{"grounding": {"ok": false, "reason": "grounding: итог: нет"}, "uid": "b2c637feafa7"}
+{"grounding": {"ok": true, "reason": "grounding: итог: да"}, "uid": "a45aafe109b0"}
+{"grounding": {"ok": true, "reason": "grounding: итог: да"}, "uid": "2ea3ec5ca718"}
+{"grounding": {"ok": true, "reason": "grounding: итог: да"}, "uid": "43ff48280e7f"}
+{"grounding": {"ok": true, "reason": "grounding: итог: да"}, "uid": "5e7eef14172c"}
+{"grounding": {"ok": true, "reason": "grounding: итог: да"}, "uid": "7eb76d116f6d"}
+{"grounding": {"ok": true, "reason": "grounding: итог: да"}, "uid": "4c6930fa256b"}
+{"grounding": {"ok": true, "reason": "grounding: итог: да"}, "uid": "33e5042d15e1"}
+{"grounding": {"ok": true, "reason": "grounding: итог: да"}, "uid": "6ef011759004"}
+{"grounding": {"ok": true, "reason": "grounding: итог: да"}, "uid": "17c216ebe114"}
+{"grounding": {"ok": true, "reason": "grounding: итог: да"}, "uid": "21f049399476"}
+{"grounding": {"ok": true, "reason": "grounding: итог: да"}, "uid": "be29057cbed1"}
+{"grounding": {"ok": true, "reason": "grounding: итог: да"}, "uid": "e8a17b9301e8"}
+{"grounding": {"ok": true, "reason": "grounding: итог: да"}, "uid": "5c056eb3724f"}
+{"grounding": {"ok": true, "reason": "grounding: итог: да"}, "uid": "3f75183fb9b3"}
+{"grounding": {"ok": true, "reason": "grounding: итог: да"}, "uid": "c77422815e40"}
+{"grounding": {"ok": true, "reason": "grounding: итог: да"}, "uid": "3e4ec81713c8"}
+{"grounding": {"ok": true, "reason": "grounding: итог: да"}, "uid": "80e8828892d2"}
+{"grounding": {"ok": true, "reason": "grounding: итог: да"}, "uid": "5fe764093fe2"}
+{"grounding": {"ok": true, "reason": "grounding: итог: да"}, "uid": "0cd485bea202"}
+{"grounding": {"ok": true, "reason": "grounding: итог: да"}, "uid": "0a72d4a5fcc6"}
+{"grounding": {"ok": true, "reason": "grounding: итог: да"}, "uid": "26254398aecc"}
+{"grounding": {"ok": true, "reason": "grounding: итог: да"}, "uid": "6597e34df940"}
+{"grounding": {"ok": true, "reason": "grounding: итог: да"}, "uid": "6ca567cab22a"}
+{"grounding": {"ok": true, "reason": "grounding: итог: да"}, "uid": "ac34cb53dab7"}
+{"grounding": {"ok": true, "reason": "grounding: итог: да"}, "uid": "31e4c48e294a"}
+{"grounding": {"ok": true, "reason": "grounding: итог: да"}, "uid": "accebdded03c"}
+{"grounding": {"ok": true, "reason": "grounding: итог: да"}, "uid": "efbae40f5fd6"}
+{"grounding": {"ok": true, "reason": "grounding: итог: да"}, "uid": "b93c5c7112e5"}
+{"grounding": {"ok": true, "reason": "grounding: итог: да"}, "uid": "12b7af35d654"}
+{"grounding": {"ok": true, "reason": "grounding: итог: да"}, "uid": "ed3c492e97aa"}
+{"grounding": {"ok": true, "reason": "grounding: итог: да"}, "uid": "15b43a56ca7c"}
+{"grounding": {"ok": true, "reason": "grounding: итог: да  "}, "uid": "e2df63d41e8c"}
+{"grounding": {"ok": true, "reason": "grounding: итог: да"}, "uid": "beb7dcb161fc"}
+{"grounding": {"ok": true, "reason": "grounding: итог: да"}, "uid": "2e08133d4941"}
+{"grounding": {"ok": true, "reason": "grounding: итог: да"}, "uid": "75e186f0308b"}
+{"grounding": {"ok": false, "reason": "grounding: итог: нет"}, "uid": "9b79ca72e9c6"}
+{"grounding": {"ok": false, "reason": "grounding: итог: нет"}, "uid": "43330717acd2"}
+{"grounding": {"ok": true, "reason": "grounding: итог: да"}, "uid": "f91a9bf79873"}
+{"grounding": {"ok": true, "reason": "grounding: итог: да"}, "uid": "88c129784284"}
+{"grounding": {"ok": true, "reason": "grounding: итог: да"}, "uid": "76a3877d28fd"}
+{"grounding": {"ok": true, "reason": "grounding: итог: да"}, "uid": "47ae5bd78eec"}
+{"grounding": {"ok": true, "reason": "grounding: итог: да"}, "uid": "ba8eba677605"}
+{"grounding": {"ok": true, "reason": "grounding: итог: да"}, "uid": "9070076ecbdb"}
+{"grounding": {"ok": true, "reason": "grounding: итог: да"}, "uid": "aa2f6752526f"}
+{"grounding": {"ok": false, "reason": "grounding: итог: нет"}, "uid": "45f1193271a8"}
+{"grounding": {"ok": true, "reason": "grounding: итог: да  "}, "uid": "2b4751d51db1"}
+{"grounding": {"ok": false, "reason": "grounding: итог: нет"}, "uid": "238955e75c84"}
+{"grounding": {"ok": false, "reason": "grounding: итог: нет"}, "uid": "31158e4aab15"}
+{"grounding": {"ok": false, "reason": "grounding: итог: нет"}, "uid": "6a3e1eb172c5"}
+{"grounding": {"ok": true, "reason": "grounding: итог: да"}, "uid": "f4433b2f1cda"}
+{"grounding": {"ok": true, "reason": "grounding: итог: да"}, "uid": "ad7ab2c06f5a"}
+{"grounding": {"ok": true, "reason": "grounding: итог: да"}, "uid": "3018eec4aba6"}
+{"grounding": {"ok": true, "reason": "grounding: итог: да"}, "uid": "a8193271035a"}
+{"grounding": {"ok": true, "reason": "grounding: итог: да"}, "uid": "8a223a4a442f"}
+{"grounding": {"ok": false, "reason": "grounding: итог: нет"}, "uid": "ae0d414d4db2"}
+{"grounding": {"ok": true, "reason": "grounding: итог: да"}, "uid": "6797b98346c6"}
+{"grounding": {"ok": true, "reason": "grounding: итог: да"}, "uid": "af8da6f97952"}
+{"grounding": {"ok": true, "reason": "grounding: итог: да"}, "uid": "8f397007c9ac"}
+{"grounding": {"ok": true, "reason": "grounding: итог: да"}, "uid": "0f6ca3d95cbb"}
+{"grounding": {"ok": false, "reason": "grounding: итог: нет"}, "uid": "bf449e58afd1"}
+{"grounding": {"ok": true, "reason": "grounding: итог: да"}, "uid": "cebbf30301a1"}
+{"grounding": {"ok": true, "reason": "grounding: итог: да"}, "uid": "c2d245562846"}
+{"grounding": {"ok": true, "reason": "grounding: итог: да"}, "uid": "6442de406caa"}
+{"grounding": {"ok": true, "reason": "grounding: итог: да"}, "uid": "2890c668287a"}
+{"grounding": {"ok": true, "reason": "grounding: итог: да"}, "uid": "2c53175ea361"}
+{"grounding": {"ok": true, "reason": "grounding: итог: да"}, "uid": "31694bc10f1d"}
+{"grounding": {"ok": false, "reason": "grounding: итог: нет"}, "uid": "abb737de90fa"}
+{"grounding": {"ok": true, "reason": "grounding: итог: да"}, "uid": "00d5f60e79a3"}
+{"grounding": {"ok": true, "reason": "grounding: итог: да"}, "uid": "641e16a49b4b"}
+{"grounding": {"ok": true, "reason": "grounding: итог: да  "}, "uid": "523458534d6e"}
+{"grounding": {"ok": true, "reason": "grounding: итог: да"}, "uid": "e203f1511b99"}
+{"grounding": {"ok": true, "reason": "grounding: итог: да"}, "uid": "402c6d5e8370"}
+{"grounding": {"ok": true, "reason": "grounding: итог: да"}, "uid": "f87457d14238"}
+{"grounding": {"ok": true, "reason": "grounding: итог: да"}, "uid": "a3155613488d"}
+{"grounding": {"ok": false, "reason": "grounding: итог: нет"}, "uid": "fefa40fb0f53"}
+{"grounding": {"ok": true, "reason": "grounding: итог: да  "}, "uid": "9a16724c07d3"}
+{"grounding": {"ok": true, "reason": "grounding: итог: да"}, "uid": "718b8aaae852"}
+{"grounding": {"ok": true, "reason": "grounding: итог: да"}, "uid": "0ae3e7936179"}

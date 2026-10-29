@@ -1,0 +1,15 @@
+{
+  "at": "2026-10-28T13:21:25",
+  "stages": [
+    "format",
+    "grounding"
+  ],
+  "input": 2075,
+  "kept": 1637,
+  "rejected": 438,
+  "rejected_by_stage": {
+    "format": 201,
+    "grounding": 237
+  },
+  "api_calls": 538
+}
