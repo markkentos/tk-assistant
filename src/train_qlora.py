@@ -48,9 +48,8 @@ def main() -> None:
     except ImportError as exc:
         sys.exit(f"Нужна GPU-среда с unsloth (см. requirements-colab.txt): {exc}")
 
-    wandb_enabled = cfg["wandb"].get("enabled", False)
-    if wandb_enabled:
-        import wandb
+    report_to = cfg.get("report_to", "tensorboard")
+    print(f"Трекинг экспериментов: {report_to}")
 
     # ---------- Модель (4-bit NF4, dtype подберётся: на T4 это fp16) ----------
     model, tokenizer = FastLanguageModel.from_pretrained(
@@ -112,7 +111,7 @@ def main() -> None:
             save_steps=cfg["train"]["save_steps"],
             seed=cfg["train"]["seed"],
             optim="adamw_8bit",
-            report_to="wandb" if wandb_enabled else "none",
+            report_to=report_to,
             run_name=run_name,
         )
     except TypeError:  # старый TRL: TrainingArguments + отдельные поля SFTTrainer
@@ -131,7 +130,7 @@ def main() -> None:
             save_steps=cfg["train"]["save_steps"],
             seed=cfg["train"]["seed"],
             optim="adamw_8bit",
-            report_to="wandb" if wandb_enabled else "none",
+            report_to=report_to,
             run_name=run_name,
         )
 

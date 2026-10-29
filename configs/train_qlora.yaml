@@ -33,6 +33,6 @@ output:
   push_to_hub: false
   hf_repo: ""              # напр. markkentos/qwen2.5-7b-tk-qlora
 
-wandb:
-  project: tk-assistant
-  enabled: true
+# Трекинг экспериментов: TensorBoard (локально в Colab, без внешних сервисов).
+# Просмотр в Colab: %load_ext tensorboard  →  %tensorboard --logdir outputs/*/checkpoints
+report_to: tensorboard

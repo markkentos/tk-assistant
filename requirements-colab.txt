@@ -2,7 +2,7 @@
 # unsloth тянет за собой совместимые torch, transformers, peft, trl, bitsandbytes, xformers.
 # Официальный способ установки unsloth см. в README (порядок версий важен!).
 unsloth
-wandb
+tensorboard
 datasets
 huggingface_hub
 rouge-score
