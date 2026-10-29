@@ -12,12 +12,13 @@
 ## Пайплайн
 
 ```
-ТК РФ (текст, ~430 статей)
+ТК РФ (текст, 534 статьи)
   → парсинг на статьи (номер, заголовок, текст, глава)          data/scripts/download_tk.py, parse_articles.py
-  → генерация QA-пар сильной LLM через API (2–3 на статью)      data/scripts/generate_qa.py
-  → автоматические фильтры: формат / заземление / самосогласие  data/scripts/filters.py
+  → генерация QA-пар сильной LLM через API (4 на статью)        data/scripts/generate_qa.py
+  → фильтры: формат (+авточинка ссылок) / заземление            data/scripts/filters.py
+  → LLM-предскрин: третий независимый прогон                    data/scripts/prescreen.py
   → дедупликация (fuzzy + опц. эмбеддинги)                      data/scripts/dedup.py
-  → ручная вычитка выборки (500 + 50 отфильтрованных)           data/scripts/review_sample.py
+  → ручная разметка: флагнутые + случайная сотня                data/scripts/finalize_dataset.py
   → стратифицированный сплит train/val/test                     data/scripts/split_dataset.py
   → QLoRA (Unsloth + PEFT + TRL, 4-bit NF4, T4, fp16)           src/train_qlora.py
   → бенчмарк base vs tuned + LLM-as-judge (другая модель)       eval/*
@@ -36,8 +37,8 @@
 
 ## Этапы
 
-- [x] **Этап 0. Подготовка** — структура репо, план, окружение; проверка T4 — `notebooks/00_t4_smoke_test.ipynb` (запустить в Colab, ~10 мин)
-- [~] **Этап 1. Датасет** — ✅ ТК РФ скачан и распарсен (534 статьи, 526 активных); ✅ скрипты генерации/фильтров/дедупа/сплита готовы; ⏳ генерация QA через GigaChat (~2.1k пар, первый проход) → фильтры → вычитка 500 → сплит → HF Datasets
+- [x] **Этап 0. Подготовка** — структура репо, план, окружение; проверка T4 (7.5 GB VRAM, fp16)
+- [x] **Этап 1. Датасет** — 2075 сгенерированных → автофильтры → предскрин → ручная разметка → **1615 пар**, сплит 1259/178/178
 - [ ] **Этап 2. Baseline ДО обучения** — 100 вопросов + ручные эталоны, base few-shot, judge 1–5, калибровка судьи на 30 ответах
 - [ ] **Этап 3. QLoRA** — ≥3 эксперимента в W&B (epochs 1/2/3, lr 1e-4/2e-4), adapter на HF Hub
 - [ ] **Этап 4. Оценка** — те же 100 вопросов, тот же судья; слепая ручная оценка 30 пар; error analysis (10 лучше / 10 хуже)
@@ -96,6 +97,27 @@ notebooks/        # разведочный анализ данных
 - Эталонные ответы бенчмарка и ручная вычитка ведутся в CSV (см. `data/review/README.md`).
 - Каждый эксперимент обучения = отдельный чекпоинт + запись в W&B.
 
+## Качество данных
+
+Протокол: **формат (+авточинка ссылок) → заземление второй моделью → LLM-предскрин →
+ручная разметка флагнутых и случайной выборки**.
+
+| Стадия | Результат |
+|---|---|
+| Генерация | 2075 пар по 521 активной статье (~4 на статью) |
+| Формат | −201 (короткие ответы без обоснования); 539 ответов без ссылки починены автоматически |
+| Заземление | −237 (11.4%: галлюцинации, контент не из статьи) |
+| Предскрин | 14 флагов, **13 подтверждено вручную** (точность 93%) |
+| Дедупликация | −9 самоповторов |
+| Ручная разметка случайной сотни | **0% брака** → остаточный дефект <3% (верхняя граница 95% ДИ) |
+| **Итог** | **1615 пара** → train 1259 / val 178 / test 178 |
+
+Отказ от fuzzy-самосогласия из исходного плана — осознанно: замер на 160 парах показал,
+что галлюцинации проходят (чекер-модель их повторяет), а корректные перефразировки
+отсеиваются. Вместо него — предскрин с другим промптом + ручная разметка.
+
+Эталоны бенчмарка пишутся вручную по тексту ТК (не LLM), test-сплит закрыт до этапа 4.
+
 ## Как воспроизвести
 
 ```bash
@@ -104,11 +126,14 @@ pip install -r requirements.txt
 # Этап 1: данные
 python data/scripts/download_tk.py          # скачает ТК РФ в data/raw/tk/
 python data/scripts/parse_articles.py       # статьи → data/processed/tk_articles.json
-python data/scripts/generate_qa.py --config configs/generate_qa.yaml
-python data/scripts/filters.py --config configs/generate_qa.yaml
+python data/scripts/generate_qa.py --config configs/generate_qa.yaml --shuffle
+python data/scripts/filters.py --config configs/filters.yaml
+python data/scripts/prescreen.py            # третий прогон → флаги для ручной разметки
 python data/scripts/dedup.py
-python data/scripts/review_sample.py --n 500
-python data/scripts/split_dataset.py
+# ручная разметка data/review/*.csv (флагнутые + случайная сотня)
+python data/scripts/finalize_dataset.py     # удалить подтверждённый брак
+python data/scripts/split_dataset.py --input data/processed/qa_final.jsonl
+python data/scripts/stats.py
 
 # Этап 2: baseline (до обучения!)
 python eval/build_benchmark.py --n 100      # → вручную заполнить эталоны

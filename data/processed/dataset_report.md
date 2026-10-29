@@ -1,6 +1,6 @@
 # Отчёт по датасету
 
-Обновлён: 2026-10-28T16:01:32
+Обновлён: 2026-10-29T14:16:46
 
 ## Источник
 - Статей в ТК РФ: 534 (активных: 526, утратили силу: 8)
@@ -32,6 +32,12 @@
 ## Сплиты
 | Сплит | Пар |
 |---|---|
-| train | 0 |
-| val | 0 |
-| test | 0 |
+| train | 1259 |
+| val | 178 |
+| test | 178 |
+
+Типы вопросов в train: {'procedure': 300, 'situational': 267, 'definition': 266, 'deadline': 244, 'amount': 177, 'other': 5}
+
+Типы вопросов в val: {'procedure': 42, 'situational': 38, 'definition': 38, 'deadline': 34, 'amount': 25, 'other': 1}
+
+Типы вопросов в test: {'procedure': 43, 'definition': 37, 'situational': 37, 'deadline': 35, 'amount': 25, 'other': 1}

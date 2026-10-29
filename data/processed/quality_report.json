@@ -1,0 +1,11 @@
+{
+  "protocol": "format → grounding → prescreen → manual (flagged + random 100)",
+  "flagged_total": 14,
+  "flag_confirmed": 13,
+  "prescreen_false_positives": 1,
+  "clean_sample_size": 100,
+  "clean_sample_defects": 0,
+  "removed_total": 13,
+  "final_pairs": 1615,
+  "residual": "остаточный брак по случайной сотне: 0%"
+}
