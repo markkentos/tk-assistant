@@ -93,6 +93,28 @@ def main() -> None:
 
     # ---------- Тренер ----------
     run_name = pathlib.Path(cfg["output"]["adapter_dir"]).name
+
+    # transformers >= 5.17 переименовал warmup_ratio в warmup_steps. Выбираем
+    # параметр по сигнатуре, чтобы код работал на любой версии.
+    import inspect
+    import math
+
+    warmup_ratio = cfg["train"]["warmup_ratio"]
+    effective_batch = (cfg["train"]["per_device_batch_size"]
+                       * cfg["train"]["grad_accum_steps"])
+    total_steps = math.ceil(len(train_dataset) / effective_batch) * cfg["train"]["epochs"]
+
+    def warmup_kwargs_for(cls) -> dict:
+        params = inspect.signature(cls.__init__).parameters
+        if "warmup_ratio" in params:
+            return {"warmup_ratio": warmup_ratio}
+        if "warmup_steps" in params:
+            steps = max(1, int(total_steps * warmup_ratio))
+            print(f"warmup: этой версии нет warmup_ratio → warmup_steps={steps} "
+                  f"(из {total_steps} шагов)")
+            return {"warmup_steps": steps}
+        return {}
+
     try:  # TRL >= 0.13
         train_args = SFTConfig(
             output_dir=str(pathlib.Path(cfg["output"]["adapter_dir"]) / "checkpoints"),
@@ -104,7 +126,7 @@ def main() -> None:
             gradient_accumulation_steps=cfg["train"]["grad_accum_steps"],
             learning_rate=cfg["train"]["lr"],
             lr_scheduler_type=cfg["train"]["scheduler"],
-            warmup_ratio=cfg["train"]["warmup_ratio"],
+            **warmup_kwargs_for(SFTConfig),
             weight_decay=cfg["train"]["weight_decay"],
             fp16=cfg["train"]["fp16"],
             logging_steps=cfg["train"]["logging_steps"],
@@ -123,7 +145,7 @@ def main() -> None:
             gradient_accumulation_steps=cfg["train"]["grad_accum_steps"],
             learning_rate=cfg["train"]["lr"],
             lr_scheduler_type=cfg["train"]["scheduler"],
-            warmup_ratio=cfg["train"]["warmup_ratio"],
+            **warmup_kwargs_for(TrainingArguments),
             weight_decay=cfg["train"]["weight_decay"],
             fp16=cfg["train"]["fp16"],
             logging_steps=cfg["train"]["logging_steps"],
