@@ -50,13 +50,32 @@ class OpenAICompatibleMixin:
             "temperature": temperature,
             "max_tokens": max_tokens,
         }
-        response = self.session.post(self.api_url, json=payload, timeout=120)
-        if response.status_code == 429:  # лимит — подождём и повторим один раз
-            time.sleep(10)
-            response = self.session.post(self.api_url, json=payload, timeout=120)
-        if response.status_code != 200:
-            raise RuntimeError(
-                f"LLM API error HTTP {response.status_code}: {response.text[:300]}")
+        # Ретраи с экспоненциальным бэккоффом: 429 (лимиты), 5xx, таймауты, обрывы.
+        delays = [15, 30, 60, 120, 300]
+        response = None
+        for attempt in range(len(delays) + 1):
+            try:
+                response = self.session.post(self.api_url, json=payload, timeout=120)
+            except requests.RequestException as exc:  # таймауты, обрывы, DNS
+                if attempt == len(delays):
+                    raise RuntimeError(
+                        f"LLM API недоступна после {attempt} ретраев: {exc!r}") from exc
+                time.sleep(delays[attempt])
+                continue
+            if response.status_code == 200:
+                break
+            retriable = response.status_code == 429 or response.status_code >= 500
+            if not retriable or attempt == len(delays):
+                break
+            pause = delays[attempt]
+            retry_after = response.headers.get("Retry-After")
+            if retry_after and retry_after.isdigit():
+                pause = max(pause, int(retry_after))
+            time.sleep(pause)
+        if response is None or response.status_code != 200:
+            status = response.status_code if response is not None else "нет ответа"
+            body = response.text[:300] if response is not None else ""
+            raise RuntimeError(f"LLM API error HTTP {status}: {body}")
         data = response.json()
         return data["choices"][0]["message"]["content"]
 

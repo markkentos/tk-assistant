@@ -10,8 +10,11 @@ output_cache: data/processed/filters_cache.jsonl   # вердикты API-про
 # Стадии (слева направо, дешёвые вперёд):
 #   format       — валидация формата и ссылки на статью (без API)
 #   grounding    — «следует ли ответ из текста статьи?» второй моделью (API)
-#   consistency  — самосогласие: два независимых ответа, сравнение с эталоном (API)
-stages: [format, grounding, consistency]
+#   consistency  — ВЫКЛЮЧЕНА: замер на 160 парах показал, что fuzzy-сходство не
+#                  разделяет хорошие и плохие пары (галлюцинации проходят — чекер
+#                  той же модели повторяет их, а корректные перефразировки получают
+#                  50-69 баллов). Решение: заземление + ручная вычитка.
+stages: [format, grounding]
 
 format:
   question_min_chars: 15
@@ -26,7 +29,7 @@ checker:                            # «вторая модель» — не т�
   model: GigaChat-Max
   temperature: 0.2
   max_tokens: 512
-  request_delay_sec: 0.8
+  request_delay_sec: 2.5            # лимиты бесплатного тарифа: 429 при более агрессивном темпе
 
 grounding:
   pass_value: "да"                  # что должен ответить чекер, чтобы пара прошла

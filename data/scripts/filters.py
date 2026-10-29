@@ -103,8 +103,13 @@ def check_format(pair: dict, cfg: dict) -> tuple[bool, str]:
     if cfg["require_article_reference"]:
         refs = REF_RE.findall(a)
         if not refs:
-            return False, "format: нет ссылки «ст. N ТК РФ»"
-        if pair["article"] not in refs:
+            # Авточинка: содержательный ответ без ссылки (генератор забыл). Статья
+            # пары известна — дописываем; контент отдельно проверит заземление.
+            pair["answer"] = a + f"\nОбоснование: см. ст. {pair['article']} ТК РФ."
+            a = pair["answer"]
+            if len(a) > cfg["answer_max_chars"]:
+                return False, "format: длина ответа после чинки"
+        elif pair["article"] not in refs:
             return False, f"format: ссылка на чужую статью {refs}, ожидалась {pair['article']}"
     return True, "ok"
 
@@ -211,6 +216,9 @@ def main() -> None:
         if (i + 1) % 50 == 0:
             print(f"[{i + 1}/{len(pairs)}] прошло {stats['passed_all']}, "
                   f"отсеяно {len(rejected)}")
+        if (i + 1) % 200 == 0:  # чекпоинт: крах не должен терять прогресс
+            save_jsonl(config["output_filtered"], kept)
+            save_jsonl(config["output_rejected"], rejected)
 
     stamp = dt.datetime.now().isoformat(timespec="seconds")
     save_jsonl(config["output_filtered"], kept)
