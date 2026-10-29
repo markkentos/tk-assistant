@@ -25,6 +25,11 @@ import sys
 
 import yaml
 
+import os
+import sys
+
+sys.path.insert(0, os.path.join(os.path.dirname(__file__), "..", "data", "scripts"))
+
 from common import append_jsonl, load_env, load_json, load_jsonl, save_json, save_jsonl, utf8_console
 from providers import make_provider
 

@@ -16,6 +16,11 @@ import datetime as dt
 import json
 import random
 
+import os
+import sys
+
+sys.path.insert(0, os.path.join(os.path.dirname(__file__), "..", "data", "scripts"))
+
 from common import load_json, load_jsonl, save_json, utf8_console
 
 

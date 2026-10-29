@@ -12,6 +12,11 @@ from __future__ import annotations
 import argparse
 import datetime as dt
 
+import os
+import sys
+
+sys.path.insert(0, os.path.join(os.path.dirname(__file__), "..", "data", "scripts"))
+
 from common import load_json, load_jsonl, save_text, utf8_console
 
 

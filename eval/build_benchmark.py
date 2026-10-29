@@ -17,6 +17,11 @@ import datetime as dt
 import random
 import sys
 
+import os
+import sys
+
+sys.path.insert(0, os.path.join(os.path.dirname(__file__), "..", "data", "scripts"))
+
 from common import load_jsonl, save_jsonl, utf8_console, PROCESSED_DIR
 
 
@@ -58,7 +63,8 @@ def main() -> None:
     csv_path = f"eval/benchmark_references_{stamp}.csv"
     with open(csv_path, "w", encoding="utf-8-sig", newline="") as fh:
         writer = csv.DictWriter(fh, fieldnames=[
-            "id", "article", "chapter", "question_type", "question", "reference", "note"])
+            "id", "article", "chapter", "question_type", "question", "reference", "note"],
+            extrasaction="ignore")
         writer.writeheader()
         writer.writerows(benchmark)
 
