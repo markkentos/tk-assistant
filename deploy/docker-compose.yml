@@ -1,0 +1,22 @@
+services:
+  llama-server:
+    image: ghcr.io/ggml-org/llama.cpp:server
+    restart: unless-stopped
+    volumes:
+      - ./models:/models:ro
+    command: >-
+      -m /models/qwen2.5-7b-tk-q4_k_m.gguf
+      --host 0.0.0.0 --port 8080
+      -c 4096 -t 0
+    ports:
+      - "127.0.0.1:8080:8080"
+
+  gradio:
+    build: ./app
+    restart: unless-stopped
+    environment:
+      - LLAMA_SERVER_URL=http://llama-server:8080
+    ports:
+      - "127.0.0.1:7860:7860"
+    depends_on:
+      - llama-server
