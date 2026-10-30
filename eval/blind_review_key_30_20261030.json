@@ -1,0 +1,122 @@
+{
+  "bm_043": {
+    "A": "tuned",
+    "B": "base"
+  },
+  "bm_042": {
+    "A": "base",
+    "B": "tuned"
+  },
+  "bm_092": {
+    "A": "base",
+    "B": "tuned"
+  },
+  "bm_010": {
+    "A": "tuned",
+    "B": "base"
+  },
+  "bm_066": {
+    "A": "base",
+    "B": "tuned"
+  },
+  "bm_051": {
+    "A": "tuned",
+    "B": "base"
+  },
+  "bm_002": {
+    "A": "base",
+    "B": "tuned"
+  },
+  "bm_071": {
+    "A": "tuned",
+    "B": "base"
+  },
+  "bm_016": {
+    "A": "tuned",
+    "B": "base"
+  },
+  "bm_079": {
+    "A": "tuned",
+    "B": "base"
+  },
+  "bm_074": {
+    "A": "base",
+    "B": "tuned"
+  },
+  "bm_011": {
+    "A": "tuned",
+    "B": "base"
+  },
+  "bm_056": {
+    "A": "base",
+    "B": "tuned"
+  },
+  "bm_057": {
+    "A": "base",
+    "B": "tuned"
+  },
+  "bm_073": {
+    "A": "tuned",
+    "B": "base"
+  },
+  "bm_046": {
+    "A": "tuned",
+    "B": "base"
+  },
+  "bm_049": {
+    "A": "base",
+    "B": "tuned"
+  },
+  "bm_093": {
+    "A": "base",
+    "B": "tuned"
+  },
+  "bm_077": {
+    "A": "tuned",
+    "B": "base"
+  },
+  "bm_038": {
+    "A": "tuned",
+    "B": "base"
+  },
+  "bm_031": {
+    "A": "tuned",
+    "B": "base"
+  },
+  "bm_022": {
+    "A": "base",
+    "B": "tuned"
+  },
+  "bm_033": {
+    "A": "base",
+    "B": "tuned"
+  },
+  "bm_097": {
+    "A": "tuned",
+    "B": "base"
+  },
+  "bm_081": {
+    "A": "tuned",
+    "B": "base"
+  },
+  "bm_050": {
+    "A": "tuned",
+    "B": "base"
+  },
+  "bm_084": {
+    "A": "base",
+    "B": "tuned"
+  },
+  "bm_027": {
+    "A": "base",
+    "B": "tuned"
+  },
+  "bm_088": {
+    "A": "base",
+    "B": "tuned"
+  },
+  "bm_034": {
+    "A": "base",
+    "B": "tuned"
+  }
+}
