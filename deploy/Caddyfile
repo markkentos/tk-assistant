@@ -1,0 +1,5 @@
+# ЗАМЕНИ your-domain.ru на свой домен из рег.ру (например, tk-assistant.ru)
+# или на поддомен: demo.your-domain.ru
+your-domain.ru {
+    reverse_proxy gradio:7860
+}

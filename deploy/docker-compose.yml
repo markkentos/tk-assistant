@@ -16,7 +16,25 @@ services:
     restart: unless-stopped
     environment:
       - LLAMA_SERVER_URL=http://llama-server:8080
-    ports:
-      - "127.0.0.1:7860:7860"
+    # Наружу не торчит — на него смотрит только Caddy внутри сети compose
+    expose:
+      - "7860"
     depends_on:
       - llama-server
+
+  caddy:
+    image: caddy:2-alpine
+    restart: unless-stopped
+    ports:
+      - "80:80"
+      - "443:443"
+    volumes:
+      - ./Caddyfile:/etc/caddy/Caddyfile:ro
+      - caddy_data:/data
+      - caddy_config:/config
+    depends_on:
+      - gradio
+
+volumes:
+  caddy_data:
+  caddy_config:
