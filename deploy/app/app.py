@@ -2,12 +2,19 @@
 """Gradio-демо tk-assistant: чат с tuned-моделью через llama-server (OpenAI API)."""
 import inspect
 import os
+import time
+from collections import defaultdict, deque
 
 import gradio as gr
 from openai import OpenAI
 
 LLAMA_SERVER_URL = os.environ.get("LLAMA_SERVER_URL", "http://llama-server:8080")
 client = OpenAI(base_url=f"{LLAMA_SERVER_URL}/v1", api_key="none")
+
+# Примитивный rate limiting: публичное демо на домашнем железе
+RATE_LIMIT = 5          # максимум запросов
+RATE_WINDOW = 60        # за скользящее окно, сек
+_clients: dict[str, deque] = defaultdict(lambda: deque(maxlen=RATE_LIMIT))
 
 SYSTEM_PROMPT = (
     "Ты — ассистент по трудовому праву РФ. Отвечай на вопросы, опираясь на "
@@ -32,7 +39,26 @@ DESCRIPTION = (
 )
 
 
-def respond(message: str, history: list):
+def _client_ip(request) -> str:
+    """IP посетителя: Caddy пробрасывает X-Forwarded-For."""
+    if request is None:
+        return ""
+    xff = request.headers.get("x-forwarded-for") or ""
+    return xff.split(",")[0].strip() or (request.client.host if request.client else "")
+
+
+def respond(message: str, history: list, request: gr.Request = None):
+    ip = _client_ip(request)
+    if ip:
+        now = time.time()
+        bucket = _clients[ip]
+        while bucket and now - bucket[0] > RATE_WINDOW:
+            bucket.popleft()
+        if len(bucket) >= RATE_LIMIT:
+            yield "⏳ Слишком много запросов с этого адреса — попробуй через минуту."
+            return
+        bucket.append(now)
+
     messages = [{"role": "system", "content": SYSTEM_PROMPT}]
     for turn in history:
         messages.append({"role": turn["role"], "content": turn["content"]})
