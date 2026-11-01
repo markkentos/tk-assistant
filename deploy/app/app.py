@@ -1,5 +1,6 @@
 # -*- coding: utf-8 -*-
 """Gradio-демо tk-assistant: чат с tuned-моделью через llama-server (OpenAI API)."""
+import inspect
 import os
 
 import gradio as gr
@@ -48,14 +49,27 @@ def respond(message: str, history: list):
         yield partial
 
 
-demo = gr.ChatInterface(
-    respond,
-    type="messages",
-    title="tk-assistant · трудовое право РФ",
-    description=DESCRIPTION,
-    examples=EXAMPLES,
-    cache_examples=False,
-)
+def build_demo():
+    """ChatInterface с адаптацией к версии gradio (сигнатура меняется между мажорами)."""
+    print("gradio version:", gr.__version__)
+    kwargs = dict(
+        title="tk-assistant · трудовое право РФ",
+        description=DESCRIPTION,
+        examples=EXAMPLES,
+        cache_examples=False,
+    )
+    params = inspect.signature(gr.ChatInterface.__init__).parameters
+    kwargs = {k: v for k, v in kwargs.items() if k in params}
+    all_keys = ("title", "description", "examples", "cache_examples")
+    dropped = [k for k in all_keys if k not in params]
+    if dropped:
+        print("Gradio: параметры не поддерживаются этой версией, пропущены:", dropped)
+    if "type" in params:
+        return gr.ChatInterface(respond, type="messages", **kwargs)
+    return gr.ChatInterface(respond, **kwargs)
+
+
+demo = build_demo()
 
 if __name__ == "__main__":
     demo.launch(server_name="0.0.0.0", server_port=7860)
