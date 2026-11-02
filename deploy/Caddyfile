@@ -1,7 +1,24 @@
 tk-assistant.ru {
-    reverse_proxy gradio:7860
+	encode zstd gzip
+
+	# API llama-server (OpenAI-совместимый, со стримингом)
+	handle /v1/* {
+		reverse_proxy llama-server:8080
+	}
+
+	# Статический фронтенд
+	handle {
+		root * /srv/web
+		try_files {path} /index.html
+		file_server
+	}
+
+	header {
+		X-Content-Type-Options nosniff
+		Referrer-Policy no-referrer-when-downgrade
+	}
 }
 
 www.tk-assistant.ru {
-    redir https://tk-assistant.ru{uri}
+	redir https://tk-assistant.ru{uri}
 }

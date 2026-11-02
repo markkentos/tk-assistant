@@ -1,0 +1,234 @@
+/* tk-assistant · тёмный минимализм в духе chat.z.ai */
+
+:root {
+  --bg: #0e0f11;
+  --surface: #16171a;
+  --surface-2: #1c1d21;
+  --border: #26272b;
+  --text: #e8e8ea;
+  --dim: #9a9ba1;
+  --accent: #d97706;
+  --accent-hover: #b45309;
+}
+
+* { box-sizing: border-box; }
+
+html, body {
+  margin: 0;
+  padding: 0;
+  background: var(--bg);
+  color: var(--text);
+  font-family: "Inter", ui-sans-serif, system-ui, -apple-system, "Segoe UI", sans-serif;
+  font-size: 15px;
+  line-height: 1.55;
+  -webkit-font-smoothing: antialiased;
+}
+
+/* ── Верхняя панель ─────────────────────────────────────────────── */
+.topbar {
+  position: sticky;
+  top: 0;
+  z-index: 10;
+  background: rgba(14, 15, 17, 0.75);
+  backdrop-filter: blur(10px);
+  border-bottom: 1px solid var(--border);
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0 20px;
+  height: 52px;
+}
+.topbar-actions { display: flex; align-items: center; gap: 8px; }
+.tbtn {
+  background: transparent;
+  border: 1px solid var(--border);
+  border-radius: 8px;
+  padding: 5px 12px;
+  font-size: 13px;
+  color: var(--dim);
+  text-decoration: none;
+  cursor: pointer;
+  transition: color .15s, border-color .15s;
+}
+.tbtn:hover { color: var(--text); border-color: #3a3b40; }
+.brand {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  font-weight: 600;
+  font-size: 14.5px;
+}
+.logo { font-size: 16px; }
+.gh {
+  color: var(--dim);
+  font-size: 13px;
+  text-decoration: none;
+  border: 1px solid var(--border);
+  border-radius: 8px;
+  padding: 5px 10px;
+  transition: color .15s, border-color .15s;
+}
+.gh:hover { color: var(--text); border-color: #3a3b40; }
+
+/* ── Основная область ───────────────────────────────────────────── */
+main {
+  max-width: 800px;
+  margin: 0 auto;
+  padding: 24px 16px 150px;
+}
+
+/* Пустое состояние */
+.empty {
+  text-align: center;
+  padding: 14vh 8px 0;
+}
+.empty h1 {
+  margin: 0 0 10px;
+  font-size: 30px;
+  font-weight: 700;
+  letter-spacing: -0.02em;
+  line-height: 1.25;
+}
+.empty .sub { color: var(--dim); margin: 0 0 28px; }
+.chips {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  max-width: 520px;
+  margin: 0 auto 24px;
+}
+.chip {
+  background: var(--surface);
+  border: 1px solid var(--border);
+  border-radius: 12px;
+  padding: 12px 16px;
+  color: var(--text);
+  font-size: 14px;
+  text-align: left;
+  cursor: pointer;
+  transition: background .15s, border-color .15s;
+}
+.chip:hover { background: var(--surface-2); border-color: #3a3b40; }
+.empty .warn { color: var(--dim); font-size: 12.5px; margin: 0; }
+
+/* ── Сообщения ──────────────────────────────────────────────────── */
+.chat { display: flex; flex-direction: column; gap: 22px; }
+
+.msg { display: flex; flex-direction: column; }
+.msg .who {
+  font-size: 12px;
+  color: var(--dim);
+  margin-bottom: 6px;
+}
+.msg-user { align-items: flex-end; }
+.msg-user .bubble {
+  background: var(--surface-2);
+  border-radius: 16px 16px 4px 16px;
+  padding: 10px 14px;
+  max-width: 85%;
+  white-space: pre-wrap;
+}
+.msg-assistant .bubble {
+  background: transparent;
+  padding: 0;
+  white-space: pre-wrap;
+}
+.bubble p { margin: 0 0 10px; }
+.bubble p:last-child { margin-bottom: 0; }
+.bubble a { color: var(--accent); text-decoration: none; }
+.bubble a:hover { text-decoration: underline; }
+.bubble strong { font-weight: 600; }
+.bubble code {
+  font-family: "JetBrains Mono", Consolas, monospace;
+  font-size: 13px;
+  background: var(--surface-2);
+  border-radius: 6px;
+  padding: 1px 6px;
+}
+
+.caret {
+  display: inline-block;
+  width: 8px;
+  height: 16px;
+  background: var(--accent);
+  vertical-align: text-bottom;
+  animation: blink 1s steps(2) infinite;
+  border-radius: 2px;
+}
+@keyframes blink { 50% { opacity: 0; } }
+
+/* ── Ввод ───────────────────────────────────────────────────────── */
+.composer-wrap {
+  position: fixed;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  z-index: 5;
+  background: linear-gradient(transparent, var(--bg) 30%);
+  padding: 24px 16px 14px;
+}
+.composer {
+  max-width: 760px;
+  margin: 0 auto;
+  background: var(--surface);
+  border: 1px solid var(--border);
+  border-radius: 16px;
+  padding: 10px 10px 10px 16px;
+  display: flex;
+  align-items: flex-end;
+  gap: 10px;
+  transition: border-color .15s;
+}
+.composer:focus-within { border-color: #3a3b40; }
+.composer textarea {
+  flex: 1;
+  background: transparent;
+  border: none;
+  outline: none;
+  resize: none;
+  color: var(--text);
+  font: inherit;
+  font-size: 15px;
+  line-height: 1.5;
+  max-height: 160px;
+  padding: 4px 0;
+}
+.composer textarea::placeholder { color: var(--dim); }
+#send {
+  width: 34px;
+  height: 34px;
+  border-radius: 50%;
+  border: none;
+  background: var(--accent);
+  color: #fff;
+  font-size: 17px;
+  line-height: 1;
+  cursor: pointer;
+  flex-shrink: 0;
+  transition: background .15s, opacity .15s;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+#send:hover:not(:disabled) { background: var(--accent-hover); }
+#send:disabled { opacity: .45; cursor: default; }
+
+.hint {
+  max-width: 760px;
+  margin: 8px auto 0;
+  text-align: center;
+  color: var(--dim);
+  font-size: 11.5px;
+}
+
+/* ── Скроллбар ──────────────────────────────────────────────────── */
+::-webkit-scrollbar { width: 10px; }
+::-webkit-scrollbar-thumb { background: #2a2b30; border-radius: 5px; }
+::-webkit-scrollbar-thumb:hover { background: #3a3b40; }
+
+@media (max-width: 640px) {
+  .empty h1 { font-size: 24px; }
+  main { padding: 16px 12px 130px; }
+  .composer-wrap { padding: 12px 12px 10px; }
+  .msg-user .bubble { max-width: 100%; }
+}

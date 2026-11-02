@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>tk-assistant — трудовое право РФ</title>
+<meta name="description" content="Ассистент по трудовому праву РФ. QLoRA fine-tune Qwen2.5-7B. Демонстрация, не юридическая консультация.">
+<link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>⚖️</text></svg>">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap">
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<header class="topbar">
+  <div class="brand"><span class="logo">⚖️</span> tk-assistant</div>
+  <div class="topbar-actions">
+    <button id="newchat" class="tbtn" title="Начать новый диалог">Новый чат</button>
+    <a class="tbtn" href="https://github.com/markkentos/tk-assistant" target="_blank" rel="noopener">GitHub</a>
+  </div>
+</header>
+
+<main>
+  <section id="empty" class="empty">
+    <h1>Ассистент по трудовому<br>праву РФ</h1>
+    <p class="sub">Дообучен методом QLoRA на 1615 парах «вопрос–ответ»<br>по тексту Трудового кодекса</p>
+    <div class="chips" id="chips"></div>
+  </section>
+  <section id="chat" class="chat" hidden></section>
+</main>
+
+<div class="composer-wrap">
+  <div class="composer">
+    <textarea id="input" rows="1" placeholder="Спросите про трудовое право РФ…"></textarea>
+    <button id="send" title="Отправить" aria-label="Отправить">↑</button>
+  </div>
+  <p class="hint">Демонстрация, не юридическая консультация</p>
+</div>
+
+<script src="app.js"></script>
+</body>
+</html>

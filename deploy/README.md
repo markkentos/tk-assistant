@@ -1,36 +1,32 @@
 # Деплой tk-assistant (GGUF Q4_K_M) — Docker-стек
 
-Состав: `llama.cpp server` (инференс) + Gradio UI (чат со стримингом).
+Состав: **llama.cpp server** (инференс, OpenAI-совместимый API со стримингом) +
+**Caddy** (кастомный тёмный фронтенд + reverse-proxy `/v1`).
 
-## Запуск на своём компьютере (Windows/Linux/macOS)
+## Структура
 
-1. Положи GGUF-файл (`*.gguf`, ~4.4 ГБ из Colab-ноутбука `03_gguf_export_colab.ipynb`)
-   в папку `deploy/models/`:
+```
+deploy/
+├── docker-compose.yml   # llama-server + caddy
+├── Caddyfile            # статика из web/ + прокси /v1/* → llama-server
+├── models/              # qwen2.5-7b-tk-q4_k_m.gguf (~4.4 ГБ, в .gitignore)
+└── web/                 # фронтенд: index.html, style.css, app.js (ванильный JS)
+```
 
-   ```
-   deploy/
-   ├── docker-compose.yml
-   ├── models/
-   │   └── qwen2.5-7b-tk-q4_k_m.gguf
-   └── app/
-   ```
+Фронтенд — ванильные HTML/CSS/JS без сборки: правки `web/*` подхватываются
+обновлением страницы (F5). Контейнер пересобирать не нужно.
 
-2. Из папки `deploy/`:
+## Запуск
 
-   ```bash
-   docker compose up --build -d
-   ```
+```bash
+cd deploy
+docker compose up -d
+```
 
-3. Открой http://localhost:7860 — чат-интерфейс.
+- Локально: `https://tk-assistant.ru` (через hairpin; «Обход NAT» должен быть ON)
+- Снаружи: то же — при условии настроенного проброса и белого IP
 
-Первый старт: llama-server загрузит модель в память (~1–2 минуты),
-последующие ответы — стримингом по ~10–30 секунд (CPU).
-
-## Полезное
-
-- Логи инференса: `docker compose logs -f llama-server`
-- Остановить: `docker compose down`
-- Потоки CPU: параметр `-t 0` в `docker-compose.yml` (0 = авто)
+API llama-server также доступен локально: `http://localhost:8080/v1` (127.0.0.1).
 
 ## Публичный доступ (домен на рег.ру + белый IP)
 
@@ -46,11 +42,18 @@
    ```
 
 5. **Caddyfile**: впиши свой домен вместо `your-domain.ru`.
-6. `docker compose up -d caddy gradio llama-server` → Caddy сам получит
+6. `docker compose up -d caddy` → Caddy сам получит
    HTTPS-сертификат Let's Encrypt (порты 80+443 должны быть доступны из интернета).
 
 Проверка: `nslookup твой-домен` (должен вернуть белый IP) → открой `https://твой-домен`.
 
-Безопасность: наружу открыты только 80/443 (Caddy), llama-server и Gradio слушают
-внутри сети compose. Любой в интернете сможет пользоваться демо — это осознанный
+Безопасность: наружу открыты только 80/443 (Caddy), llama-server слушает
+127.0.0.1 внутри хоста. Любой в интернете сможет пользоваться демо — это осознанный
 выбор для портфолио; при желании Caddy умеет basic_auth (добавим по запросу).
+
+## Безопасность (из реального опыта деплоя)
+
+- Билайн/SmartBox GIGA дропает входящий 443 даже при настроенном пробросе —
+  рабочее решение: внешний порт 8443 → внутренний 443 (см. роутер),
+  ссылка `https://tk-assistant.ru:8443`
+- Rate limiting на клиента — в `web/app.js` (5 запросов/мин на IP)
