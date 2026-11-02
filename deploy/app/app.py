@@ -2,6 +2,7 @@
 """Gradio-демо tk-assistant: чат с tuned-моделью через llama-server (OpenAI API)."""
 import inspect
 import os
+import re
 import time
 from collections import defaultdict, deque
 
@@ -32,19 +33,42 @@ EXAMPLES = [
 ]
 
 DESCRIPTION = (
-    "Демо модели Qwen2.5-7B-Instruct, дообученной методом QLoRA на 1615 парах "
-    "вопрос–ответ по Трудовому кодексу РФ. "
-    "[Код проекта](https://github.com/markkentos/tk-assistant).\n\n"
-    "⚠️ Демонстрация, не юридическая консультация."
+    "**Ассистент по трудовому праву РФ** · QLoRA fine-tune Qwen2.5-7B · "
+    "[код проекта](https://github.com/markkentos/tk-assistant)\n\n"
+    "⚠️ Демонстрация, не юридическая консультация"
 )
 
+TITLE = "tk-assistant — трудовое право РФ"
 
+# Ссылки на статьи «ст. N ТК РФ» → кликабельные (zakonrf.info)
+ARTICLE_LINK_RE = re.compile(
+    r"ст(?:ать[а-яё]*)?\.?\s*№?\s*(\d+(?:\.\d+)?)\s*ТК\s*РФ", re.IGNORECASE)
+
+
+def linkify(text: str) -> str:
+    def _link(m: re.Match) -> str:
+        return f"[{m.group(0)}](https://www.zakonrf.info/tk/{m.group(1)}/)"
+
+    return ARTICLE_LINK_RE.sub(_link, text)
+
+
+# Примитивный rate limiting: публичное демо на домашнем железе
 def _client_ip(request) -> str:
-    """IP посетителя: Caddy пробрасывает X-Forwarded-For."""
     if request is None:
         return ""
     xff = request.headers.get("x-forwarded-for") or ""
     return xff.split(",")[0].strip() or (request.client.host if request.client else "")
+
+
+def _rate_ok(ip: str) -> bool:
+    now = time.time()
+    bucket = _clients[ip]
+    while bucket and now - bucket[0] > RATE_WINDOW:
+        bucket.popleft()
+    if len(bucket) >= RATE_LIMIT:
+        return False
+    bucket.append(now)
+    return True
 
 
 def respond(message: str, history: list, request: gr.Request = None):
@@ -71,22 +95,57 @@ def respond(message: str, history: list, request: gr.Request = None):
     partial = ""
     for chunk in stream:
         delta = chunk.choices[0].delta.content or ""
-        partial += delta
-        yield partial
+        if delta:
+            partial += delta
+            yield linkify(partial)
+
+
+# ── Визуал: тёплая бумага + янтарный акцент, узкая колонка ──────────────────
+custom_theme = gr.themes.Soft(
+    primary_hue="amber",
+    secondary_hue="stone",
+    neutral_hue="stone",
+    font=[gr.themes.GoogleFont("Inter"), "ui-sans-serif", "system-ui", "sans-serif"],
+    font_mono=[gr.themes.GoogleFont("JetBrains Mono"), "Consolas", "monospace"],
+).set(
+    body_background_fill="#faf9f7",
+    body_background_fill_dark="#1c1917",
+    block_background_fill="#ffffff",
+    block_background_fill_dark="#292524",
+    block_border_width="0px",
+    block_title_text_color="#78716c",
+    button_primary_background_fill="#d97706",
+    button_primary_background_fill_hover="#b45309",
+    button_primary_text_color="#ffffff",
+    slider_color="#d97706",
+)
+
+custom_css = """
+.gradio-container {max-width: 840px !important; margin: 0 auto !important;}
+footer {visibility: hidden !important; display: none !important;}
+#chatbot {border: none !important; box-shadow: none !important; background: transparent !important;}
+h1 {font-weight: 700 !important; letter-spacing: -0.02em !important;}
+.prose p {margin-bottom: 0.4rem !important;}
+a {color: #b45309 !important; text-decoration: none !important;}
+a:hover {text-decoration: underline !important;}
+"""
 
 
 def build_demo():
     """ChatInterface с адаптацией к версии gradio (сигнатура меняется между мажорами)."""
     print("gradio version:", gr.__version__)
     kwargs = dict(
-        title="tk-assistant · трудовое право РФ",
+        title=TITLE,
         description=DESCRIPTION,
         examples=EXAMPLES,
         cache_examples=False,
+        theme=custom_theme,
+        css=custom_css,
     )
     params = inspect.signature(gr.ChatInterface.__init__).parameters
     kwargs = {k: v for k, v in kwargs.items() if k in params}
-    all_keys = ("title", "description", "examples", "cache_examples")
+    all_keys = ("title", "description", "examples", "cache_examples",
+                "theme", "css")
     dropped = [k for k in all_keys if k not in params]
     if dropped:
         print("Gradio: параметры не поддерживаются этой версией, пропущены:", dropped)
