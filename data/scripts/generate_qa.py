@@ -87,6 +87,18 @@ def build_prompt(article: dict, types: list[str], n: int) -> str:
     )
 
 
+# Вторая волна: упор на исключения, цифры/сроки, процедуры и живые формулировки
+V2_EXTRA = """
+
+ДОПОЛНИТЕЛЬНОЕ ТРЕБОВАНИЕ (вторая волна датасета):
+- Делай упор на ИСКЛЮЧЕНИЯ из общих правил, точные ЦИФРЫ, СУММЫ, СРОКИ
+  и пошаговые ПРОЦЕДУРЫ из текста статьи.
+- Избегай простых вопросов уровня «что такое X» и пересказа первого абзаца.
+- Формулируй как спросил бы человек в реальной жизненной ситуации
+  (с деталями: «работаю по срочному договору», «у меня двое детей» и т.п.).
+- Для ситуационных вопросов добавляй конкретные вводные."""
+
+
 def parse_pairs(raw_answer: str, article: dict, allowed_types: set[str]) -> list[dict]:
     """Парсим и первично валидируем ответ генератора."""
     items = extract_json_array(raw_answer)
@@ -121,7 +133,8 @@ ARTICLE_GENERATOR = ""  # заполнится в run()
 
 
 def run(config_path: str, limit: int | None, only_articles: list[str] | None,
-        dry_run: bool, shuffle: bool = False, seed: int = 42) -> None:
+        dry_run: bool, shuffle: bool = False, seed: int = 42,
+        v2: bool = False) -> None:
     global ARTICLE_GENERATOR
 
     with open(config_path, "r", encoding="utf-8") as fh:
@@ -137,13 +150,21 @@ def run(config_path: str, limit: int | None, only_articles: list[str] | None,
 
     done = set()
     try:
-        done = {r["article"] for r in load_jsonl(config["output_raw"])}
+        rows = load_jsonl(config["output_raw"])
+        if v2:
+            # вторая волна: пропускаем статьи, у которых уже есть пары wave=2
+            done = {r["article"] for r in rows
+                    if r.get("meta", {}).get("wave") == 2}
+        else:
+            done = {r["article"] for r in rows}
         print(f"Докачка: в {config['output_raw']} уже есть статьи: {len(done)}")
     except FileNotFoundError:
         pass
 
     todo = []
     for article in articles:
+        # done уже посчитан с учётом волны: в v2 пропускаем статьи с готовыми
+        # парами wave=2, в обычном режиме — статьи из первой волны
         if article["status"] != "active" or article["number"] in done:
             continue
         if len(article["text"]) < 100:  # слишком короткие не информативны
@@ -169,6 +190,8 @@ def run(config_path: str, limit: int | None, only_articles: list[str] | None,
         offset = index * n_questions
         types = [all_types[(offset + j) % len(all_types)] for j in range(n_questions)]
         prompt = build_prompt(article, sorted(set(types)), n_questions)
+        if v2:
+            prompt += V2_EXTRA
 
         if dry_run:
             print("=" * 80)
@@ -199,6 +222,7 @@ def run(config_path: str, limit: int | None, only_articles: list[str] | None,
             continue
 
         for pair in pairs:
+            pair["meta"]["wave"] = 2 if v2 else 1
             append_jsonl(config["output_raw"], pair)
         stats["articles"] += 1
         stats["pairs"] += len(pairs)
@@ -227,12 +251,15 @@ def main() -> None:
                         help="случайный порядок статей (при обрыве датасет останется "
                              "равномерным, а не «первые N»)")
     parser.add_argument("--seed", type=int, default=42)
+    parser.add_argument("--v2", action="store_true",
+                        help="вторая волна: упор на исключения, цифры/сроки, процедуры")
     parser.add_argument("--dry-run", action="store_true",
                         help="показать промпты без обращения к API")
     args = parser.parse_args()
 
     only = args.articles.split(",") if args.articles else None
-    run(args.config, args.limit, only, args.dry_run, args.shuffle, args.seed)
+    run(args.config, args.limit, only, args.dry_run, args.shuffle, args.seed,
+        v2=args.v2)
 
 
 if __name__ == "__main__":

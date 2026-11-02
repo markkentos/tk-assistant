@@ -9,6 +9,9 @@
 
 Запуск:
     python data/scripts/split_dataset.py [--train 0.78 --val 0.11 --test 0.11]
+
+Защита бенчмарка: вопросы из eval/benchmark.jsonl жёстко закрепляются в test-сплите,
+чтобы при пересборке датасета (v2 и далее) они не попали в обучение.
 """
 from __future__ import annotations
 
@@ -41,8 +44,21 @@ def main() -> None:
     pairs = load_jsonl(args.input)
     rng = random.Random(args.seed)
 
+    # Защита бенчмарка: вопросы из eval/benchmark.jsonl всегда уходят в test,
+    # чтобы переобучение на пересобранном train не контаминировало бенчмарк
+    benchmark_uids = set()
+    try:
+        for b in load_jsonl("eval/benchmark.jsonl"):
+            if b.get("uid"):
+                benchmark_uids.add(b["uid"])
+    except FileNotFoundError:
+        pass
+    locked = [p for p in pairs if p.get("uid") in benchmark_uids]
+    rest = [p for p in pairs if p.get("uid") not in benchmark_uids]
+    print(f"Бенчмарк: {len(locked)} вопросов закреплены в test")
+
     strata: dict[str, list[dict]] = collections.defaultdict(list)
-    for pair in pairs:
+    for pair in rest:
         strata[pair["question_type"]].append(pair)
 
     train, val, test = [], [], []
@@ -55,6 +71,9 @@ def main() -> None:
         train += group[:n_train]
         val += group[n_train:n_train + n_val]
         test += group[n_train + n_val:]
+
+    # заблокированные бенчмарк-вопросы добавляются в конец test
+    test += locked
 
     for name, split in (("train", train), ("val", val), ("test", test)):
         rng.shuffle(split)
