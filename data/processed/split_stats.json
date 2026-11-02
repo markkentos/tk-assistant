@@ -1,5 +1,5 @@
 {
-  "at": "2026-10-29T14:16:46",
+  "at": "2026-11-03T02:09:21",
   "seed": 42,
   "fractions": {
     "train": 0.78,
@@ -7,34 +7,34 @@
     "test": 0.11
   },
   "sizes": {
-    "train": 1259,
-    "val": 178,
-    "test": 178
+    "train": 3043,
+    "val": 429,
+    "test": 525
   },
   "question_type_dist": {
     "train": {
-      "amount": 177,
-      "procedure": 300,
-      "situational": 267,
-      "deadline": 244,
-      "definition": 266,
-      "other": 5
+      "amount": 432,
+      "definition": 634,
+      "deadline": 567,
+      "situational": 695,
+      "other": 18,
+      "procedure": 697
     },
     "val": {
-      "procedure": 42,
-      "situational": 38,
-      "deadline": 34,
-      "definition": 38,
-      "amount": 25,
-      "other": 1
+      "definition": 89,
+      "deadline": 80,
+      "procedure": 98,
+      "situational": 98,
+      "amount": 61,
+      "other": 3
     },
     "test": {
-      "definition": 37,
-      "deadline": 35,
-      "procedure": 43,
-      "situational": 37,
-      "amount": 25,
-      "other": 1
+      "amount": 74,
+      "definition": 111,
+      "deadline": 98,
+      "procedure": 121,
+      "situational": 118,
+      "other": 3
     }
   }
 }
