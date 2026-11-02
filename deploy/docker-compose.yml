@@ -14,6 +14,10 @@ services:
   gradio:
     build: ./app
     restart: unless-stopped
+    volumes:
+      # app.py монтируется: правки кода не требуют пересборки образа,
+      # достаточно `docker compose restart gradio`
+      - ./app/app.py:/app/app.py:ro
     environment:
       - LLAMA_SERVER_URL=http://llama-server:8080
     # Наружу не торчит — на него смотрит только Caddy внутри сети compose
