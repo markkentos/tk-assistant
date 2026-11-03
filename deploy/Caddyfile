@@ -1,12 +1,11 @@
 tk-assistant.ru {
 	encode zstd gzip
 
-	# API llama-server (OpenAI-совместимый, со стримингом)
+	# Статический фронтенд + RAG-прокси
 	handle /v1/* {
-		reverse_proxy llama-server:8080
+		reverse_proxy rag:8000
 	}
 
-	# Статический фронтенд
 	handle {
 		root * /srv/web
 		try_files {path} /index.html
