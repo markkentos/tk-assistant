@@ -1,0 +1,54 @@
+# GPU-вариант стека для ПК с NVIDIA (деплой на машине с видеокартой).
+# Запуск: docker compose -f docker-compose.gpu.yml up -d --build
+# Требуется NVIDIA-драйвер с поддержкой WSL2 CUDA (драйверы 511+).
+
+services:
+  llama-server:
+    image: ghcr.io/ggml-org/llama.cpp:server-cuda
+    restart: unless-stopped
+    volumes:
+      - ./models:/models:ro
+    command: >-
+      -m /models/qwen2.5-7b-tk-q4_k_m.gguf
+      --host 0.0.0.0 --port 8080
+      -c 4096 -ngl 99
+    ports:
+      - "127.0.0.1:8080:8080"
+    deploy:
+      resources:
+        reservations:
+          devices:
+            - driver: nvidia
+              count: all
+              capabilities: [gpu]
+
+  rag:
+    build: ./rag
+    restart: unless-stopped
+    environment:
+      - TK_ARTICLES_PATH=/app/data/tk_articles.json
+      - LLAMA_SERVER_URL=http://llama-server:8080
+    volumes:
+      - ../data/processed/tk_articles.json:/app/data/tk_articles.json:ro
+    ports:
+      - "8001:8000"
+    depends_on:
+      - llama-server
+
+  caddy:
+    image: caddy:2-alpine
+    restart: unless-stopped
+    ports:
+      - "80:80"
+      - "443:443"
+    volumes:
+      - ./Caddyfile:/etc/caddy/Caddyfile:ro
+      - ./web:/srv/web:ro
+      - caddy_data:/data
+      - caddy_config:/config
+    depends_on:
+      - rag
+
+volumes:
+  caddy_data:
+  caddy_config:

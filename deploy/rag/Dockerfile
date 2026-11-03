@@ -2,14 +2,12 @@ FROM python:3.11-slim
 
 WORKDIR /app
 
-# torch — CPU-сборка (190 МБ вместо 2+ ГБ CUDA-колеса)
+# torch — CPU-сборка (190 МБ); модели эмбеддера/переранкинщика монтируются
+# с хоста через volume (см. docker-compose.yml), а не качаются в образ
 RUN pip install --no-cache-dir torch --index-url https://download.pytorch.org/whl/cpu
 
 COPY requirements.txt .
 RUN pip install --no-cache-dir -r requirements.txt
-
-# Предзагрузка эмбеддера в образ: сервис стартует без доступа в интернет
-RUN python -c "from sentence_transformers import SentenceTransformer; SentenceTransformer('paraphrase-multilingual-MiniLM-L12-v2')"
 
 COPY rag_service.py .
 

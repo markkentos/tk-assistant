@@ -1,25 +1,15 @@
 services:
   llama-server:
-    # NVIDIA GPU: server-cuda образ + проброс GPU + все слои в VRAM
-    # (если CUDA в Docker не заработает — верни image :server (CPU), флаг -t 0
-    #  и убери блок deploy.resources)
-    image: ghcr.io/ggml-org/llama.cpp:server-cuda
+    image: ghcr.io/ggml-org/llama.cpp:server
     restart: unless-stopped
     volumes:
       - ./models:/models:ro
     command: >-
       -m /models/qwen2.5-7b-tk-q4_k_m.gguf
       --host 0.0.0.0 --port 8080
-      -c 4096 -ngl 99
+      -c 4096 -t 0
     ports:
       - "127.0.0.1:8080:8080"
-    deploy:
-      resources:
-        reservations:
-          devices:
-            - driver: nvidia
-              count: all
-              capabilities: [gpu]
 
   rag:
     build: ./rag
@@ -29,8 +19,10 @@ services:
       - LLAMA_SERVER_URL=http://llama-server:8080
     volumes:
       - ../data/processed/tk_articles.json:/app/data/tk_articles.json:ro
+      # Модели (эмбеддер + reranker) качаются на ХОСТЕ и монтируются в контейнер
+      - C:\Users\mark\.cache\huggingface:/root/.cache/huggingface:ro
     ports:
-      - "127.0.0.1:8001:8000"
+      - "8001:8000"
     depends_on:
       - llama-server
 
