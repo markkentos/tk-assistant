@@ -81,9 +81,12 @@ def parse_judge_json(text: str) -> dict:
     data = json.loads(text[start:end + 1])
     scores = {}
     for key in ("accuracy", "completeness", "reference", "format"):
-        scores[key] = int(re.search(r"\d+", str(data[key])).group())
-        if not 1 <= scores[key] <= 5:
-            raise ValueError(f"оценка вне шкалы: {key}={scores[key]}")
+        raw = int(re.search(r"\d+", str(data[key])).group())
+        if not 1 <= raw <= 5:
+            # Судья иногда ставит 0 за полностью неверный ответ (вне шкалы
+            # 1–5) — клампим к границе, чтобы пара не выпадала из выборки
+            print(f"judge: {key}={raw} вне шкалы — клампим к границе [1,5]")
+        scores[key] = max(1, min(5, raw))
     scores["hallucination"] = str(data["hallucination"]).lower().startswith("да")
     scores["wrong_reference"] = str(data["wrong_reference"]).lower().startswith("да")
     scores["comment"] = str(data.get("comment", "")).strip()
