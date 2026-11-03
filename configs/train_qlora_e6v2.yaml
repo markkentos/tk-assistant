@@ -16,7 +16,7 @@ lora:
 train:
   dataset: data/processed/train.jsonl
   val_dataset: data/processed/val.jsonl
-  epochs: 6
+  epochs: 4
   lr: 2.0e-4
   scheduler: cosine
   warmup_ratio: 0.05
@@ -26,7 +26,7 @@ train:
   seed: 42
   fp16: true
   logging_steps: 10
-  save_steps: 400
+  save_steps: 300
 
 output:
   adapter_dir: outputs/adapter_e6_v2
