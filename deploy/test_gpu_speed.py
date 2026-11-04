@@ -27,7 +27,7 @@ for question, expected in TESTS:
             timeout=300,
         )
         dt = time.time() - t0
-        retrieved = response.headers.get("x-retrieved-article", "-")
+        retrieved = response.headers.get("x-retrieved-articles", "-")
         data = response.json()
         content = data["choices"][0]["message"]["content"]
         print(f"  retrieved={retrieved} | {dt:.1f} сек | HTTP {response.status_code}",

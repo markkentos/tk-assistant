@@ -1,14 +1,15 @@
 # -*- coding: utf-8 -*-
-"""RAG-сервис tk-assistant: multi-query retrieval + гибрид + переранкинг + прокси.
+"""RAG-сервис tk-assistant: гибридный поиск + переранкинг + прокси.
 
 Пайплайн на вопрос пользователя:
-  1. LLM генерирует 3 переформулировки вопроса (расширение запроса)
-  2. Для каждого из 4 запросов (оригинал + 3): BM25 (лексика) и bi-encoder
-     (семантика) ищут топ-15 статей
-  3. Голосование: статья набирает голос за каждый список, где она в топ-15
+  1. BM25 (лексика) и bi-encoder (семантика) ищут топ-15 статей
+  2. Голосование: статья набирает голос за каждый список, где она в топ-15
      → топ-5 кандидатов
-  4. Cross-encoder переранкинг топ-5 → топ-3 статьи
-  5. Топ-3 инъектируется в system как справочный материал
+  3. Cross-encoder переранкинг топ-5 → топ-3 статьи (TK_RERANK=1 — вкл;
+     на CPU стоит 4-7 с, для демо по умолчанию выкл)
+  4. Топ-3 инъектируется в system как справочный материал
+  [опция] TK_MULTI_QUERY=1: перед поиском LLM порождает 3 переформулировки
+  запроса (+2-6 с) — точнее на неявных вопросах, медленнее.
 
 POST /v1/chat/completions — OpenAI-совместимо (стриминг и не-стриминг).
 Остальные /v1/* — прозрачный прокси в llama-server.
@@ -16,6 +17,7 @@ POST /v1/chat/completions — OpenAI-совместимо (стриминг и �
 import json
 import os
 import re
+import time
 from contextlib import asynccontextmanager
 
 import httpx
@@ -38,6 +40,25 @@ VOTE_TOP_K = 5               # сколько статей после голос
 FINAL_TOP_K = 3              # сколько статей уходит модели
 MIN_ARTICLE_CHARS = 100
 MIN_QUERY_CHARS = 12
+
+# Системный промпт — зеркальная копия SYSTEM_PROMPT из src/prompts.py.
+# Тренировка (в т.ч. RAG-native) идёт с этим текстом; прод обязан совпадать.
+SYSTEM_PROMPT = (
+    "Ты — ассистент по трудовому праву РФ. Отвечай на вопросы, опираясь на "
+    "Трудовой кодекс РФ. Формат ответа — строго две части:\n"
+    "1) краткий ответ одним предложением;\n"
+    "2) обоснование из 1–3 предложений со ссылкой на статью в формате «ст. N ТК РФ».\n"
+    "Не выдумывай номера статей. Если не уверен — так и скажи."
+)
+# Тяжёлые этапы вынесены в env (замеры на ПК, Ryzen + 1070 Ti-хост, CPU-инференс):
+# - cross-encoder rerank: 3.8-6.9 с на запрос (5 пар по ~700 символов) — слишком
+#   дорого для демо, по умолчанию ВЫКЛ; TK_RERANK=1 для экспериментов качества
+# - multi-query (LLM-переформулировки): +2-6 с на запрос — TK_MULTI_QUERY=1
+# retrieve (голосование BM25+эмбеддер): 32-48 мс
+MULTI_QUERY = os.environ.get("TK_MULTI_QUERY", "0") == "1"
+USE_RERANK = os.environ.get("TK_RERANK", "0") == "1"
+RERANK_CHARS = int(os.environ.get("TK_RERANK_CHARS", "700"))
+NEIGHBORS = os.environ.get("TK_NEIGHBORS", "1") == "1"
 
 articles: list[dict] = []
 bm25 = None
@@ -153,22 +174,78 @@ def vote_aggregate(variants: list[str], top_k: int) -> list[dict]:
 
 
 async def retrieve_candidates(query: str) -> list[dict]:
-    """Multi-query: оригинал + 3 LLM-переформулировки → голосование."""
+    """Голосование BM25 + эмбеддер. С TK_MULTI_QUERY=1 — ещё и 3 LLM-
+    переформулировки запроса (медленнее на 2-6 с, точнее на неявных вопросах)."""
     variants = [query]
-    try:
-        variants += await expand_query(query)
-    except Exception as exc:
-        print(f"RAG: расширение запроса не удалось ({exc!r}) — "
-              f"поиск по оригиналу", flush=True)
+    if MULTI_QUERY:
+        try:
+            variants += await expand_query(query)
+        except Exception as exc:
+            print(f"RAG: расширение запроса не удалось ({exc!r}) — "
+                  f"поиск по оригиналу", flush=True)
     return vote_aggregate(variants, VOTE_TOP_K)
 
 
 def rerank_candidates(query: str, candidates: list[dict]) -> list[dict]:
-    pairs = [[query, c["text"]] for c in candidates]
+    # Обрезаем текст статьи: начало статьи несёт основную релевантность,
+    # а полные 512 токенов на пару на CPU — лишние секунды
+    pairs = [[query, c["text"][:RERANK_CHARS]] for c in candidates]
     scores = reranker.predict(pairs, show_progress_bar=False)
     for c, s in zip(candidates, scores):
         c["rerank_score"] = float(s)
     return sorted(candidates, key=lambda c: -c["rerank_score"])[:FINAL_TOP_K]
+
+
+def neighbor_numbers(number: str) -> list[str]:
+    """Номера соседних статей: предыдущая и следующая (±1 целой части)."""
+    base = number.split(".")[0]
+    try:
+        b = int(base)
+        return [str(b - 1), str(b + 1)]
+    except ValueError:
+        return []
+
+
+def expand_with_neighbors(candidates: list[dict]) -> list[dict]:
+    """Расширяем подборку соседями: подпункты той же статьи (x.N, по
+    близости к найденному) и статьи ±1. Частый промах ретрива —
+    правильная статья стоит соседом найденной (замер: 8 из 32 промахов)."""
+    out = list(candidates)
+    seen = {c["number"] for c in out}
+
+    # 1) Подпункты той же статьи, ближайшие по номеру первыми
+    for c in candidates:
+        parts = c["number"].split(".", 1)
+        if len(parts) != 2:
+            continue
+        try:
+            sub = float(parts[1])
+        except ValueError:
+            continue
+        sibs = [a for a in articles
+                if a["number"] != c["number"]
+                and a["number"].split(".", 1)[0] == parts[0]
+                and "." in a["number"]]
+        sibs.sort(key=lambda a: abs(float(a["number"].split(".", 1)[1]) - sub))
+        for a in sibs:
+            if a["number"] not in seen:
+                out.append(a)
+                seen.add(a["number"])
+                if len(out) >= 8:
+                    return out
+
+    # 2) Соседние статьи ±1
+    for c in candidates:
+        for num in neighbor_numbers(c["number"]):
+            if num in seen:
+                continue
+            a = next((x for x in articles if x["number"] == num), None)
+            if a:
+                out.append(a)
+                seen.add(num)
+                if len(out) >= 8:
+                    return out
+    return out
 
 
 def inject_candidates(messages: list[dict], candidates: list[dict]) -> list[dict]:
@@ -191,8 +268,7 @@ def inject_candidates(messages: list[dict], candidates: list[dict]) -> list[dict
     if msgs and msgs[0].get("role") == "system":
         msgs[0]["content"] = msgs[0].get("content", "") + block
     else:
-        msgs.insert(0, {"role": "system",
-                        "content": "Ты — ассистент по трудовому праву РФ." + block})
+        msgs.insert(0, {"role": "system", "content": SYSTEM_PROMPT + block})
     return msgs
 
 
@@ -246,6 +322,7 @@ async def chat_completions(request: Request):
     query = retrieve_query(messages)
     candidates: list[dict] = []
     route = "none"
+    retrieval_ms = 0
 
     # Прямой путь: в запросе явная ссылка на статью («ст. 134») —
     # достаём её по метаданным + соседей по кодексу, минуя поиск
@@ -258,12 +335,24 @@ async def chat_completions(request: Request):
             route = f"direct ст. {explicit_ref}"
 
     if not candidates and query and len(query) >= MIN_QUERY_CHARS:
-        # Multi-query: оригинал + 3 переформулировки → голосование → топ-5
+        t_retr = time.perf_counter()
+        # Голосование BM25 + эмбеддер → топ-5 (multi-query опционально)
         candidates = await retrieve_candidates(query)
-        # Переранкинг cross-encoder → топ-3 для модели
-        ranked = rerank_candidates(query, candidates)
-        candidates = ranked
-        route = "hybrid+rerank"
+        t_rerank = time.perf_counter()
+        if USE_RERANK and candidates:
+            # Переранкинг cross-encoder → топ-3 для модели
+            candidates = rerank_candidates(query, candidates)
+            route = "hybrid+rerank"
+        else:
+            candidates = candidates[:FINAL_TOP_K]
+            route = "hybrid"
+        if NEIGHBORS:
+            candidates = expand_with_neighbors(candidates)
+        print(f"RAG: retrieve {1000 * (t_rerank - t_retr):.0f} мс | "
+              f"rerank {1000 * (time.perf_counter() - t_rerank):.0f} мс | "
+              f"multi_query={MULTI_QUERY} rerank={USE_RERANK} | route={route}",
+              flush=True)
+        retrieval_ms = int(1000 * (time.perf_counter() - t_retr))
 
     retrieved_list = [a["number"] for a in candidates]
     body["messages"] = inject_candidates(messages, candidates)
@@ -276,9 +365,52 @@ async def chat_completions(request: Request):
     upstream_response = await client.send(upstream_request, stream=True)
 
     extra = {"x-retrieved-articles": ",".join(retrieved_list),
-             "x-retrieval-route": route} if retrieved_list else \
-            {"x-retrieval-route": route}
+             "x-retrieval-route": route,
+             "x-retrieval-ms": str(retrieval_ms)} if retrieved_list else \
+            {"x-retrieval-route": route, "x-retrieval-ms": str(retrieval_ms)}
     return await relay(upstream_response, extra)
+
+
+@app.post("/retrieve")
+async def retrieve(request: Request):
+    """Только поиск, без LLM: бенчмарк ретрива (recall@k) и отладка."""
+    body = await request.json()
+    if isinstance(body, dict) and body.get("messages"):
+        messages = body["messages"]
+    else:
+        messages = [{"role": "user",
+                     "content": str((body or {}).get("query", ""))}]
+    query = retrieve_query(messages)
+    if not query:
+        return {"query": None, "route": "none", "articles": []}
+
+    candidates: list[dict] = []
+    route = "none"
+    explicit_ref = detect_article_reference(query)
+    if explicit_ref:
+        exact = next((a for a in articles if a["number"] == explicit_ref), None)
+        if exact:
+            idx = articles.index(exact)
+            candidates = [exact] + articles[idx + 1:idx + 2]
+            route = f"direct ст. {explicit_ref}"
+
+    retrieval_ms = 0
+    if not candidates and query and len(query) >= MIN_QUERY_CHARS:
+        t0 = time.perf_counter()
+        candidates = await retrieve_candidates(query)
+        if USE_RERANK and candidates:
+            candidates = rerank_candidates(query, candidates)
+            route = "hybrid+rerank"
+        else:
+            candidates = candidates[:FINAL_TOP_K]
+            route = "hybrid"
+        if NEIGHBORS:
+            candidates = expand_with_neighbors(candidates)
+        retrieval_ms = int(1000 * (time.perf_counter() - t0))
+
+    return {"query": query, "route": route, "retrieval_ms": retrieval_ms,
+            "articles": [{"number": a["number"], "title": a["title"]}
+                         for a in candidates]}
 
 
 @app.api_route("/v1/{path:path}", methods=["GET", "POST"])
