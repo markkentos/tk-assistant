@@ -1,0 +1,42 @@
+# Эксперимент №4: RAG-native файнтюн на датасете v2 с контекстом.
+# Каждый пример: system(SYSTEM_PROMPT + блок 3 статей, формат продового
+# rag_service) + question + answer. ~14% примеров чистые (без контекста),
+# чтобы одна модель работала в обоих режимах.
+# Цель: побить чистую e6v2 (judge 3.21) режимом «модель + RAG».
+model:
+  name: unsloth/Qwen2.5-7B-Instruct
+  max_seq_length: 2048
+  load_in_4bit: true
+
+lora:
+  r: 16
+  alpha: 32
+  dropout: 0.05
+  target_modules: [q_proj, k_proj, v_proj, o_proj, gate_proj, up_proj, down_proj]
+
+train:
+  dataset: data/processed/train_ragnative.jsonl
+  val_dataset: data/processed/val_ragnative.jsonl
+  epochs: 4
+  lr: 2.0e-4
+  scheduler: cosine
+  warmup_ratio: 0.05
+  per_device_batch_size: 2
+  grad_accum_steps: 4
+  weight_decay: 0.01
+  seed: 42
+  fp16: true
+  logging_steps: 10
+  save_steps: 300
+
+output:
+  adapter_dir: outputs/adapter_e6_v3rag
+  sample_n: 10
+  push_to_hub: false
+  hf_repo: ""
+
+wandb:
+  project: tk-assistant
+  enabled: false
+
+report_to: tensorboard

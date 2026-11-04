@@ -57,13 +57,39 @@ def build_messages(question: str, fewshot: bool = False) -> list[dict]:
 
 
 def training_text(tokenizer, record: dict) -> str:
-    """Полный текст примера для SFT: system + user + assistant, один промпт-шаблон."""
+    """Полный текст примера для SFT: system + user + assistant, один промпт-шаблон.
+
+    Если в записи есть `candidates` (RAG-native датасет) — в system добавляется
+    блок контекста РОВНО в том формате, который инжектит rag_service в проде."""
+    system = SYSTEM_PROMPT
+    if record.get("candidates"):
+        system += build_context_block(record["candidates"])
     messages = [
-        {"role": "system", "content": SYSTEM_PROMPT},
+        {"role": "system", "content": system},
         {"role": "user", "content": record["question"]},
         {"role": "assistant", "content": record["answer"]},
     ]
     return tokenizer.apply_chat_template(messages, tokenize=False)
+
+
+def build_context_block(candidates: list[dict]) -> str:
+    """Блок инъекции контекста — зеркальная копия шаблона из
+    deploy/rag/rag_service.py::inject_candidates. Менять только парой!"""
+    parts = []
+    for i, article in enumerate(candidates, 1):
+        parts.append(
+            f"Кандидат {i} — ст. {article['number']} ТК РФ: «{article['title']}».\n"
+            f"Текст:\n{article['text']}"
+        )
+    return (
+        "\n\nНиже — статьи Трудового кодекса РФ, найденные по вопросу "
+        "(в порядке убывания релевантности):\n\n"
+        + "\n\n".join(parts)
+        + "\n\nОпредели, какая из них РЕАЛЬНО отвечает на вопрос пользователя "
+          "(если ни одна — так и скажи, не выдумывай номера статей). "
+          "Отвечай СТРОГО по тексту выбранной статьи и обязательно ссылайся "
+          "на неё в формате «ст. N ТК РФ»."
+    )
 
 
 def inference_prompt(tokenizer, question: str, fewshot: bool = False) -> str:
