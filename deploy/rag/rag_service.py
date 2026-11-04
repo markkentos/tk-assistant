@@ -166,6 +166,8 @@ def vote_aggregate(variants: list[str], top_k: int) -> tuple[list[dict], float]:
     используется гейтом релевантности (TK_MIN_COS)."""
     votes: dict[int, int] = {}
     best_cos = -1.0
+    guaranteed: list[int] = []
+    seen_g: set[int] = set()
     for variant in variants:
         q_tokens = tokens(variant)
         bm_scores = bm25.get_scores(q_tokens)
@@ -176,16 +178,48 @@ def vote_aggregate(variants: list[str], top_k: int) -> tuple[list[dict], float]:
         best_cos = max(best_cos, float(sims.max()))
         for idx in np.argsort(sims)[::-1][:CANDIDATES_PER_SOURCE]:
             votes[idx] = votes.get(idx, 0) + 1
+        # Гарантированные слоты: топ-2 по cosine каждого варианта — темы
+        # мульти-вопроса не вытесняют друг друга из контекста
+        for idx in np.argsort(sims)[::-1][:2]:
+            if int(idx) not in seen_g:
+                seen_g.add(int(idx))
+                guaranteed.append(int(idx))
+                if len(guaranteed) >= top_k:
+                    break
+        if len(guaranteed) >= top_k:
+            break
 
-    top = sorted(votes.items(), key=lambda kv: -kv[1])[:top_k]
-    return [articles[idx] for idx, _ in top], best_cos
+    top = [idx for idx, _ in
+           sorted(votes.items(), key=lambda kv: -kv[1])[:top_k]]
+    merged: list[int] = []
+    seen_m: set[int] = set()
+    for idx in guaranteed + top:
+        if idx not in seen_m:
+            merged.append(idx)
+            seen_m.add(idx)
+        if len(merged) >= top_k:
+            break
+    return [articles[idx] for idx in merged], best_cos
+
+
+def query_variants(message: str) -> list[str]:
+    """Мульти-вопрос: каждое содержательное предложение — отдельный вариант
+    поиска (иначе эмбеддер усредняет темы и в топ доезжает одна)."""
+    parts = []
+    for raw in re.split(r"[?\n]+", message):
+        p = raw.strip()
+        if len(p) >= 10:
+            parts.append(p)
+    if not parts:
+        parts = [message]
+    return parts[:4]  # не даём голосам размазаться по десяткам кусков
 
 
 async def retrieve_candidates(query: str) -> tuple[list[dict], float]:
     """Голосование BM25 + эмбеддер. С TK_MULTI_QUERY=1 — ещё и 3 LLM-
     переформулировки запроса (медленнее на 2-6 с, точнее на неявных вопросах).
     Возвращает (кандидаты, лучший cosine)."""
-    variants = [query]
+    variants = query_variants(query)
     if MULTI_QUERY:
         try:
             variants += await expand_query(query)
@@ -291,10 +325,13 @@ def inject_candidates(messages: list[dict], candidates: list[dict]) -> list[dict
         "\n\nНиже — статьи Трудового кодекса РФ, найденные по вопросу "
         "(в порядке убывания релевантности):\n\n"
         + "\n\n".join(parts)
-        + "\n\nОпредели, какая из них РЕАЛЬНО отвечает на вопрос пользователя. "
-          "Если такая статья есть — отвечай СТРОГО по её тексту и обязательно "
-          "ссылайся в формате «ст. N ТК РФ». Если же ни одна не относится "
-          "к вопросу — так и скажи прямо и НЕ указывай никакую статью."
+        + "\n\nОпредели, какие из них РЕАЛЬНО отвечают на вопрос пользователя. "
+          "Если в сообщении несколько вопросов — ответь на каждый отдельным "
+          "абзацем, разделяя ответы пустой строкой, и приведи ссылку для "
+          "каждого. Если релевантная статья есть — отвечай СТРОГО по её "
+          "тексту и ссылайся в формате «ст. N ТК РФ». Если же ни одна не "
+          "относится к вопросу — так и скажи прямо и НЕ указывай никакую "
+          "статью."
     )
     msgs = [dict(m) for m in messages]
     if msgs and msgs[0].get("role") == "system":
