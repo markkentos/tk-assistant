@@ -1,7 +1,8 @@
 tk-assistant.ru {
 	encode zstd gzip
 
-	# Статический фронтенд + RAG-прокси
+	# Статический фронтенд + RAG-прокси (e6v2 + RAG = judge 3.38/3.71,
+	# лучший прогон; чистая e6v2 — откатом этой строки на llama-server:8080)
 	handle /v1/* {
 		reverse_proxy rag:8000
 	}

@@ -1,5 +1,9 @@
 # -*- coding: utf-8 -*-
-"""Бенчмарк через RAG-сервис: 100 вопросов → answers_tuned_e6v2_rag.jsonl."""
+"""Бенчмарк через RAG-сервис: 100 вопросов → answers_e6v2_rag.jsonl.
+
+--start/--end — срез вопросов по порядку (для диагностики зависаний),
+резюма: если OUTPUT уже существует, вопросы с готовыми ответами пропускаются."""
+import argparse
 import json
 import sys
 import time
@@ -8,15 +12,31 @@ import requests
 
 sys.stdout.reconfigure(encoding="utf-8")
 
+parser = argparse.ArgumentParser()
+parser.add_argument("--start", type=int, default=1, help="первый вопрос (с 1)")
+parser.add_argument("--end", type=int, default=100, help="последний вопрос (вкл)")
+args = parser.parse_args()
+
 BASE = "http://192.168.1.170:8001"          # RAG-сервис на ПК
 BENCHMARK = "eval/benchmark.jsonl"
-OUTPUT = "eval/runs/answers_tuned_e6v2_rag.jsonl"
+OUTPUT = "eval/runs/answers_e6v2_rag.jsonl"
 
 rows = [json.loads(l) for l in open(BENCHMARK, encoding="utf-8") if l.strip()]
-out = []
+done: dict[str, dict] = {}
+try:
+    for l in open(OUTPUT, encoding="utf-8"):
+        r = json.loads(l)
+        if not r["answer"].startswith("ОШИБКА"):
+            done[r["id"]] = r
+except FileNotFoundError:
+    pass
+
+out = [done[r["id"]] for r in rows if r["id"] in done]
 t_start = time.time()
 
 for i, row in enumerate(rows, 1):
+    if not (args.start <= i <= args.end) or row["id"] in done:
+        continue
     question = row["question"]
     t0 = time.time()
     answer = ""
@@ -25,25 +45,24 @@ for i, row in enumerate(rows, 1):
             f"{BASE}/v1/chat/completions",
             json={"messages": [{"role": "user", "content": question}],
                   "stream": False, "max_tokens": 400, "temperature": 0.2},
-            timeout=300,
+            timeout=90,
         )
         response.raise_for_status()
         answer = response.json()["choices"][0]["message"]["content"].strip()
     except Exception as exc:
         answer = f"ОШИБКА: {exc!r}"
     dt = time.time() - t0
-    retrieved = response.headers.get("x-retrieved-article", "-") if "response" in dir() else "-"
+    retrieved = response.headers.get("x-retrieved-articles", "-") if "response" in dir() else "-"
     out.append({
         "id": row["id"], "article": row["article"], "question": question,
         "answer": answer, "reference": row.get("reference", ""),
-        "meta": {"mode": "tuned_e6v2_rag", "retrieved_article": retrieved,
+        "meta": {"mode": "e6v2_rag", "retrieved_article": retrieved,
                  "time_sec": round(dt, 1)},
     })
-    if i % 10 == 0 or i == len(rows):
+    if i % 10 == 0 or i == args.end or i == len(rows):
         elapsed = time.time() - t_start
         print(f"[{i}/{len(rows)}] {elapsed:.0f} сек всего", flush=True)
-
-with open(OUTPUT, "w", encoding="utf-8") as fh:
-    for row in out:
-        fh.write(json.dumps(row, ensure_ascii=False) + "\n")
-print(f"Готово: {OUTPUT}", flush=True)
+    with open(OUTPUT, "w", encoding="utf-8") as fh:
+        for r in out:
+            fh.write(json.dumps(r, ensure_ascii=False) + "\n")
+print(f"Готово: {OUTPUT} ({len(out)} ответов)", flush=True)
