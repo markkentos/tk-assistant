@@ -24,7 +24,7 @@ import httpx
 import numpy as np
 import uvicorn
 from fastapi import FastAPI, Request
-from fastapi.responses import StreamingResponse
+from fastapi.responses import JSONResponse, StreamingResponse
 from nltk.stem.snowball import SnowballStemmer
 from rank_bm25 import BM25Okapi
 from sentence_transformers import CrossEncoder, SentenceTransformer
@@ -59,6 +59,10 @@ MULTI_QUERY = os.environ.get("TK_MULTI_QUERY", "0") == "1"
 USE_RERANK = os.environ.get("TK_RERANK", "0") == "1"
 RERANK_CHARS = int(os.environ.get("TK_RERANK_CHARS", "700"))
 NEIGHBORS = os.environ.get("TK_NEIGHBORS", "1") == "1"
+# Гейт релевантности: если лучший cosine (эмбеддер) ниже порога — вопрос
+# считается вне темы ТК, контекст не инъекцируется (маршрут offtopic).
+# Калибровка (e5): офтопик 0.72–0.76, тематические 0.84–0.89 → порог 0.80
+MIN_QUERY_COS = float(os.environ.get("TK_MIN_COS", "0.80"))
 
 articles: list[dict] = []
 bm25 = None
@@ -155,10 +159,13 @@ async def expand_query(query: str) -> list[str]:
     return variants[:3]
 
 
-def vote_aggregate(variants: list[str], top_k: int) -> list[dict]:
+def vote_aggregate(variants: list[str], top_k: int) -> tuple[list[dict], float]:
     """Голосование: для каждого запроса BM25 + эмбеддер ищут топ-15;
-    статья набирает голос за каждый список, где она в топе."""
+    статья набирает голос за каждый список, где она в топе.
+    Возвращает (кандидаты, лучший cosine по всем вариантам) — cosine
+    используется гейтом релевантности (TK_MIN_COS)."""
     votes: dict[int, int] = {}
+    best_cos = -1.0
     for variant in variants:
         q_tokens = tokens(variant)
         bm_scores = bm25.get_scores(q_tokens)
@@ -166,16 +173,18 @@ def vote_aggregate(variants: list[str], top_k: int) -> list[dict]:
             votes[idx] = votes.get(idx, 0) + 1
         qv = embedder.encode([f"query: {variant}"], normalize_embeddings=True)
         sims = (article_vecs @ qv.T).ravel()
+        best_cos = max(best_cos, float(sims.max()))
         for idx in np.argsort(sims)[::-1][:CANDIDATES_PER_SOURCE]:
             votes[idx] = votes.get(idx, 0) + 1
 
     top = sorted(votes.items(), key=lambda kv: -kv[1])[:top_k]
-    return [articles[idx] for idx, _ in top]
+    return [articles[idx] for idx, _ in top], best_cos
 
 
-async def retrieve_candidates(query: str) -> list[dict]:
+async def retrieve_candidates(query: str) -> tuple[list[dict], float]:
     """Голосование BM25 + эмбеддер. С TK_MULTI_QUERY=1 — ещё и 3 LLM-
-    переформулировки запроса (медленнее на 2-6 с, точнее на неявных вопросах)."""
+    переформулировки запроса (медленнее на 2-6 с, точнее на неявных вопросах).
+    Возвращает (кандидаты, лучший cosine)."""
     variants = [query]
     if MULTI_QUERY:
         try:
@@ -250,6 +259,27 @@ def expand_with_neighbors(candidates: list[dict]) -> list[dict]:
     return out
 
 
+OFFTOPIC_NOTE = (
+    "\n\nВажно: вопрос пользователя может не относиться к трудовому праву РФ. "
+    "Если он вне твоей компетенции, ответь РОВНО в таком стиле: «Этот вопрос "
+    "не относится к трудовому праву — я ассистент по Трудовому кодексу РФ и "
+    "отвечаю только на вопросы о труде. Могу помочь, если вопрос про работу, "
+    "отпуск, увольнение, зарплату и т.п.» Никаких статей и ссылок в этом "
+    "случае не указывай. Если же вопрос всё же связан с трудовыми "
+    "отношениями — отвечай в обычном формате по своим знаниям кодекса."
+)
+
+
+def inject_offtopic(messages: list[dict]) -> list[dict]:
+    """Офториковый маршрут: контекст не инъекцируем, разрешаем честный отказ."""
+    msgs = [dict(m) for m in messages]
+    if msgs and msgs[0].get("role") == "system":
+        msgs[0]["content"] = msgs[0].get("content", "") + OFFTOPIC_NOTE
+    else:
+        msgs.insert(0, {"role": "system", "content": SYSTEM_PROMPT + OFFTOPIC_NOTE})
+    return msgs
+
+
 def inject_candidates(messages: list[dict], candidates: list[dict]) -> list[dict]:
     parts = []
     for i, article in enumerate(candidates, 1):
@@ -261,10 +291,10 @@ def inject_candidates(messages: list[dict], candidates: list[dict]) -> list[dict
         "\n\nНиже — статьи Трудового кодекса РФ, найденные по вопросу "
         "(в порядке убывания релевантности):\n\n"
         + "\n\n".join(parts)
-        + "\n\nОпредели, какая из них РЕАЛЬНО отвечает на вопрос пользователя "
-          "(если ни одна — так и скажи, не выдумывай номера статей). "
-          "Отвечай СТРОГО по тексту выбранной статьи и обязательно ссылайся "
-          f"на неё в формате «ст. N ТК РФ»."
+        + "\n\nОпредели, какая из них РЕАЛЬНО отвечает на вопрос пользователя. "
+          "Если такая статья есть — отвечай СТРОГО по её тексту и обязательно "
+          "ссылайся в формате «ст. N ТК РФ». Если же ни одна не относится "
+          "к вопросу — так и скажи прямо и НЕ указывай никакую статью."
     )
     msgs = [dict(m) for m in messages]
     if msgs and msgs[0].get("role") == "system":
@@ -272,6 +302,40 @@ def inject_candidates(messages: list[dict], candidates: list[dict]) -> list[dict
     else:
         msgs.insert(0, {"role": "system", "content": SYSTEM_PROMPT + block})
     return msgs
+
+
+CITATION_RE = re.compile(
+    r"\s*ст\.\s*\d+(?:\.\d+)?(?:\s*ТК\s*РФ)?\.?", re.IGNORECASE)
+
+
+def strip_citations(text: str) -> str:
+    """Маршрут offtopic: рефлекс файнтюна дорисовывает «ст. N» даже к отказам —
+    вычищаем сами паттерны цитат (иногда они в той же строке, что и отказ,
+    поэтому строки целиком удалять нельзя)."""
+    cleaned = CITATION_RE.sub("", text)
+    cleaned = re.sub(r"\n{2,}", "\n", cleaned)
+    return cleaned.strip()
+
+
+def offtopic_sse_response(data: dict, extra_headers: dict | None = None):
+    """Отказ в SSE-формате (фронт просит stream=true): один чанк + [DONE]."""
+    try:
+        content = strip_citations(data["choices"][0]["message"].get("content", ""))
+    except (KeyError, IndexError, TypeError):
+        content = ""
+    chunk = {"id": data.get("id", "offtopic"),
+             "object": "chat.completion.chunk",
+             "model": data.get("model", "local"),
+             "choices": [{"index": 0, "delta": {"content": content},
+                          "finish_reason": "stop"}]}
+    payload = (f"data: {json.dumps(chunk, ensure_ascii=False)}\n\n"
+               f"data: [DONE]\n\n")
+
+    async def gen():
+        yield payload
+
+    return StreamingResponse(gen(), media_type="text/event-stream",
+                             headers=extra_headers or {})
 
 
 async def relay(upstream_response: httpx.Response,
@@ -345,25 +409,36 @@ async def chat_completions(request: Request):
     if not candidates and query and len(query) >= MIN_QUERY_CHARS:
         t_retr = time.perf_counter()
         # Голосование BM25 + эмбеддер → топ-5 (multi-query опционально)
-        candidates = await retrieve_candidates(query)
+        candidates, best_cos = await retrieve_candidates(query)
         t_rerank = time.perf_counter()
-        if USE_RERANK and candidates:
+        if best_cos < MIN_QUERY_COS:
+            # Гейт релевантности: контекст не инъекцируем, маршрут offtopic
+            candidates = []
+            route = "offtopic"
+        elif USE_RERANK and candidates:
             # Переранкинг cross-encoder → топ-3 для модели
             candidates = rerank_candidates(query, candidates)
             route = "hybrid+rerank"
         else:
             candidates = candidates[:FINAL_TOP_K]
             route = "hybrid"
-        if NEIGHBORS:
+        if candidates and NEIGHBORS:
             candidates = expand_with_neighbors(candidates)
         print(f"RAG: retrieve {1000 * (t_rerank - t_retr):.0f} мс | "
               f"rerank {1000 * (time.perf_counter() - t_rerank):.0f} мс | "
-              f"multi_query={MULTI_QUERY} rerank={USE_RERANK} | route={route}",
+              f"best_cos={best_cos:.2f} | multi_query={MULTI_QUERY} "
+              f"rerank={USE_RERANK} | route={route}",
               flush=True)
         retrieval_ms = int(1000 * (time.perf_counter() - t_retr))
 
     retrieved_list = [a["number"] for a in candidates]
-    body["messages"] = inject_candidates(messages, candidates)
+    client_wants_stream = bool(body.get("stream"))
+    if route == "offtopic":
+        # Отказ буферизуем целиком (вычищаем цитаты) — llama зовём без стрима
+        body["stream"] = False
+        body["messages"] = inject_offtopic(messages)
+    else:
+        body["messages"] = inject_candidates(messages, candidates)
 
     upstream_request = client.build_request(
         "POST", f"{LLAMA_SERVER_URL}/v1/chat/completions",
@@ -376,6 +451,22 @@ async def chat_completions(request: Request):
              "x-retrieval-route": route,
              "x-retrieval-ms": str(retrieval_ms)} if retrieved_list else \
             {"x-retrieval-route": route, "x-retrieval-ms": str(retrieval_ms)}
+
+    if route == "offtopic":
+        # Отказ: буферизуем и вычищаем случайные «ст. N» — рефлекс файнтюна
+        # дорисовывает цитаты даже к отказам
+        await upstream_response.aread()
+        data = json.loads(upstream_response.content)
+        await upstream_response.aclose()
+        try:
+            msg = data["choices"][0]["message"]
+            msg["content"] = strip_citations(msg.get("content", ""))
+        except (KeyError, IndexError, TypeError):
+            pass
+        if client_wants_stream:
+            return offtopic_sse_response(data, extra)
+        return JSONResponse(data, headers=extra)
+
     return await relay(upstream_response, extra)
 
 
@@ -403,20 +494,25 @@ async def retrieve(request: Request):
             route = f"direct ст. {explicit_ref}"
 
     retrieval_ms = 0
+    best_cos = -1.0
     if not candidates and query and len(query) >= MIN_QUERY_CHARS:
         t0 = time.perf_counter()
-        candidates = await retrieve_candidates(query)
-        if USE_RERANK and candidates:
+        candidates, best_cos = await retrieve_candidates(query)
+        if best_cos < MIN_QUERY_COS:
+            candidates = []
+            route = "offtopic"
+        elif USE_RERANK and candidates:
             candidates = rerank_candidates(query, candidates)
             route = "hybrid+rerank"
         else:
             candidates = candidates[:FINAL_TOP_K]
             route = "hybrid"
-        if NEIGHBORS:
+        if candidates and NEIGHBORS:
             candidates = expand_with_neighbors(candidates)
         retrieval_ms = int(1000 * (time.perf_counter() - t0))
 
     return {"query": query, "route": route, "retrieval_ms": retrieval_ms,
+            "best_cos": round(best_cos, 3),
             "articles": [{"number": a["number"], "title": a["title"]}
                          for a in candidates]}
 
