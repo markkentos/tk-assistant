@@ -209,7 +209,9 @@ def neighbor_numbers(number: str) -> list[str]:
 def expand_with_neighbors(candidates: list[dict]) -> list[dict]:
     """Расширяем подборку соседями: подпункты той же статьи (x.N, по
     близости к найденному) и статьи ±1. Частый промах ретрива —
-    правильная статья стоит соседом найденной (замер: 8 из 32 промахов)."""
+    правильная статья стоит соседом найденной (замер: 8 из 32 промахов).
+    Лимит 5 итоговых статей: при 8 длинные статьи переполняли даже
+    контекст 6144 (3 из 100 бенчмарк-запросов падали с переполнением)."""
     out = list(candidates)
     seen = {c["number"] for c in out}
 
@@ -231,7 +233,7 @@ def expand_with_neighbors(candidates: list[dict]) -> list[dict]:
             if a["number"] not in seen:
                 out.append(a)
                 seen.add(a["number"])
-                if len(out) >= 8:
+                if len(out) >= 5:
                     return out
 
     # 2) Соседние статьи ±1
@@ -243,7 +245,7 @@ def expand_with_neighbors(candidates: list[dict]) -> list[dict]:
             if a:
                 out.append(a)
                 seen.add(num)
-                if len(out) >= 8:
+                if len(out) >= 5:
                     return out
     return out
 
@@ -304,7 +306,13 @@ async def lifespan(_: FastAPI):
         normalize_embeddings=True, show_progress_bar=False)
 
     print(f"RAG: загружаю reranker ({RERANKER_MODEL})...", flush=True)
-    reranker = CrossEncoder(RERANKER_MODEL)
+    if USE_RERANK:
+        reranker = CrossEncoder(RERANKER_MODEL)
+        print("RAG: reranker загружен", flush=True)
+    else:
+        reranker = None
+        print("RAG: reranker выключен (TK_RERANK=0) — в память не грузим "
+              "(экономия ~2,3 ГБ RAM)", flush=True)
     print("RAG: индексация завершена", flush=True)
     yield
 
