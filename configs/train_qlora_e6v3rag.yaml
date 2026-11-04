@@ -21,8 +21,8 @@ train:
   lr: 2.0e-4
   scheduler: cosine
   warmup_ratio: 0.05
-  per_device_batch_size: 1
-  grad_accum_steps: 8
+  per_device_batch_size: 2
+  grad_accum_steps: 4
   weight_decay: 0.01
   seed: 42
   fp16: true
